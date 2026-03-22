@@ -10,6 +10,11 @@ Repos that were removed from the list because they were archived, deprecated, or
 - [DataspaceConnector](https://github.com/International-Data-Spaces-Association/DataspaceConnector) - IDS Connector reference implementation. Archived Feb 2024.
 - [FIWARE data-models](https://github.com/FIWARE/data-models) - Harmonized data models (superseded by smart-data-models). Archived Jan 2024.
 - [gematik ref-eRp-FD-Server](https://github.com/gematik/ref-eRp-FD-Server) - eRezept reference implementation. Archived Nov 2022.
+- [TheHive](https://github.com/TheHive-Project/TheHive) - Collaborative case management platform for CERTs. Archived, now commercial only.
+- [eclipse-edc/FederatedCatalog](https://github.com/eclipse-edc/FederatedCatalog) - EDC Federated Catalog component. Archived Mar 2026.
+- [SIOP-OID4VP](https://github.com/sphereon-opensource/SIOP-OID4VP) - Self Issued OpenID Provider v2 with OpenID4VP. Archived Jul 2024.
+- [SDG-sandbox](https://github.com/SEMICeu/SDG-sandbox) - Single Digital Gateway data model sandbox. Archived Mar 2023.
+- [eclipse-tractusx/managed-identity-wallet](https://github.com/eclipse-tractusx/managed-identity-wallet) - Catena-X managed identity wallet. Archived Nov 2024.
 
 ## Deprecated
 

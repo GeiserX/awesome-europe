@@ -29,7 +29,6 @@
 - [Geospatial and Earth Observation](#geospatial-and-earth-observation)
 - [Health and Pharmaceuticals](#health-and-pharmaceuticals)
 - [Cybersecurity](#cybersecurity)
-- [Digital Services and Platforms](#digital-services-and-platforms)
 - [Education and Research](#education-and-research)
 - [European Utilities](#european-utilities)
 - [Country-Specific Awesome Lists](#country-specific-awesome-lists)
@@ -67,6 +66,12 @@ Electronic Identification, Authentication and Trust Services regulation for cros
 - [SSI Agent](https://github.com/impierce/ssi-agent) - eIDAS 2.0-compliant Self Sovereign Identity Agent that connects European Identity Wallets to IT systems.
 - [Open Banking eIDAS Broker](https://github.com/enablebanking/open_banking_eidas_broker) - Microservice using eIDAS certificates for signing PSD2 API requests and accessing banks over mTLS.
 - [js-undersign](https://github.com/moll/js-undersign) - JavaScript library for creating eIDAS compatible XAdES signatures with support for OCSP and timestamps.
+- [EUDI Wallet Core Android](https://github.com/eu-digital-identity-wallet/eudi-lib-android-wallet-core) - Core libraries for the EUDI Wallet reference implementation on Android.
+- [EUDI OpenID4VCI Kotlin](https://github.com/eu-digital-identity-wallet/eudi-lib-jvm-openid4vci-kt) - Kotlin implementation of the OpenID for Verifiable Credential Issuance protocol for the EUDI Wallet.
+- [EUDI SD-JWT Kotlin](https://github.com/eu-digital-identity-wallet/eudi-lib-jvm-sdjwt-kt) - Kotlin library for issuing and verifying SD-JWT credentials in the EUDI Wallet ecosystem.
+- [EUDI PID Issuer](https://github.com/eu-digital-identity-wallet/eudi-srv-pid-issuer) - Microservice for issuing Person Identification Data and mDL according to OpenID4VCI.
+- [EUDI Web Verifier](https://github.com/eu-digital-identity-wallet/eudi-web-verifier) - Web-based verifier application for the European Digital Identity Wallet.
+- [OID4VCI](https://github.com/sphereon-opensource/OID4VCI) - TypeScript modules for OpenID for Verifiable Credential Issuance used in EUDI Wallet implementations.
 
 ## Interoperability and Digital Infrastructure
 
@@ -85,6 +90,14 @@ CEF building blocks (eDelivery, eSignature, eTranslation), X-Road, EBSI, and EU 
 - [Europeana Portal](https://github.com/europeana/portal.js) - Europeana.eu website providing access to European cultural heritage collections.
 - [Europeana Core Library](https://github.com/europeana/corelib) - Core library containing EDM (Europeana Data Model) used by Europeana applications.
 - [LinkedPipes ETL](https://github.com/linkedpipes/etl) - RDF-based lightweight ETL tool developed under EU research funding.
+- [Stellio Context Broker](https://github.com/stellio-hub/stellio-context-broker) - NGSI-LD compatible context broker for EU smart applications.
+- [Scorpio Broker](https://github.com/ScorpioBroker/ScorpioBroker) - NGSI-LD compliant context broker developed by NEC for EU data spaces.
+- [hale»studio](https://github.com/halestudio/hale) - Spatial data harmonisation tool for INSPIRE-compliant data transformation.
+- [Interoperability Test Bed](https://github.com/ISAITB/gitb) - Conformance testing solution supported by the European Commission for EU IT systems interoperability.
+- [publiccode.yml](https://github.com/publiccodeyml/publiccode.yml) - Metadata standard for describing public software adopted across EU administrations.
+- [Eclipse EDC IdentityHub](https://github.com/eclipse-edc/IdentityHub) - Identity management component for the Eclipse Dataspace Connector ecosystem.
+- [Minimum Viable Dataspace](https://github.com/eclipse-edc/MinimumViableDataspace) - Documentation and scripts for deploying a minimum viable EU dataspace with Eclipse EDC.
+- [SEMIC Core Vocabularies](https://github.com/SEMICeu/Core-Person-Vocabulary) - Core Person Vocabulary for cross-border data exchange in the EU, maintained by SEMIC.
 
 ## Electronic Invoicing
 
@@ -117,6 +130,7 @@ SEPA, PSD2, Open Banking, EBICS, and the Single Euro Payments Area infrastructur
 - [Nordigen Python](https://github.com/nordigen/nordigen-python) - Python library for the Nordigen open banking API.
 - [Sephpa](https://github.com/AbcAeffchen/Sephpa) - PHP class to create SEPA XML files for credit transfer and direct debit.
 - [SepaUtilities](https://github.com/AbcAeffchen/SepaUtilities) - PHP methods for validating and sanitizing inputs used in SEPA files.
+- [python-sepaxml](https://github.com/raphaelm/python-sepaxml) - Python library to generate SEPA XML files for direct debit and credit transfer.
 
 ## Central Banking and Monetary Policy
 
@@ -133,6 +147,7 @@ EU VAT system (VIES, OSS/IOSS), TARIC customs tariffs, CN codes, EORI, and Intra
 - [node-sales-tax](https://github.com/valeriansaliou/node-sales-tax) - International sales tax calculator for Node.js with EU VAT support including VIES validation.
 - [VIES](https://github.com/DragonBe/vies) - PHP component for the European Commission VAT Information Exchange System (VIES).
 - [vat](https://github.com/dannyvankooten/vat) - Go package for EU VAT number validation and rates retrieval.
+- [VAT Calculator](https://github.com/driesvints/vat-calculator) - PHP package to handle EU MOSS tax and VAT regulations including rate lookup and VIES validation.
 
 ## Anti-Money Laundering and Compliance
 
@@ -141,12 +156,14 @@ EU Anti-Money Laundering Directives (AMLD), sanctions screening, KYC/KYB, benefi
 - [Aleph](https://github.com/alephdata/aleph) - Search and browse documents and data to find people and companies, used for investigative journalism and EU compliance.
 - [OpenSanctions](https://github.com/opensanctions/opensanctions) - Open database of international sanctions data, persons of interest and politically exposed persons, including EU sanctions lists.
 - [Follow the Money](https://github.com/alephdata/followthemoney) - Data model and processing tools for investigative entity data used in EU AML compliance.
+- [Yente](https://github.com/opensanctions/yente) - Entity matching and search API for OpenSanctions data, supporting EU sanctions screening and KYC workflows.
 
 ## Finance and Capital Markets
 
 EBA, ESMA regulations, MiFID II, MiCA, DORA, EMIR, XBRL/iXBRL reporting, and European financial market infrastructure.
 
 - [Arelle](https://github.com/Arelle/Arelle) - Open source XBRL platform for European financial reporting including EBA and ESMA taxonomies.
+- [Arelle iXBRL Viewer](https://github.com/Arelle/ixbrl-viewer) - Interactive viewer for Inline XBRL reports used in EU financial filings under ESEF regulation.
 
 ## Open Data and Statistics
 
@@ -157,6 +174,9 @@ Eurostat, EU Open Data Portal, SDMX, NUTS regions, and pan-European statistical 
 - [SDMX-ML](https://github.com/sdmx-twg/sdmx-ml) - Format specification for statistical data exchange used by Eurostat and ECB.
 - [Open Data Handbook](https://github.com/okfn/opendatahandbook) - Guide to legal, social and technical aspects of open data, widely used in EU open data initiatives.
 - [Metis Framework](https://github.com/europeana/metis-framework) - Data publication framework for ingesting and processing European cultural heritage metadata.
+- [CKAN](https://github.com/ckan/ckan) - Open source data management system powering many European government open data portals.
+- [DCAT-AP](https://github.com/SEMICeu/DCAT-AP) - Application profile of DCAT for describing public sector datasets in European data portals.
+- [udata](https://github.com/opendatateam/udata) - Customizable social platform for open data publication, powering data.gouv.fr and other EU portals.
 
 ## Legal and Legislation
 
@@ -164,6 +184,7 @@ EUR-Lex, ECLI, CELEX, ELI, Akoma Ntoso, and tools for accessing and processing E
 
 - [eForms SDK](https://github.com/OP-TED/eForms-SDK) - eForms notification standard for public procurement procedures in the EU, published by the EU Publications Office.
 - [eForms Notice Viewer](https://github.com/OP-TED/eforms-notice-viewer) - Sample application that can visualise an eForms notice using the eForms SDK.
+- [eurlex](https://github.com/step21/eurlex) - Python package for querying the EU Cellar repository and downloading EUR-Lex legislative data.
 
 ## Democracy and Governance
 
@@ -172,12 +193,19 @@ European Parliament, EU elections, Transparency Register, European Citizens' Ini
 - [Parltrack](https://github.com/parltrack/parltrack) - Parliamentary tracker application for monitoring the European Parliament.
 - [EveryPolitician Data](https://github.com/everypolitician/everypolitician-data) - Data for national legislatures worldwide including all EU member states.
 - [FragDenStaat](https://github.com/okfde/fragdenstaat_de) - Freedom of information portal for government transparency requests.
+- [EUSurvey](https://github.com/EUSurvey/EUSURVEY) - Official European Commission open source survey tool used across EU institutions.
 
 ## Public Procurement
 
 TED (Tenders Electronic Daily), eForms, ESPD, CPV codes, and EU public procurement infrastructure.
 
 - [OCDS Standard](https://github.com/open-contracting/standard) - Open Contracting Data Standard used in EU public procurement transparency.
+- [ESPD-EDM](https://github.com/OP-TED/ESPD-EDM) - European Single Procurement Document Exchange Data Model for integration with national ESPD service providers.
+- [eProcurement Ontology](https://github.com/OP-TED/ePO) - Formal semantic foundation for linked open data in the domain of EU public procurement.
+- [TED Open Data](https://github.com/OP-TED/ted-open-data) - SPARQL query editor for the Tenders Electronic Daily Open Data Service.
+- [eForms Notice Editor](https://github.com/OP-TED/eforms-notice-editor) - Sample application demonstrating how to create eForms notices using the SDK.
+- [model2owl](https://github.com/OP-TED/model2owl) - Tool to transform UML models into OWL ontologies and SHACL shapes for EU procurement data.
+- [ted-rdf-mapping](https://github.com/OP-TED/ted-rdf-mapping) - Transformation rules for the TED Semantic Web Services RDF conversion.
 
 ## Energy and Electricity
 
@@ -189,12 +217,21 @@ ENTSO-E Transparency Platform, ACER, REMIT, and the European energy market.
 - [powerplantmatching](https://github.com/PyPSA/powerplantmatching) - Tools to combine multiple European power plant databases.
 - [technology-data](https://github.com/PyPSA/technology-data) - Compiled assumptions on European energy system technologies including costs and efficiencies.
 - [Open Smart Grid Platform](https://github.com/OSGP/open-smart-grid-platform) - Open source platform for smart grid management in European energy networks.
+- [Electricity Maps](https://github.com/electricitymaps/electricitymap-contrib) - Open source data parsers powering real-time electricity generation and carbon intensity maps across Europe.
+- [Dispa-SET](https://github.com/energy-modelling-toolkit/Dispa-SET) - Unit commitment and optimal dispatch model for the European power system, developed at the JRC.
+- [Open Energy Ontology](https://github.com/OpenEnergyPlatform/ontology) - Ontology for energy system modelling and analysis in the European research context.
+- [Calliope](https://github.com/calliope-project/calliope) - Multi-scale energy systems modelling framework used in European energy research.
+- [FlexMeasures](https://github.com/FlexMeasures/flexmeasures) - Intelligent energy management system supporting real-time flexibility applications in European energy markets.
 
 ## Sustainability and ESG
 
 EU Taxonomy, CSRD, SFDR, CBAM, Digital Product Passport, EU Deforestation Regulation, and sustainable finance.
 
 - [Eclipse Tractus-X](https://github.com/eclipse-tractusx/tractus-x-release) - EU-funded Catena-X automotive data ecosystem for supply chain transparency and sustainability.
+- [Tractus-X Traceability](https://github.com/eclipse-tractusx/traceability-foss) - Supply chain traceability application for the Catena-X EU Digital Product Passport ecosystem.
+- [Tractus-X BPDM](https://github.com/eclipse-tractusx/bpdm) - Business Partner Data Management for the Catena-X EU automotive data ecosystem.
+- [EU Emissions Trading System Data](https://github.com/datasets/eu-emissions-trading-system) - Open dataset of the EU Emissions Trading System.
+- [OS-Climate ITR](https://github.com/os-climate/ITR) - Python implementation of the Implied Temperature Rise methodology for EU sustainable finance.
 
 ## Transport and Mobility
 
@@ -222,6 +259,13 @@ INSPIRE directive, Copernicus programme, Sentinel data, and European geospatial 
 - [OpenSarToolkit](https://github.com/ESA-PhiLab/OpenSarToolkit) - ESA toolkit for inventory, download and pre-processing of Sentinel-1 SAR data.
 - [LISFLOOD](https://github.com/ec-jrc/lisflood-code) - JRC spatially distributed water resources model used for European flood forecasting.
 - [c2cgeoportal](https://github.com/camptocamp/c2cgeoportal) - Geoportal application framework used in European INSPIRE-compliant geospatial portals.
+- [ldproxy](https://github.com/interactive-instruments/ldproxy) - Server for sharing geospatial data via modern OGC API web services, used in INSPIRE infrastructure.
+- [GeoNetwork](https://github.com/geonetwork/core-geonetwork) - Metadata catalog application for managing spatially referenced resources, widely used in EU INSPIRE nodes.
+- [deegree](https://github.com/deegree/deegree3) - Java framework for OGC web service implementations used in European geospatial data infrastructure.
+- [openEO Python Client](https://github.com/Open-EO/openeo-python-client) - Python client for the openEO API, providing access to Copernicus and other European Earth observation data.
+- [earthkit](https://github.com/ecmwf/earthkit) - ECMWF Python tools for working with European weather and climate data.
+- [INSPIRE Validator](https://github.com/INSPIRE-MIF/helpdesk-validator) - Community discussion and issue tracker for the INSPIRE data and service validation tools.
+- [actinia](https://github.com/mundialis/actinia_core) - Open source REST API for scalable geospatial data processing used in European environmental monitoring.
 
 ## Health and Pharmaceuticals
 
@@ -230,16 +274,19 @@ European Health Data Space (EHDS), EMA, EudraVigilance, EHIC, EU MDR/IVDR, and c
 - [HL7 EU Laboratory](https://github.com/hl7-eu/laboratory) - HL7 Europe Laboratory Report FHIR Implementation Guide.
 - [HL7 EU Base](https://github.com/hl7-eu/base) - Base profiles and common artefacts for HL7 FHIR in Europe.
 - [EGA Download Client](https://github.com/EGA-archive/ega-download-client) - Python client for the European Genome-phenome Archive.
+- [Blaze](https://github.com/samply/blaze) - FHIR server with built-in CQL evaluation engine used in European health data spaces.
+- [openEHR Archie](https://github.com/openEHR/archie) - Java library implementing openEHR specifications used across European eHealth systems.
+- [HL7 EU Imaging](https://github.com/hl7-eu/imaging) - HL7 Europe FHIR Implementation Guide for imaging study reports.
+- [HL7 Gravitate Health](https://github.com/hl7-eu/gravitate-health) - EU-funded FHIR Implementation Guide for patient-centric health information.
 
 ## Cybersecurity
 
 NIS2 directive, ENISA, EU Cybersecurity Act, Cyber Resilience Act, and European cyber frameworks.
 
 - [ALTCHA](https://github.com/altcha-org/altcha) - GDPR and EAA compliant, self-hosted CAPTCHA alternative with proof-of-work mechanism.
-
-## Digital Services and Platforms
-
-Digital Services Act (DSA), Digital Markets Act (DMA), EU Data Act, and platform regulation tools.
+- [MISP](https://github.com/MISP/MISP) - Open source threat intelligence and sharing platform used by EU-CERTs and endorsed by ENISA.
+- [IntelMQ](https://github.com/certtools/intelmq) - Security feed processing framework for CERTs, developed by Austrian CERT for European cybersecurity operations.
+- [OpenCTI](https://github.com/OpenCTI-Platform/opencti) - Open cyber threat intelligence platform used by European CERTs and security agencies.
 
 ## Education and Research
 
@@ -249,6 +296,12 @@ ECTS, Erasmus+, Horizon Europe, CORDIS, OpenAIRE, EOSC, CERN, and European resea
 - [OpenAPC](https://github.com/OpenAPC/openapc-de) - Collect and disseminate information on fee-based Open Access publishing in European research.
 - [ELIXIR RDMkit](https://github.com/elixir-europe/rdmkit) - ELIXIR European Research Data Management Toolkit.
 - [CSV Validator](https://github.com/digital-preservation/csv-validator) - CSV Validation Tool and API used in European digital preservation projects.
+- [Zenodo](https://github.com/zenodo/zenodo) - CERN-hosted open research repository for EU-funded research outputs.
+- [InvenioRDM](https://github.com/inveniosoftware/invenio) - CERN-developed digital library framework powering Zenodo and European institutional repositories.
+- [ROOT](https://github.com/root-project/root) - CERN framework for data processing, statistical analysis and visualization in particle physics.
+- [Geant4](https://github.com/geant4/geant4) - CERN toolkit for simulating the passage of particles through matter.
+- [B2SHARE](https://github.com/EUDAT-B2SHARE/b2share) - EUDAT collaborative data infrastructure service for storing and sharing European research data.
+- [DSpace](https://github.com/DSpace/DSpace) - Digital asset management system powering institutional repositories across European universities.
 
 ## European Utilities
 
@@ -256,6 +309,10 @@ Pan-European utility libraries: IBAN validation, NUTS regions, European phone nu
 
 - [php-iban](https://github.com/globalcitizen/php-iban) - PHP library to generate, parse, validate, error-correct and present IBAN bank account numbers.
 - [iban-validation](https://github.com/jschaedl/iban-validation) - PHP library for validating International Bank Account Numbers (IBANs) used in SEPA.
+- [python-stdnum](https://github.com/arthurdejong/python-stdnum) - Python library to validate tax numbers, VAT IDs, IBANs and other standard numbers used across Europe.
+- [schwifty](https://github.com/mdomke/schwifty) - Python library for IBAN and BIC parsing, validation and generation.
+- [date-holidays](https://github.com/commenthol/date-holidays) - JavaScript library providing public holiday data for countries worldwide including all EU member states.
+- [stdnum-js](https://github.com/koblas/stdnum-js) - JavaScript library to validate European tax numbers, VAT IDs, and other standard identifiers.
 
 ## Country-Specific Awesome Lists
 
