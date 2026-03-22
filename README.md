@@ -120,6 +120,16 @@ CEF building blocks (eDelivery, eSignature, eTranslation), X-Road, EBSI, and EU 
 - [Eclipse EDC IdentityHub](https://github.com/eclipse-edc/IdentityHub) - Identity management component for the Eclipse Dataspace Connector ecosystem.
 - [Minimum Viable Dataspace](https://github.com/eclipse-edc/MinimumViableDataspace) - Documentation and scripts for deploying a minimum viable EU dataspace with Eclipse EDC.
 - [SEMIC Core Vocabularies](https://github.com/SEMICeu/Core-Person-Vocabulary) - Core Person Vocabulary for cross-border data exchange in the EU, maintained by SEMIC.
+- [Core Location Vocabulary](https://github.com/SEMICeu/Core-Location-Vocabulary) - EU vocabulary describing location information such as geometries and addresses for cross-border exchange.
+- [Core Business Vocabulary](https://github.com/SEMICeu/Core-Business-Vocabulary) - EU vocabulary for exchanging basic business information across borders.
+- [CCCEV](https://github.com/SEMICeu/CCCEV) - Core Criterion and Core Evidence Vocabulary for EU cross-border public services.
+- [Dataspace Protocol](https://github.com/International-Data-Spaces-Association/ids-specification) - Specifications for interoperable data sharing in EU data spaces based on web technologies.
+- [FIWARE Data Space Connector](https://github.com/FIWARE/data-space-connector) - Data Space Connector following DSBA Technical Convergence recommendations for EU data spaces.
+- [Trusted Connector](https://github.com/Fraunhofer-AISEC/trusted-connector) - IoT edge platform for the International Data Spaces with Camel message routing and remote attestation.
+- [FIWARE Keyrock](https://github.com/ging/fiware-idm) - OAuth 2.0 identity management and Single Sign-On for FIWARE-based EU smart applications.
+- [EDC DataDashboard](https://github.com/eclipse-edc/DataDashboard) - Dashboard UI for the Eclipse Dataspace Connector ecosystem.
+- [sovity Authority Portal](https://github.com/sovity/authority-portal) - Governance and collaboration portal for participants in EU Data Spaces.
+- [Core Public Organisation Vocabulary](https://github.com/SEMICeu/CPOV) - EU vocabulary for describing public organisations in cross-border data exchange.
 
 ## Electronic Invoicing
 
@@ -147,6 +157,9 @@ Peppol, EN 16931, and the EU e-invoicing directive (2014/55/EU) for cross-border
 - [Recommand Peppol](https://github.com/brbxai/recommand-peppol) - Open source Peppol API.
 - [einvoicing (JS)](https://github.com/esvit/einvoicing) - JavaScript library for creating and parsing electronic invoices compliant with the eInvoicing Directive and EN 16931.
 - [e-invoicing (PHP)](https://github.com/easybill/e-invoicing) - PHP library to generate and read EN 16931 structured XML with UBL and CII syntaxes.
+- [en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Converter for EN 16931 electronic invoices from CII to UBL format.
+- [ph-ubl](https://github.com/phax/ph-ubl) - Java library for reading and writing UBL 2.0 through 2.4 documents used in EU e-invoicing.
+- [Peppol Reporting](https://github.com/phax/peppol-reporting) - Java library for creating and validating Peppol Reporting messages.
 
 ## Payments and Banking
 
@@ -238,6 +251,7 @@ Eurostat, EU Open Data Portal, SDMX, NUTS regions, and pan-European statistical 
 - [CKAN](https://github.com/ckan/ckan) - Open source data management system powering many European government open data portals.
 - [DCAT-AP](https://github.com/SEMICeu/DCAT-AP) - Application profile of DCAT for describing public sector datasets in European data portals.
 - [udata](https://github.com/opendatateam/udata) - Customizable social platform for open data publication, powering data.gouv.fr and other EU portals.
+- [RMLMapper](https://github.com/RMLio/rmlmapper-java) - RML rules executor for generating linked data from semi-structured sources used in EU data integration.
 
 ## Legal and Legislation
 
@@ -305,6 +319,7 @@ ENTSO-E Transparency Platform, ACER, REMIT, and the European energy market.
 - [Open Energy Ontology](https://github.com/OpenEnergyPlatform/ontology) - Ontology for energy system modelling and analysis in the European research context.
 - [Calliope](https://github.com/calliope-project/calliope) - Multi-scale energy systems modelling framework used in European energy research.
 - [FlexMeasures](https://github.com/FlexMeasures/flexmeasures) - Intelligent energy management system supporting real-time flexibility applications in European energy markets.
+- [Open Energy Platform](https://github.com/OpenEnergyPlatform/oeplatform) - Web platform providing an interface to open energy data and the Open Energy Ontology for European research.
 
 ## Sustainability and ESG
 
@@ -381,6 +396,10 @@ INSPIRE directive, Copernicus programme, Sentinel data, and European geospatial 
 - [earthkit](https://github.com/ecmwf/earthkit) - ECMWF Python tools for working with European weather and climate data.
 - [INSPIRE Validator](https://github.com/INSPIRE-MIF/helpdesk-validator) - Community discussion and issue tracker for the INSPIRE data and service validation tools.
 - [actinia](https://github.com/mundialis/actinia_core) - Open source REST API for scalable geospatial data processing used in European environmental monitoring.
+- [52North SOS](https://github.com/52North/sos) - OGC Sensor Observation Service implementation for European environmental monitoring networks.
+- [Helgoland](https://github.com/52North/helgoland) - Visual exploration and analysis of sensor web data for European environmental monitoring.
+- [Magics](https://github.com/ecmwf/magics) - ECMWF meteorological plotting package for visualising data in GRIB, NetCDF, and BUFR formats.
+- [Polytope](https://github.com/ecmwf/polytope) - ECMWF library for extracting polytope features from meteorological datacubes.
 
 ## Health and Pharmaceuticals
 
@@ -394,6 +413,7 @@ European Health Data Space (EHDS), EMA, EudraVigilance, EHIC, EU MDR/IVDR, and c
 - [HL7 EU Imaging](https://github.com/hl7-eu/imaging) - HL7 Europe FHIR Implementation Guide for imaging study reports.
 - [HL7 Gravitate Health](https://github.com/hl7-eu/gravitate-health) - EU-funded FHIR Implementation Guide for patient-centric health information.
 - [EUDAMED API](https://github.com/openregulatory/eudamed-api) - Unofficial API reference for EUDAMED, the EU medical device database under MDR/IVDR.
+- [BBMRI-ERIC Negotiator](https://github.com/BBMRI-ERIC/negotiator) - Open source access negotiation system for European biobank research infrastructures.
 
 ## Cybersecurity
 
@@ -411,6 +431,13 @@ NIS2 directive, ENISA, EU Cybersecurity Act, Cyber Resilience Act, and European 
 - [n6](https://github.com/CERT-Polska/n6) - Automated handling of data feeds for security teams, developed by CERT Polska.
 - [IntelMQ](https://github.com/certtools/intelmq) - Security feed processing framework for CERTs, developed by Austrian CERT for European cybersecurity operations.
 - [ALTCHA](https://github.com/altcha-org/altcha) - GDPR and EAA compliant, self-hosted CAPTCHA alternative with proof-of-work mechanism.
+- [PyMISP](https://github.com/MISP/PyMISP) - Python library for the MISP threat intelligence platform REST API.
+- [MISP Galaxy](https://github.com/MISP/misp-galaxy) - Galaxy clusters of threat actors, tools and campaigns for the MISP threat intelligence ecosystem.
+- [MISP Warninglists](https://github.com/MISP/misp-warninglists) - Warning lists for false-positive prevention in MISP threat intelligence sharing.
+- [MISP Taxonomies](https://github.com/MISP/misp-taxonomies) - Machine-readable taxonomies for classifying threat intelligence in MISP.
+- [MISP Objects](https://github.com/MISP/misp-objects) - Object templates for structured threat intelligence in the MISP platform.
+- [OpenCTI Connectors](https://github.com/OpenCTI-Platform/connectors) - Data connectors for ingesting and enriching threat intelligence in the OpenCTI platform.
+- [IntelMQ Manager](https://github.com/certtools/intelmq-manager) - Web interface for managing IntelMQ security feed processing configurations.
 
 ## Accessibility
 
@@ -434,6 +461,11 @@ ECTS, Erasmus+, Horizon Europe, CORDIS, OpenAIRE, EOSC, CERN, and European resea
 - [Geant4](https://github.com/geant4/geant4) - CERN toolkit for simulating the passage of particles through matter.
 - [B2SHARE](https://github.com/EUDAT-B2SHARE/b2share) - EUDAT collaborative data infrastructure service for storing and sharing European research data.
 - [DSpace](https://github.com/DSpace/DSpace) - Digital asset management system powering institutional repositories across European universities.
+- [Indico](https://github.com/indico/indico) - Feature-rich event management system developed at CERN for scientific conferences and workshops.
+- [CERN Analysis Preservation](https://github.com/cernanalysispreservation/analysispreservation.cern.ch) - Portal for capturing, preserving and reusing physics analyses at CERN.
+- [RDA DMP Common Standard](https://github.com/RDA-DMP-Common/RDA-DMP-Common-Standard) - Machine-actionable data management plan standard used in European research infrastructure.
+- [MGnify API](https://github.com/EBI-Metagenomics/emgapi) - RESTful API for the MGnify metagenomics platform at the European Bioinformatics Institute.
+- [EBRAINS Drive](https://github.com/HumanBrainProject/ebrains-drive) - Python client for EBRAINS Collaboratory storage in the EU Human Brain Project.
 
 ## European Utilities
 

@@ -15,6 +15,7 @@ Repos that were removed from the list because they were archived, deprecated, or
 - [SIOP-OID4VP](https://github.com/sphereon-opensource/SIOP-OID4VP) - Self Issued OpenID Provider v2 with OpenID4VP. Archived Jul 2024.
 - [SDG-sandbox](https://github.com/SEMICeu/SDG-sandbox) - Single Digital Gateway data model sandbox. Archived Mar 2023.
 - [eclipse-tractusx/managed-identity-wallet](https://github.com/eclipse-tractusx/managed-identity-wallet) - Catena-X managed identity wallet. Archived Nov 2024.
+- [waltid-ssikit](https://github.com/walt-id/waltid-ssikit) - All-in-one SSI infrastructure toolkit (superseded by waltid-identity). Archived Jan 2026.
 
 ## Deprecated
 
