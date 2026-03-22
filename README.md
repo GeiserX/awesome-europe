@@ -65,6 +65,7 @@ EU General Data Protection Regulation (2016/679) and related data protection fra
 - [Data Privacy Vocabulary](https://github.com/w3c/dpv) - W3C vocabulary for describing personal data processing activities aligned with GDPR concepts.
 - [CNIL PIA](https://github.com/LINCnil/pia) - Privacy Impact Assessment tool published by the French data protection authority for GDPR compliance.
 - [GDPR Developer Guide](https://github.com/LINCnil/GDPR-Developer-Guide) - Best practices guide for developers to comply with GDPR, published by the CNIL.
+- [Haven](https://github.com/chiiya/haven) - Fully-featured GDPR-ready cookie consent manager for websites.
 
 ## eIDAS and Digital Identity
 
@@ -105,6 +106,8 @@ EU AI Act, Digital Services Act (DSA), Digital Markets Act (DMA), and related di
 - [EuConform](https://github.com/Hiepler/EuConform) - EU AI Act compliance tool for risk classification and bias testing.
 - [DSA Transparency Database](https://github.com/digital-services-act/transparency-database) - Official Digital Services Act Transparency Database for content moderation reporting.
 - [Compl-AI](https://github.com/compl-ai/compl-ai) - Compliance-centered evaluation framework for generative AI models aligned with the EU AI Act.
+- [VerifyWise](https://github.com/verifywise-ai/verifywise) - AI governance and evaluation platform with EU AI Act, ISO 42001, and NIST AI RMF support.
+- [EU AI Act MCP](https://github.com/SonnyLabs/EU_AI_ACT_MCP) - Model Context Protocol server connecting AI agents to EU AI Act compliance checks.
 
 ## Interoperability and Digital Infrastructure
 
@@ -158,6 +161,8 @@ CEF building blocks (eDelivery, eSignature, eTranslation), X-Road, EBSI, and EU 
 - [SiGa](https://github.com/open-eid/SiGa) - Signature Gateway for creating and validating eIDAS-compliant digital signature containers.
 - [Harmony eDelivery Access Point](https://github.com/nordic-institute/harmony-access-point) - Open source eDelivery AS4 Access Point for cross-border document exchange.
 - [WireCloud](https://github.com/Wirecloud/wirecloud) - FIWARE Application Mashup widget container and composition tools.
+- [Idra](https://github.com/OPSILab/Idra) - Open Data Federation Platform for aggregating open datasets from heterogeneous EU data catalogues.
+- [efm-asic](https://github.com/felleslosninger/efm-asic) - Generic implementation of ETSI ASiC-E archive containers for EU eDelivery infrastructure.
 
 ## Electronic Invoicing
 
@@ -242,6 +247,7 @@ EU VAT system (VIES, OSS/IOSS), TARIC customs tariffs, CN codes, EORI, and Intra
 - [VAT Calculator](https://github.com/driesvints/vat-calculator) - PHP package to handle EU MOSS tax and VAT regulations including rate lookup and VIES validation.
 - [vat-rates](https://github.com/ibericode/vat-rates) - Community-maintained JSON dataset of VAT rates for all EU member states.
 - [vies-dotnet](https://github.com/zapadi/vies-dotnet) - .NET API for verifying EU VAT information via the VIES exchange system.
+- [Intrastat-Extrastat](https://github.com/OCA/intrastat-extrastat) - Odoo modules for EU Intrastat and Extrastat trade reporting.
 
 ## Anti-Money Laundering and Compliance
 
@@ -275,6 +281,9 @@ EBA, ESMA regulations, MiFID II, MiCA, DORA, EMIR, XBRL/iXBRL reporting, and Eur
 - [Brel](https://github.com/BrelLibrary/brel) - Python library for reading XBRL reports used in EU ESEF financial filings.
 - [concentrationMetrics](https://github.com/open-risk/concentrationMetrics) - Python library for computing concentration, inequality and diversity indices used in EU banking regulation.
 - [portfolioAnalytics](https://github.com/open-risk/portfolioAnalytics) - Python library for generating analytic tests on credit portfolio loss distributions for EU regulatory compliance.
+- [Insurance Python](https://github.com/open-source-modelling/insurance_python) - Python algorithms for Solvency II insurance modelling including Smith-Wilson and actuarial risk models.
+- [Open Source Economic Model](https://github.com/open-source-modelling/Open_Source_Economic_Model) - Open source asset-liability model for Solvency II regulatory compliance.
+- [smith-wilson-py](https://github.com/simicd/smith-wilson-py) - Python implementation of the Smith-Wilson yield curve fitting algorithm used by EIOPA for risk-free rate extrapolation.
 
 ## Open Data and Statistics
 
@@ -428,6 +437,7 @@ EFSA, Common Agricultural Policy (CAP), RASFF, EU food labeling, and pan-Europea
 - [Open Food Facts Folksonomy](https://github.com/openfoodfacts/folksonomy_api) - REST API for the Open Food Facts folksonomy engine for tagging food products.
 - [EFSA Catalogue Browser](https://github.com/openefsa/catalogue-browser) - Java application for browsing EFSA food safety catalogues and FoodEx2 classifications.
 - [Nutri-Score Calculator](https://github.com/food-nutrients/nutri-score) - Library for calculating EU Nutri-Score food nutrition labels.
+- [Sen4CAP](https://github.com/Sen4CAP/Sen4CAP) - ESA-funded Sentinels for Common Agricultural Policy monitoring system.
 
 ## Transport and Mobility
 
@@ -462,6 +472,11 @@ European railway interoperability (ERA, ETCS), cross-border transport, eCall, EE
 - [OSDM](https://github.com/UnionInternationalCheminsdeFer/OSDM) - Open Sales and Distribution Model API for European public transport ticketing and distribution.
 - [SIRI](https://github.com/SIRI-CEN/SIRI) - Service Interface for Real-Time Information, the CEN standard for European public transport data exchange.
 - [Navitia](https://github.com/hove-io/navitia) - Open source multimodal journey planning engine powering European public transport services.
+- [direkt.bahn.guru](https://github.com/juliuste/direkt.bahn.guru) - Map of all direct long-distance railway connections for cities across central Europe.
+- [Trainline EU Stations](https://github.com/trainline-eu/stations) - List of European railway stations with associated metadata and identifiers.
+- [ETSI ITS Messages](https://github.com/ika-rwth-aachen/etsi_its_messages) - ROS 2 support for ETSI ITS messages enabling V2X communication.
+- [SIMROUTE](https://github.com/ManelGrifoll/SIMROUTE) - Weather ship routing software using Copernicus Marine Service wave predictions.
+- [mobilityDCAT-AP](https://github.com/mobilityDCAT-AP/mobilityDCAT-AP) - Metadata specification for describing European transport datasets and services.
 
 ## Space and Aviation
 
@@ -532,6 +547,10 @@ INSPIRE directive, Copernicus programme, Sentinel data, and European geospatial 
 - [earthkit-data](https://github.com/ecmwf/earthkit-data) - Format-agnostic Python interface for accessing and processing geospatial data from ECMWF and Copernicus.
 - [skinnywms](https://github.com/ecmwf/skinnywms) - Lightweight WMS server for serving maps of NetCDF and GRIB data from ECMWF and Copernicus.
 - [pdbufr](https://github.com/ecmwf/pdbufr) - High-level BUFR interface for the ECMWF ecCodes library with Pandas DataFrame support.
+- [CDSETool](https://github.com/CDSETool/CDSETool) - Python tool for downloading data from the Copernicus Data Space Ecosystem.
+- [era5cli](https://github.com/eWaterCycle/era5cli) - Command line interface to download ERA5 data from the Copernicus Climate Data Store.
+- [CopernicusMarine](https://github.com/pepijn-devries/CopernicusMarine) - R package to subset and download marine data from the EU Copernicus Marine Service.
+- [creodias-finder](https://github.com/DHI-GRAS/creodias-finder) - Python API for data discovery on the Copernicus Data Space Ecosystem.
 - [SNAP Engine](https://github.com/senbox-org/snap-engine) - ESA Sentinel Application Platform engine for processing Earth observation data.
 - [PyWPS](https://github.com/geopython/pywps) - Python implementation of the OGC Web Processing Service standard used in European spatial data infrastructures.
 - [pygeometa](https://github.com/geopython/pygeometa) - Python package for generating geospatial metadata in ISO 19115 and other standards used in INSPIRE infrastructure.
@@ -590,6 +609,7 @@ NIS2 directive, ENISA, EU Cybersecurity Act, Cyber Resilience Act, and European 
 - [MISP-STIX](https://github.com/MISP/misp-stix) - Python library for converting between MISP and STIX threat intelligence formats.
 - [CSAF Distribution](https://github.com/csaf-poc/csaf_distribution) - Tools for downloading and providing Common Security Advisory Framework documents.
 - [Hfinger](https://github.com/CERT-Polska/hfinger) - HTTP request fingerprinting tool developed by CERT Polska for malware traffic analysis.
+- [Awesome NIS2 Directive](https://github.com/CyberAlbSecOP/Awesome_NIS2_Directive) - Curated resources, information, and tools for the EU NIS2 Directive on network and information security.
 
 ## Accessibility
 
@@ -654,6 +674,7 @@ Pan-European utility libraries: IBAN validation, NUTS regions, European phone nu
 - [schwifty](https://github.com/mdomke/schwifty) - Python library for IBAN and BIC parsing, validation and generation.
 - [date-holidays](https://github.com/commenthol/date-holidays) - JavaScript library providing public holiday data for countries worldwide including all EU member states.
 - [stdnum-js](https://github.com/koblas/stdnum-js) - JavaScript library to validate European tax numbers, VAT IDs, and other standard identifiers.
+- [OpenHolidays API](https://github.com/openpotato/openholidaysapi) - Web service providing public holiday data with strong European country coverage.
 
 ## Country-Specific Awesome Lists
 
