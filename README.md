@@ -121,6 +121,7 @@ CEF building blocks (eDelivery, eSignature, eTranslation), X-Road, EBSI, and EU 
 - [Stellio Context Broker](https://github.com/stellio-hub/stellio-context-broker) - NGSI-LD compatible context broker for EU smart applications.
 - [Scorpio Broker](https://github.com/ScorpioBroker/ScorpioBroker) - NGSI-LD compliant context broker developed by NEC for EU data spaces.
 - [Orion Context Broker](https://github.com/telefonicaid/fiware-orion) - Reference implementation of the NGSI Context Broker providing NGSI-v2 interfaces for EU smart applications.
+- [Cygnus](https://github.com/telefonicaid/fiware-cygnus) - FIWARE connector for persisting context data into third-party databases creating a historical view of EU smart data.
 - [hale»studio](https://github.com/halestudio/hale) - Spatial data harmonisation tool for INSPIRE-compliant data transformation.
 - [Interoperability Test Bed](https://github.com/ISAITB/gitb) - Conformance testing solution supported by the European Commission for EU IT systems interoperability.
 - [publiccode.yml](https://github.com/publiccodeyml/publiccode.yml) - Metadata standard for describing public software adopted across EU administrations.
@@ -164,6 +165,7 @@ Peppol, EN 16931, and the EU e-invoicing directive (2014/55/EU) for cross-border
 - [Recommand Peppol](https://github.com/brbxai/recommand-peppol) - Open source Peppol API.
 - [einvoicing (JS)](https://github.com/esvit/einvoicing) - JavaScript library for creating and parsing electronic invoices compliant with the eInvoicing Directive and EN 16931.
 - [e-invoicing (PHP)](https://github.com/easybill/e-invoicing) - PHP library to generate and read EN 16931 structured XML with UBL and CII syntaxes.
+- [ph-schematron](https://github.com/phax/ph-schematron) - Java Schematron validation library used extensively in EU e-invoicing and document validation.
 - [en16931-cii2ubl](https://github.com/phax/en16931-cii2ubl) - Converter for EN 16931 electronic invoices from CII to UBL format.
 - [ph-ubl](https://github.com/phax/ph-ubl) - Java library for reading and writing UBL 2.0 through 2.4 documents used in EU e-invoicing.
 - [Peppol Reporting](https://github.com/phax/peppol-reporting) - Java library for creating and validating Peppol Reporting messages.
@@ -238,6 +240,8 @@ EBA, ESMA regulations, MiFID II, MiCA, DORA, EMIR, XBRL/iXBRL reporting, and Eur
 - [ixbrl-reporter](https://github.com/cybermaggedon/ixbrl-reporter) - Automated creation of iXBRL financial report files from template configuration and account data.
 - [python-lei](https://github.com/jdvala/python-lei) - Python wrapper for the Legal Entity Identifier API with ISIN-LEI conversion for EU regulatory compliance.
 - [esma_data_py](https://github.com/European-Securities-Markets-Authority/esma_data_py) - Official ESMA Python package for searching and downloading data from the ESMA register.
+- [openNPL](https://github.com/open-risk/openNPL) - Open source platform for managing Non-Performing Loan data aligned with EBA templates.
+- [transitionMatrix](https://github.com/open-risk/transitionMatrix) - Python library for statistical analysis of credit rating transitions used in EU banking regulation.
 
 ## Open Data and Statistics
 
@@ -260,6 +264,12 @@ Eurostat, EU Open Data Portal, SDMX, NUTS regions, and pan-European statistical 
 - [DCAT-AP](https://github.com/SEMICeu/DCAT-AP) - Application profile of DCAT for describing public sector datasets in European data portals.
 - [udata](https://github.com/opendatateam/udata) - Customizable social platform for open data publication, powering data.gouv.fr and other EU portals.
 - [RMLMapper](https://github.com/RMLio/rmlmapper-java) - RML rules executor for generating linked data from semi-structured sources used in EU data integration.
+- [ckanext-dcat](https://github.com/okfn/ckanext-dcat) - CKAN extension implementing DCAT and DCAT-AP for EU open data portal interoperability.
+- [ckanext-harvest](https://github.com/ckan/ckanext-harvest) - Remote harvesting extension for CKAN used by European government data portals.
+- [ckanext-spatial](https://github.com/ckan/ckanext-spatial) - Geospatial extension for CKAN enabling INSPIRE metadata support in European data portals.
+- [giscoR](https://github.com/rOpenGov/giscoR) - R package for downloading geospatial data from the Eurostat GISCO API.
+- [Eurostat Statistics Coded](https://github.com/eurostat/statistics-coded) - Catalogue of code resources to reproduce results from Eurostat Statistics Explained articles.
+- [pxweb](https://github.com/rOpenGov/pxweb) - R package for accessing PX-WEB API used by European statistical agencies.
 
 ## Legal and Legislation
 
@@ -276,6 +286,7 @@ EUR-Lex, ECLI, CELEX, ELI, Akoma Ntoso, and tools for accessing and processing E
 - [cobalt](https://github.com/laws-africa/cobalt) - Lightweight Python library for working with Akoma Ntoso legislative documents.
 - [bluebell](https://github.com/laws-africa/bluebell) - Generic parser for Akoma Ntoso 3 legislative documents in Python.
 - [pyEuroVoc](https://github.com/racai-ai/pyeurovoc) - Legal document classification with EuroVoc descriptors across 22 EU languages.
+- [Legal Reference Extraction](https://github.com/openlegaldata/legal-reference-extraction) - Extract and parse legal references from European legal documents.
 
 ## Intellectual Property
 
@@ -295,6 +306,7 @@ European Parliament, EU elections, Transparency Register, European Citizens' Ini
 - [FragDenStaat](https://github.com/okfde/fragdenstaat_de) - Freedom of information portal for government transparency requests.
 - [EUSurvey](https://github.com/EUSurvey/EUSURVEY) - Official European Commission open source survey tool used across EU institutions.
 - [Dear MEP](https://github.com/AKVorrat/dearmep) - Tool empowering citizens to contact Members of the European Parliament about legislative debates.
+- [Froide](https://github.com/okfde/froide) - Freedom of Information portal framework deployed across European countries for government transparency requests.
 
 ## Public Procurement
 
@@ -329,6 +341,10 @@ ENTSO-E Transparency Platform, ACER, REMIT, and the European energy market.
 - [Calliope](https://github.com/calliope-project/calliope) - Multi-scale energy systems modelling framework used in European energy research.
 - [FlexMeasures](https://github.com/FlexMeasures/flexmeasures) - Intelligent energy management system supporting real-time flexibility applications in European energy markets.
 - [Open Energy Platform](https://github.com/OpenEnergyPlatform/oeplatform) - Web platform providing an interface to open energy data and the Open Energy Ontology for European research.
+- [oemof-solph](https://github.com/oemof/oemof-solph) - Energy system modelling and optimisation framework widely used in European energy research.
+- [PowSyBl Open Load Flow](https://github.com/powsybl/powsybl-open-loadflow) - Open source power load flow implementation for European transmission system analysis.
+- [PowSyBl Diagram](https://github.com/powsybl/powsybl-diagram) - SVG diagram generation for single-line substation and network graphs in European power systems.
+- [FARAO](https://github.com/farao-community/farao-core) - Toolbox for coordinated capacity calculation and security analysis in European power systems.
 
 ## Sustainability and ESG
 
@@ -342,6 +358,7 @@ EU Taxonomy, CSRD, SFDR, CBAM, Digital Product Passport, EU Deforestation Regula
 - [SustainableQA](https://github.com/DataScienceUIBK/SustainableQA) - Question answering dataset for corporate sustainability reporting and EU Taxonomy compliance.
 - [Open DPP](https://github.com/open-dpp/open-dpp) - Open source platform for managing Digital Product Passports in compliance with EU regulations.
 - [Tractus-X PURIS](https://github.com/eclipse-tractusx/puris) - Predictive Unit Real-Time Information Service for short-term demand and capacity management in Catena-X.
+- [Tractus-X Digital Twin Registry](https://github.com/eclipse-tractusx/sldt-digital-twin-registry) - Digital Twin Registry for the Catena-X EU automotive data ecosystem.
 - [EUDR API Client](https://github.com/mfrntic/eudr-api-client) - Node.js library for the EU Deforestation Regulation TRACES system API.
 - [ESRS XBRL Parser](https://github.com/aimabel-ai/esrs-xbrl-parser) - Tools for parsing European Sustainability Reporting Standards taxonomies in XBRL format.
 - [EU Emissions Trading System Data](https://github.com/datasets/eu-emissions-trading-system) - Open dataset of the EU Emissions Trading System.
@@ -354,6 +371,7 @@ EFSA, Common Agricultural Policy (CAP), RASFF, EU food labeling, and pan-Europea
 - [JRC Checks by Monitoring](https://github.com/ec-jrc/cbm) - JRC toolkit for CAP area-based checks by monitoring using Copernicus Sentinel data.
 - [Open Food Facts Server](https://github.com/openfoodfacts/openfoodfacts-server) - Database, API and web interface for the collaborative food products database with EU nutrition labeling support.
 - [Open Food Facts Python](https://github.com/openfoodfacts/openfoodfacts-python) - Python package for accessing the Open Food Facts database including EU Nutri-Score and food labeling data.
+- [Robotoff](https://github.com/openfoodfacts/robotoff) - Machine learning prediction service for Open Food Facts product categorization and quality checks.
 
 ## Transport and Mobility
 
@@ -421,6 +439,10 @@ INSPIRE directive, Copernicus programme, Sentinel data, and European geospatial 
 - [LISFLOOD Utilities](https://github.com/ec-jrc/lisflood-utilities) - Utility tools for the JRC LISFLOOD European flood forecasting system.
 - [pycsw](https://github.com/geopython/pycsw) - OGC CSW server implementation widely used as a catalogue component of European spatial data infrastructures.
 - [GeoDCAT-AP](https://github.com/SEMICeu/iso-19139-to-dcat-ap) - Reference XSLT implementation for converting ISO 19139 metadata to GeoDCAT-AP for EU data portals.
+- [ECMWF Open Data](https://github.com/ecmwf/ecmwf-opendata) - Python package to download ECMWF open weather and climate data.
+- [Metview Python](https://github.com/ecmwf/metview-python) - Python interface to the ECMWF Metview meteorological workstation and batch system.
+- [Satpy](https://github.com/pytroll/satpy) - Python package for processing earth-observing satellite data including Copernicus Sentinel imagery.
+- [Pyresample](https://github.com/pytroll/pyresample) - Geospatial image resampling library developed by the European PyTroll meteorological community.
 - [52North SOS](https://github.com/52North/sos) - OGC Sensor Observation Service implementation for European environmental monitoring networks.
 - [Helgoland](https://github.com/52North/helgoland) - Visual exploration and analysis of sensor web data for European environmental monitoring.
 - [Magics](https://github.com/ecmwf/magics) - ECMWF meteorological plotting package for visualising data in GRIB, NetCDF, and BUFR formats.
@@ -463,6 +485,10 @@ NIS2 directive, ENISA, EU Cybersecurity Act, Cyber Resilience Act, and European 
 - [MISP Objects](https://github.com/MISP/misp-objects) - Object templates for structured threat intelligence in the MISP platform.
 - [OpenCTI Connectors](https://github.com/OpenCTI-Platform/connectors) - Data connectors for ingesting and enriching threat intelligence in the OpenCTI platform.
 - [IntelMQ Manager](https://github.com/certtools/intelmq-manager) - Web interface for managing IntelMQ security feed processing configurations.
+- [Cortex Analyzers](https://github.com/TheHive-Project/Cortex-Analyzers) - Repository of analyzers and responders for the Cortex observable analysis engine used by European CERTs.
+- [Vulnerability-Lookup](https://github.com/vulnerability-lookup/vulnerability-lookup) - Vulnerability correlation and CVD management platform developed by CIRCL Luxembourg.
+- [MISP Modules](https://github.com/MISP/misp-modules) - Expansion, enrichment, import and export modules for the MISP threat intelligence platform.
+- [AIL Typo-Squatting](https://github.com/ail-project/ail-typo-squatting) - Domain name permutation engine for detecting typo-squatting, developed by CIRCL Luxembourg.
 
 ## Accessibility
 
@@ -471,6 +497,7 @@ European Accessibility Act (EAA), EN 301 549, EU Web Accessibility Directive, an
 - [ACT Rules](https://github.com/act-rules/act-rules.github.io) - Community-maintained accessibility conformance testing rules used to harmonize EU EN 301 549 compliance evaluation.
 - [BIK Web Test](https://github.com/BIK-BITV/BIK-Web-Test) - Test procedures for evaluating web accessibility against WCAG 2.1 and EN 301 549 criteria.
 - [simplA11yMonit](https://github.com/accessibility-luxembourg/simplA11yMonit) - Tool implementing the EU simplified accessibility monitoring method from Commission Decision 2018/1524.
+- [Alfa](https://github.com/Siteimprove/alfa) - Standards-based accessibility conformance testing suite implementing ACT Rules for EN 301 549 and WCAG.
 
 ## Education and Research
 
@@ -493,6 +520,8 @@ ECTS, Erasmus+, Horizon Europe, CORDIS, OpenAIRE, EOSC, CERN, and European resea
 - [EBRAINS Drive](https://github.com/HumanBrainProject/ebrains-drive) - Python client for EBRAINS Collaboratory storage in the EU Human Brain Project.
 - [OpenAIRE IIS](https://github.com/openaire/iis) - Information Inference Service of the OpenAIRE European research data infrastructure.
 - [OpenAIRE Guidelines](https://github.com/openaire/guidelines-literature-repositories) - Guidelines for literature repository managers based on Dublin Core and DataCite for OpenAIRE compliance.
+- [EMMO](https://github.com/emmo-repo/EMMO) - Elementary Multiperspective Material Ontology developed by the European Materials Modelling Council.
+- [Karabo](https://github.com/European-XFEL/karabo) - SCADA framework for the European X-Ray Free-Electron Laser facility.
 
 ## European Utilities
 
