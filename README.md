@@ -32,6 +32,7 @@
 - [Geospatial and Earth Observation](#geospatial-and-earth-observation)
 - [Health and Pharmaceuticals](#health-and-pharmaceuticals)
 - [Cybersecurity](#cybersecurity)
+- [Accessibility](#accessibility)
 - [Education and Research](#education-and-research)
 - [European Utilities](#european-utilities)
 - [Country-Specific Awesome Lists](#country-specific-awesome-lists)
@@ -50,6 +51,9 @@ EU General Data Protection Regulation (2016/679) and related data protection fra
 - [CISO Assistant](https://github.com/intuitem/ciso-assistant-community) - GRC platform supporting 100+ frameworks including GDPR, NIS2, DORA, and ISO 27001 with automatic control mapping.
 - [Probo](https://github.com/getprobo/probo) - Open source compliance solutions for SOC2, GDPR, and ISO 27001.
 - [Databunker](https://github.com/paranoidguy/databunker) - Secure vault for customer PII records providing a GDPR compliance API.
+- [tarteaucitron.js](https://github.com/AmauriC/tarteaucitron.js) - Compliant and accessible cookie consent banner with built-in support for hundreds of services.
+- [Fides](https://github.com/ethyca/fides) - Privacy engineering and compliance framework for GDPR data mapping, consent, and subject request automation.
+- [gdpr_rails](https://github.com/prey/gdpr_rails) - Rails engine for GDPR compliance including data portability, consent management, and right to erasure.
 
 ## eIDAS and Digital Identity
 
@@ -152,6 +156,8 @@ SEPA, PSD2, Open Banking, EBICS, and the Single Euro Payments Area infrastructur
 - [sepa_king](https://github.com/salesking/sepa_king) - Ruby gem for creating SEPA XML files for credit transfer and direct debit.
 - [epics](https://github.com/railslove/epics) - EBICS client for Ruby supporting secure European banking communication.
 - [node-ebics-client](https://github.com/node-ebics/node-ebics-client) - Node.js EBICS client compliant with ISO 20022 for European electronic banking.
+- [ebics-client-php](https://github.com/ebics-api/ebics-client-php) - PHP EBICS library supporting versions 2.4, 2.5, and 3.0 for European banking communication.
+- [libfintx](https://github.com/libfintx/libfintx) - .NET banking client library for HBCI 2.2, FinTS 3.0, and EBICS H004/H005.
 
 ## Central Banking and Monetary Policy
 
@@ -160,6 +166,7 @@ ECB APIs, TARGET2/T2S/TIPS, Euribor/ESTR, euro exchange rates, and Eurosystem to
 - [Frankfurter](https://github.com/lineofflight/frankfurter) - Currency data API built on top of ECB exchange rates.
 - [Swap](https://github.com/florianv/swap) - Currency exchange rates library supporting ECB and other European central bank providers.
 - [eu_central_bank](https://github.com/RubyMoney/eu_central_bank) - Ruby gem that calculates exchange rates using published rates from the European Central Bank.
+- [CurrencyConverter](https://github.com/alexprengere/currencyconverter) - Python currency converter using historical exchange rate data from the European Central Bank.
 
 ## VAT, Customs, and Trade
 
@@ -171,6 +178,7 @@ EU VAT system (VIES, OSS/IOSS), TARIC customs tariffs, CN codes, EORI, and Intra
 - [VIES](https://github.com/DragonBe/vies) - PHP component for the European Commission VAT Information Exchange System (VIES).
 - [vat](https://github.com/dannyvankooten/vat) - Go package for EU VAT number validation and rates retrieval.
 - [VAT Calculator](https://github.com/driesvints/vat-calculator) - PHP package to handle EU MOSS tax and VAT regulations including rate lookup and VIES validation.
+- [vat-rates](https://github.com/ibericode/vat-rates) - Community-maintained JSON dataset of VAT rates for all EU member states.
 
 ## Anti-Money Laundering and Compliance
 
@@ -180,6 +188,7 @@ EU Anti-Money Laundering Directives (AMLD), sanctions screening, KYC/KYB, benefi
 - [OpenSanctions](https://github.com/opensanctions/opensanctions) - Open database of international sanctions data, persons of interest and politically exposed persons, including EU sanctions lists.
 - [Follow the Money](https://github.com/alephdata/followthemoney) - Data model and processing tools for investigative entity data used in EU AML compliance.
 - [Yente](https://github.com/opensanctions/yente) - Entity matching and search API for OpenSanctions data, supporting EU sanctions screening and KYC workflows.
+- [Beneficial Ownership Data Standard](https://github.com/openownership/data-standard) - Open standard for publishing beneficial ownership data, aligned with EU AMLD transparency requirements.
 
 ## Finance and Capital Markets
 
@@ -188,6 +197,8 @@ EBA, ESMA regulations, MiFID II, MiCA, DORA, EMIR, XBRL/iXBRL reporting, and Eur
 - [Arelle](https://github.com/Arelle/Arelle) - Open source XBRL platform for European financial reporting including EBA and ESMA taxonomies.
 - [Arelle iXBRL Viewer](https://github.com/Arelle/ixbrl-viewer) - Interactive viewer for Inline XBRL reports used in EU financial filings under ESEF regulation.
 - [py-xbrl](https://github.com/manusimidt/py-xbrl) - Python parser for XBRL and iXBRL files used in EU ESEF financial reporting.
+- [ixbrl-parse](https://github.com/kanedata/ixbrl-parse) - Python library for extracting structured data from iXBRL files used in EU regulatory filings.
+- [esma_data_py](https://github.com/European-Securities-Markets-Authority/esma_data_py) - Official ESMA Python package for searching and downloading data from the ESMA register.
 
 ## Open Data and Statistics
 
@@ -201,6 +212,9 @@ Eurostat, EU Open Data Portal, SDMX, NUTS regions, and pan-European statistical 
 - [CKAN](https://github.com/ckan/ckan) - Open source data management system powering many European government open data portals.
 - [DCAT-AP](https://github.com/SEMICeu/DCAT-AP) - Application profile of DCAT for describing public sector datasets in European data portals.
 - [udata](https://github.com/opendatateam/udata) - Customizable social platform for open data publication, powering data.gouv.fr and other EU portals.
+- [gridviz](https://github.com/eurostat/gridviz) - JavaScript library for visualising European gridded statistical data.
+- [eurostat-map.js](https://github.com/eurostat/eurostat-map.js) - JavaScript library for creating thematic web maps of European NUTS regions based on D3.
+- [pandaSDMX](https://github.com/dr-leo/pandaSDMX) - Python interface to SDMX for accessing data from ECB, Eurostat, and other European statistical providers.
 
 ## Legal and Legislation
 
@@ -209,6 +223,7 @@ EUR-Lex, ECLI, CELEX, ELI, Akoma Ntoso, and tools for accessing and processing E
 - [eForms SDK](https://github.com/OP-TED/eForms-SDK) - eForms notification standard for public procurement procedures in the EU, published by the EU Publications Office.
 - [eForms Notice Viewer](https://github.com/OP-TED/eforms-notice-viewer) - Sample application that can visualise an eForms notice using the eForms SDK.
 - [eurlex](https://github.com/step21/eurlex) - Python package for querying the EU Cellar repository and downloading EUR-Lex legislative data.
+- [eurlex (R)](https://github.com/michalovadek/eurlex) - R package for retrieving data on European Union laws and policies from EUR-Lex and CELLAR.
 
 ## Intellectual Property
 
@@ -284,6 +299,8 @@ European railway interoperability (ERA, ETCS), cross-border transport, eCall, EE
 - [UIC Barcode](https://github.com/UnionInternationalCheminsdeFer/UIC-barcode) - Implementation of the FCB barcode standard (IRS 90918-9) for European railway ticketing.
 - [Digitransit UI](https://github.com/HSLdevcom/digitransit-ui) - Open source multi-modal journey planner UI used in European public transport.
 - [NeTEx](https://github.com/NeTEx-CEN/NeTEx) - CEN technical standard for exchanging public transport schedules and related data across Europe.
+- [Transitous](https://github.com/public-transport/transitous) - Free and open public transport routing engine for pan-European journey planning.
+- [MOTIS](https://github.com/motis-project/motis) - Multimodal travel information system providing routing, geocoding, and map tiles across European transit networks.
 
 ## Space and Aviation
 
@@ -345,6 +362,13 @@ NIS2 directive, ENISA, EU Cybersecurity Act, Cyber Resilience Act, and European 
 - [Karton](https://github.com/CERT-Polska/karton) - Distributed malware processing framework developed by CERT Polska.
 - [IntelMQ](https://github.com/certtools/intelmq) - Security feed processing framework for CERTs, developed by Austrian CERT for European cybersecurity operations.
 - [ALTCHA](https://github.com/altcha-org/altcha) - GDPR and EAA compliant, self-hosted CAPTCHA alternative with proof-of-work mechanism.
+
+## Accessibility
+
+European Accessibility Act (EAA), EN 301 549, EU Web Accessibility Directive, and accessibility conformance testing.
+
+- [ACT Rules](https://github.com/act-rules/act-rules.github.io) - Community-maintained accessibility conformance testing rules used to harmonize EU EN 301 549 compliance evaluation.
+- [BIK Web Test](https://github.com/BIK-BITV/BIK-Web-Test) - Test procedures for evaluating web accessibility against WCAG 2.1 and EN 301 549 criteria.
 
 ## Education and Research
 
