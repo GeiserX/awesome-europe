@@ -140,13 +140,18 @@ CEF building blocks (eDelivery, eSignature, eTranslation), X-Road, EBSI, and EU 
 - [Trusted Connector](https://github.com/Fraunhofer-AISEC/trusted-connector) - IoT edge platform for the International Data Spaces with Camel message routing and remote attestation.
 - [FIWARE Keyrock](https://github.com/ging/fiware-idm) - OAuth 2.0 identity management and Single Sign-On for FIWARE-based EU smart applications.
 - [EDC DataDashboard](https://github.com/eclipse-edc/DataDashboard) - Dashboard UI for the Eclipse Dataspace Connector ecosystem.
+- [EDC Samples](https://github.com/eclipse-edc/Samples) - Sample implementations and tutorials for the Eclipse Dataspace Connector.
 - [sovity Authority Portal](https://github.com/sovity/authority-portal) - Governance and collaboration portal for participants in EU Data Spaces.
+- [sovity EDC Extensions](https://github.com/sovity/edc-extensions) - Extended Eclipse Dataspace Connector components for the sovity Community Edition.
 - [Core Public Organisation Vocabulary](https://github.com/SEMICeu/CPOV) - EU vocabulary for describing public organisations in cross-border data exchange.
 - [Holodeck B2B](https://github.com/holodeck-b2b/Holodeck-B2B) - AS4 messaging solution implementing OASIS ebMS3 and AS4 profile for EU eDelivery.
 - [DSS Demonstrations](https://github.com/esig/dss-demonstrations) - Sample applications demonstrating the integration of the EU Digital Signature Service library.
 - [CPSV-AP](https://github.com/SEMICeu/CPSV-AP) - Core Public Service Vocabulary Application Profile for describing public services in EU cross-border exchange.
 - [ITB XML Validator](https://github.com/ISAITB/xml-validator) - European Commission validation service for XML data in EU interoperability testing.
 - [ITB SHACL Validator](https://github.com/ISAITB/shacl-validator) - European Commission validation service for RDF data using SHACL shapes.
+- [libdigidocpp](https://github.com/open-eid/libdigidocpp) - Library for creating and verifying XAdES digital signatures compliant with eIDAS standards.
+- [SiGa](https://github.com/open-eid/SiGa) - Signature Gateway for creating and validating eIDAS-compliant digital signature containers.
+- [Harmony eDelivery Access Point](https://github.com/nordic-institute/harmony-access-point) - Open source eDelivery AS4 Access Point for cross-border document exchange.
 
 ## Electronic Invoicing
 
@@ -283,6 +288,7 @@ Eurostat, EU Open Data Portal, SDMX, NUTS regions, and pan-European statistical 
 - [DCAT-AP](https://github.com/SEMICeu/DCAT-AP) - Application profile of DCAT for describing public sector datasets in European data portals.
 - [udata](https://github.com/opendatateam/udata) - Customizable social platform for open data publication, powering data.gouv.fr and other EU portals.
 - [RMLMapper](https://github.com/RMLio/rmlmapper-java) - RML rules executor for generating linked data from semi-structured sources used in EU data integration.
+- [Morph-KGC](https://github.com/oeg-upm/morph-kgc) - Powerful RDF knowledge graph generation engine with RML mappings used in European data integration.
 - [ckanext-dcat](https://github.com/okfn/ckanext-dcat) - CKAN extension implementing DCAT and DCAT-AP for EU open data portal interoperability.
 - [ckanext-harvest](https://github.com/ckan/ckanext-harvest) - Remote harvesting extension for CKAN used by European government data portals.
 - [ckanext-spatial](https://github.com/ckan/ckanext-spatial) - Geospatial extension for CKAN enabling INSPIRE metadata support in European data portals.
@@ -486,6 +492,7 @@ INSPIRE directive, Copernicus programme, Sentinel data, and European geospatial 
 - [Metview Python](https://github.com/ecmwf/metview-python) - Python interface to the ECMWF Metview meteorological workstation and batch system.
 - [Satpy](https://github.com/pytroll/satpy) - Python package for processing earth-observing satellite data including Copernicus Sentinel imagery.
 - [Pyresample](https://github.com/pytroll/pyresample) - Geospatial image resampling library developed by the European PyTroll meteorological community.
+- [Pyorbital](https://github.com/pytroll/pyorbital) - Orbital and astronomy computation library from the European PyTroll meteorological community.
 - [52North SOS](https://github.com/52North/sos) - OGC Sensor Observation Service implementation for European environmental monitoring networks.
 - [Helgoland](https://github.com/52North/helgoland) - Visual exploration and analysis of sensor web data for European environmental monitoring.
 - [Magics](https://github.com/ecmwf/magics) - ECMWF meteorological plotting package for visualising data in GRIB, NetCDF, and BUFR formats.
