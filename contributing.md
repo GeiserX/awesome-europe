@@ -10,7 +10,7 @@ Thanks for your interest in contributing. This list grows thanks to the communit
 - The project must provide **support specifically for Europe** — EU institutions, regulations, standards, or cross-border infrastructure.
 - The project must be **actively maintained** (activity in the last 3 years) and not archived.
 - Each entry must follow the format: `- [Name](URL) - Brief description starting with a capital letter and ending with a period.`
-- Add the entry at the **end of the corresponding category**.
+- Add the entry in **alphabetical order** within the corresponding category.
 - Check for **duplicates** and typos.
 - Descriptions must be **concise and objective** (one sentence).
 
