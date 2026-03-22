@@ -152,6 +152,8 @@ CEF building blocks (eDelivery, eSignature, eTranslation), X-Road, EBSI, and EU 
 - [CPSV-AP](https://github.com/SEMICeu/CPSV-AP) - Core Public Service Vocabulary Application Profile for describing public services in EU cross-border exchange.
 - [ITB XML Validator](https://github.com/ISAITB/xml-validator) - European Commission validation service for XML data in EU interoperability testing.
 - [ITB SHACL Validator](https://github.com/ISAITB/shacl-validator) - European Commission validation service for RDF data using SHACL shapes.
+- [ITB JSON Validator](https://github.com/ISAITB/json-validator) - European Commission validation service for JSON data in EU interoperability testing.
+- [ITB CSV Validator](https://github.com/ISAITB/csv-validator) - European Commission validation service for CSV data in EU interoperability testing.
 - [libdigidocpp](https://github.com/open-eid/libdigidocpp) - Library for creating and verifying XAdES digital signatures compliant with eIDAS standards.
 - [SiGa](https://github.com/open-eid/SiGa) - Signature Gateway for creating and validating eIDAS-compliant digital signature containers.
 - [Harmony eDelivery Access Point](https://github.com/nordic-institute/harmony-access-point) - Open source eDelivery AS4 Access Point for cross-border document exchange.
@@ -364,6 +366,7 @@ TED (Tenders Electronic Daily), eForms, ESPD, CPV codes, and EU public procureme
 - [model2owl](https://github.com/OP-TED/model2owl) - Tool to transform UML models into OWL ontologies and SHACL shapes for EU procurement data.
 - [ted-rdf-mapping](https://github.com/OP-TED/ted-rdf-mapping) - Transformation rules for the TED Semantic Web Services RDF conversion.
 - [TED RDF Conversion Pipeline](https://github.com/OP-TED/ted-rdf-conversion-pipeline) - Pipeline for converting Tenders Electronic Daily notices to linked open data.
+- [OCDS EU Extension](https://github.com/open-contracting-extensions/european-union) - Extension adapting the Open Contracting Data Standard to European Union procurement.
 
 ## Energy and Electricity
 
@@ -586,6 +589,7 @@ NIS2 directive, ENISA, EU Cybersecurity Act, Cyber Resilience Act, and European 
 - [BGP Ranking](https://github.com/CIRCL/bgp-ranking) - Security ranking tool for Internet Service Providers developed by CIRCL Luxembourg.
 - [MISP-STIX](https://github.com/MISP/misp-stix) - Python library for converting between MISP and STIX threat intelligence formats.
 - [CSAF Distribution](https://github.com/csaf-poc/csaf_distribution) - Tools for downloading and providing Common Security Advisory Framework documents.
+- [Hfinger](https://github.com/CERT-Polska/hfinger) - HTTP request fingerprinting tool developed by CERT Polska for malware traffic analysis.
 
 ## Accessibility
 
