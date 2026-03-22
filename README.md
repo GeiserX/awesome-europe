@@ -43,17 +43,24 @@
 
 EU General Data Protection Regulation (2016/679) and related data protection frameworks.
 
+- [Osano Cookie Consent](https://github.com/osano/cookieconsent) - Free solution to the EU GDPR and ePrivacy cookie laws with customizable consent popups.
 - [Cookie Consent](https://github.com/orestbida/cookieconsent) - Simple cross-browser cookie-consent plugin written in vanilla JavaScript for GDPR and ePrivacy compliance.
 - [Consent-O-Matic](https://github.com/cavi-au/Consent-O-Matic) - Browser extension that automatically fills out cookie popups based on your preferences.
-- [Klaro](https://github.com/kiprotect/klaro) - Privacy-friendly and compliant consent manager for websites.
-- [GDPR Transparency and Consent Framework](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework) - Technical specifications for IAB Europe Transparency and Consent Framework for GDPR compliance in digital advertising.
-- [GDPR Checklist](https://github.com/privacyradius/gdpr-checklist) - Checklist for GDPR compliance.
-- [CISO Assistant](https://github.com/intuitem/ciso-assistant-community) - GRC platform supporting 100+ frameworks including GDPR, NIS2, DORA, and ISO 27001 with automatic control mapping.
-- [Probo](https://github.com/getprobo/probo) - Open source compliance solutions for SOC2, GDPR, and ISO 27001.
-- [Databunker](https://github.com/paranoidguy/databunker) - Secure vault for customer PII records providing a GDPR compliance API.
 - [tarteaucitron.js](https://github.com/AmauriC/tarteaucitron.js) - Compliant and accessible cookie consent banner with built-in support for hundreds of services.
+- [Klaro](https://github.com/kiprotect/klaro) - Privacy-friendly and compliant consent manager for websites.
 - [Fides](https://github.com/ethyca/fides) - Privacy engineering and compliance framework for GDPR data mapping, consent, and subject request automation.
 - [gdpr_rails](https://github.com/prey/gdpr_rails) - Rails engine for GDPR compliance including data portability, consent management, and right to erasure.
+- [Cookies EU Banner](https://github.com/Alex-D/Cookies-EU-banner) - Lightweight 1kb vanilla JavaScript EU cookie consent banner.
+- [GDPR Transparency and Consent Framework](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework) - Technical specifications for IAB Europe Transparency and Consent Framework for GDPR compliance in digital advertising.
+- [laravel-gdpr](https://github.com/sander3/laravel-gdpr) - Laravel package for GDPR compliance with data portability and right to erasure.
+- [Cookie Scanner](https://github.com/CovenantSQL/CookieScanner) - Scan websites for cookies and generate GDPR compliance reports.
+- [Cookie Consent Banner](https://github.com/porscheofficial/cookie-consent-banner) - Lightweight and flexible cookie consent banner for EU GDPR compliance.
+- [CISO Assistant](https://github.com/intuitem/ciso-assistant-community) - GRC platform supporting 100+ frameworks including GDPR, NIS2, DORA, and ISO 27001 with automatic control mapping.
+- [Databunker](https://github.com/paranoidguy/databunker) - Secure vault for customer PII records providing a GDPR compliance API.
+- [Anonimatron](https://github.com/realrolfje/anonimatron) - Data anonymization tool providing GDPR compliance for databases since 2010.
+- [Consent Management Platform](https://github.com/68publishers/consent-management-platform) - Manage user consents and the cookie widget for GDPR compliance.
+- [GDPR Checklist](https://github.com/privacyradius/gdpr-checklist) - Checklist for GDPR compliance.
+- [Probo](https://github.com/getprobo/probo) - Open source compliance solutions for SOC2, GDPR, and ISO 27001.
 
 ## eIDAS and Digital Identity
 
@@ -146,6 +153,7 @@ Peppol, EN 16931, and the EU e-invoicing directive (2014/55/EU) for cross-border
 SEPA, PSD2, Open Banking, EBICS, and the Single Euro Payments Area infrastructure.
 
 - [OBP-API](https://github.com/OpenBankProject/OBP-API) - Open source RESTful API platform for banks supporting PSD2, Open Banking, and XS2A.
+- [Prowide Core](https://github.com/prowide/prowide-core) - Java framework for managing SWIFT messages used in European interbank communication.
 - [Open Banking Gateway](https://github.com/adorsys/open-banking-gateway) - RESTful API, tools, adapters, and connectors for transparent access to open banking APIs (PSD2).
 - [XS2A](https://github.com/adorsys/xs2a) - Open source NextGenPSD2 XS2A implementation for PSD2 compliance.
 - [php-sepa-xml](https://github.com/php-sepa-xml/php-sepa-xml) - PHP library for generating SEPA XML files for credit transfer and direct debit.
@@ -158,15 +166,17 @@ SEPA, PSD2, Open Banking, EBICS, and the Single Euro Payments Area infrastructur
 - [node-ebics-client](https://github.com/node-ebics/node-ebics-client) - Node.js EBICS client compliant with ISO 20022 for European electronic banking.
 - [ebics-client-php](https://github.com/ebics-api/ebics-client-php) - PHP EBICS library supporting versions 2.4, 2.5, and 3.0 for European banking communication.
 - [libfintx](https://github.com/libfintx/libfintx) - .NET banking client library for HBCI 2.2, FinTS 3.0, and EBICS H004/H005.
+- [ebics-java-client](https://github.com/ebics-java/ebics-java-client) - Java open source EBICS client supporting French, German, and Swiss banks.
 
 ## Central Banking and Monetary Policy
 
 ECB APIs, TARGET2/T2S/TIPS, Euribor/ESTR, euro exchange rates, and Eurosystem tools.
 
 - [Frankfurter](https://github.com/lineofflight/frankfurter) - Currency data API built on top of ECB exchange rates.
+- [CurrencyConverter](https://github.com/alexprengere/currencyconverter) - Python currency converter using historical exchange rate data from the European Central Bank.
 - [Swap](https://github.com/florianv/swap) - Currency exchange rates library supporting ECB and other European central bank providers.
 - [eu_central_bank](https://github.com/RubyMoney/eu_central_bank) - Ruby gem that calculates exchange rates using published rates from the European Central Bank.
-- [CurrencyConverter](https://github.com/alexprengere/currencyconverter) - Python currency converter using historical exchange rate data from the European Central Bank.
+- [Euribor](https://github.com/datasets/euribor) - Open dataset of Euribor rates by year and granularity.
 
 ## VAT, Customs, and Trade
 
@@ -174,11 +184,13 @@ EU VAT system (VIES, OSS/IOSS), TARIC customs tariffs, CN codes, EORI, and Intra
 
 - [valvat](https://github.com/yolk/valvat) - Ruby library for validating European VAT numbers with VIES lookup.
 - [ibericode VAT](https://github.com/ibericode/vat) - PHP library for dealing with European VAT including rates and VIES validation.
+- [eu-vat-validator](https://github.com/pH-7/eu-vat-validator) - PHP library that validates EU VAT registration numbers against the VIES API.
 - [node-sales-tax](https://github.com/valeriansaliou/node-sales-tax) - International sales tax calculator for Node.js with EU VAT support including VIES validation.
 - [VIES](https://github.com/DragonBe/vies) - PHP component for the European Commission VAT Information Exchange System (VIES).
 - [vat](https://github.com/dannyvankooten/vat) - Go package for EU VAT number validation and rates retrieval.
 - [VAT Calculator](https://github.com/driesvints/vat-calculator) - PHP package to handle EU MOSS tax and VAT regulations including rate lookup and VIES validation.
 - [vat-rates](https://github.com/ibericode/vat-rates) - Community-maintained JSON dataset of VAT rates for all EU member states.
+- [vies-dotnet](https://github.com/zapadi/vies-dotnet) - .NET API for verifying EU VAT information via the VIES exchange system.
 
 ## Anti-Money Laundering and Compliance
 
@@ -186,9 +198,11 @@ EU Anti-Money Laundering Directives (AMLD), sanctions screening, KYC/KYB, benefi
 
 - [Aleph](https://github.com/alephdata/aleph) - Search and browse documents and data to find people and companies, used for investigative journalism and EU compliance.
 - [OpenSanctions](https://github.com/opensanctions/opensanctions) - Open database of international sanctions data, persons of interest and politically exposed persons, including EU sanctions lists.
+- [OpenAleph](https://github.com/openaleph/openaleph) - Open source investigative data platform for securely cross-referencing datasets using the FollowTheMoney schema.
 - [Follow the Money](https://github.com/alephdata/followthemoney) - Data model and processing tools for investigative entity data used in EU AML compliance.
 - [Yente](https://github.com/opensanctions/yente) - Entity matching and search API for OpenSanctions data, supporting EU sanctions screening and KYC workflows.
 - [Beneficial Ownership Data Standard](https://github.com/openownership/data-standard) - Open standard for publishing beneficial ownership data, aligned with EU AMLD transparency requirements.
+- [pygleif](https://github.com/ggravlingen/pygleif) - Python client for the GLEIF Legal Entity Identifier API used in EU regulatory compliance.
 
 ## Finance and Capital Markets
 
@@ -198,32 +212,48 @@ EBA, ESMA regulations, MiFID II, MiCA, DORA, EMIR, XBRL/iXBRL reporting, and Eur
 - [Arelle iXBRL Viewer](https://github.com/Arelle/ixbrl-viewer) - Interactive viewer for Inline XBRL reports used in EU financial filings under ESEF regulation.
 - [py-xbrl](https://github.com/manusimidt/py-xbrl) - Python parser for XBRL and iXBRL files used in EU ESEF financial reporting.
 - [ixbrl-parse](https://github.com/kanedata/ixbrl-parse) - Python library for extracting structured data from iXBRL files used in EU regulatory filings.
+- [vLEI](https://github.com/WebOfTrust/vLEI) - Public open specifications for GLEIF verifiable Legal Entity Identifiers used in EU financial regulations.
+- [Xoxo](https://github.com/dgm9704/Xoxo) - .NET library to read, write, compare, and convert XBRL reports including ESEF and EBA taxonomies.
+- [ixbrl-reporter](https://github.com/cybermaggedon/ixbrl-reporter) - Automated creation of iXBRL financial report files from template configuration and account data.
+- [python-lei](https://github.com/jdvala/python-lei) - Python wrapper for the Legal Entity Identifier API with ISIN-LEI conversion for EU regulatory compliance.
 - [esma_data_py](https://github.com/European-Securities-Markets-Authority/esma_data_py) - Official ESMA Python package for searching and downloading data from the ESMA register.
 
 ## Open Data and Statistics
 
 Eurostat, EU Open Data Portal, SDMX, NUTS regions, and pan-European statistical infrastructure.
 
+- [SDMX REST](https://github.com/sdmx-twg/sdmx-rest) - RESTful web services specification for statistical data exchange used by ECB, Eurostat, and EU agencies.
+- [pandaSDMX](https://github.com/dr-leo/pandaSDMX) - Python interface to SDMX for accessing data from ECB, Eurostat, and other European statistical providers.
+- [rsdmx](https://github.com/eblondel/rsdmx) - R package for reading SDMX data and metadata from ECB, Eurostat, and other EU data providers.
+- [SDMX Connectors](https://github.com/amattioc/SDMX) - Multi-platform connectors for accessing SDMX data sources including ECB and Eurostat.
 - [eurostat (R)](https://github.com/rOpenGov/eurostat) - R tools for Eurostat open data access and analysis.
+- [gridviz](https://github.com/eurostat/gridviz) - JavaScript library for visualising European gridded statistical data.
+- [eurostat-map.js](https://github.com/eurostat/eurostat-map.js) - JavaScript library for creating thematic web maps of European NUTS regions based on D3.
 - [Nuts2json](https://github.com/eurostat/Nuts2json) - Eurostat NUTS regions dataset as JSON for web mapping.
+- [restatapi](https://github.com/eurostat/restatapi) - R package for searching and retrieving data from the Eurostat database using SDMX.
 - [SDMX-ML](https://github.com/sdmx-twg/sdmx-ml) - Format specification for statistical data exchange used by Eurostat and ECB.
+- [SDMX-JSON](https://github.com/sdmx-twg/sdmx-json) - JSON format specification for SDMX statistical data and metadata exchange.
 - [Open Data Handbook](https://github.com/okfn/opendatahandbook) - Guide to legal, social and technical aspects of open data, widely used in EU open data initiatives.
 - [Metis Framework](https://github.com/europeana/metis-framework) - Data publication framework for ingesting and processing European cultural heritage metadata.
 - [CKAN](https://github.com/ckan/ckan) - Open source data management system powering many European government open data portals.
 - [DCAT-AP](https://github.com/SEMICeu/DCAT-AP) - Application profile of DCAT for describing public sector datasets in European data portals.
 - [udata](https://github.com/opendatateam/udata) - Customizable social platform for open data publication, powering data.gouv.fr and other EU portals.
-- [gridviz](https://github.com/eurostat/gridviz) - JavaScript library for visualising European gridded statistical data.
-- [eurostat-map.js](https://github.com/eurostat/eurostat-map.js) - JavaScript library for creating thematic web maps of European NUTS regions based on D3.
-- [pandaSDMX](https://github.com/dr-leo/pandaSDMX) - Python interface to SDMX for accessing data from ECB, Eurostat, and other European statistical providers.
 
 ## Legal and Legislation
 
 EUR-Lex, ECLI, CELEX, ELI, Akoma Ntoso, and tools for accessing and processing European legislation.
 
+- [Open Legal Data Platform](https://github.com/openlegaldata/oldp) - Open source platform for publishing and accessing European legal data.
 - [eForms SDK](https://github.com/OP-TED/eForms-SDK) - eForms notification standard for public procurement procedures in the EU, published by the EU Publications Office.
 - [eForms Notice Viewer](https://github.com/OP-TED/eforms-notice-viewer) - Sample application that can visualise an eForms notice using the eForms SDK.
 - [eurlex](https://github.com/step21/eurlex) - Python package for querying the EU Cellar repository and downloading EUR-Lex legislative data.
 - [eurlex (R)](https://github.com/michalovadek/eurlex) - R package for retrieving data on European Union laws and policies from EUR-Lex and CELLAR.
+- [eurlex (Python)](https://github.com/kevin91nl/eurlex) - Python parser for extracting and processing EUR-Lex legislative documents.
+- [Case Law Explorer](https://github.com/maastrichtlawtech/case-law-explorer) - Network analysis platform for analysing Dutch and European court decisions.
+- [ECHR Open Data](https://github.com/echr-od/ECHR-OD_process) - Process to rebuild the European Court of Human Rights database and datasets from scratch.
+- [cobalt](https://github.com/laws-africa/cobalt) - Lightweight Python library for working with Akoma Ntoso legislative documents.
+- [bluebell](https://github.com/laws-africa/bluebell) - Generic parser for Akoma Ntoso 3 legislative documents in Python.
+- [pyEuroVoc](https://github.com/racai-ai/pyeurovoc) - Legal document classification with EuroVoc descriptors across 22 EU languages.
 
 ## Intellectual Property
 
@@ -237,6 +267,7 @@ European Patent Office (EPO), EUIPO, Unitary Patent, and EU trademark tools.
 European Parliament, EU elections, Transparency Register, European Citizens' Initiative, and EU legislative tracking.
 
 - [HowTheyVote](https://github.com/HowTheyVote/howtheyvote) - Tracks how Members of the European Parliament vote in plenary sessions.
+- [HowTheyVote Data](https://github.com/HowTheyVote/data) - Weekly updated roll-call-vote data from the European Parliament.
 - [Parltrack](https://github.com/parltrack/parltrack) - Parliamentary tracker application for monitoring the European Parliament.
 - [EveryPolitician Data](https://github.com/everypolitician/everypolitician-data) - Data for national legislatures worldwide including all EU member states.
 - [FragDenStaat](https://github.com/okfde/fragdenstaat_de) - Freedom of information portal for government transparency requests.
@@ -282,7 +313,12 @@ EU Taxonomy, CSRD, SFDR, CBAM, Digital Product Passport, EU Deforestation Regula
 - [Eclipse Tractus-X](https://github.com/eclipse-tractusx/tractus-x-release) - EU-funded Catena-X automotive data ecosystem for supply chain transparency and sustainability.
 - [Tractus-X Traceability](https://github.com/eclipse-tractusx/traceability-foss) - Supply chain traceability application for the Catena-X EU Digital Product Passport ecosystem.
 - [Tractus-X BPDM](https://github.com/eclipse-tractusx/bpdm) - Business Partner Data Management for the Catena-X EU automotive data ecosystem.
+- [Equinox](https://github.com/open-risk/equinox) - Open source platform for sustainable portfolio management adhering to European Banking Authority frameworks.
 - [Battery Pass Data Model](https://github.com/batterypass/BatteryPassDataModel) - Data model for the EU Battery Passport under the Digital Product Passport framework.
+- [SustainableQA](https://github.com/DataScienceUIBK/SustainableQA) - Question answering dataset for corporate sustainability reporting and EU Taxonomy compliance.
+- [Open DPP](https://github.com/open-dpp/open-dpp) - Open source platform for managing Digital Product Passports in compliance with EU regulations.
+- [EUDR API Client](https://github.com/mfrntic/eudr-api-client) - Node.js library for the EU Deforestation Regulation TRACES system API.
+- [ESRS XBRL Parser](https://github.com/aimabel-ai/esrs-xbrl-parser) - Tools for parsing European Sustainability Reporting Standards taxonomies in XBRL format.
 - [EU Emissions Trading System Data](https://github.com/datasets/eu-emissions-trading-system) - Open dataset of the EU Emissions Trading System.
 - [OS-Climate ITR](https://github.com/os-climate/ITR) - Python implementation of the Implied Temperature Rise methodology for EU sustainable finance.
 
@@ -290,17 +326,27 @@ EU Taxonomy, CSRD, SFDR, CBAM, Digital Product Passport, EU Deforestation Regula
 
 European railway interoperability (ERA, ETCS), cross-border transport, eCall, EETS, and EU mobility frameworks.
 
+- [Transitous](https://github.com/public-transport/transitous) - Free and open public transport routing engine for pan-European journey planning.
+- [MOTIS](https://github.com/motis-project/motis) - Multimodal travel information system providing routing, geocoding, and map tiles across European transit networks.
 - [traffic](https://github.com/xoolive/traffic) - Python toolbox for processing and analysing air traffic data from Eurocontrol and OpenSky.
 - [OpenSky API](https://github.com/openskynetwork/opensky-api) - Python and Java bindings for the OpenSky Network REST API for European air traffic data.
 - [hafas-client](https://github.com/derhuerst/hafas-client) - JavaScript client for HAFAS public transport APIs used across European transit systems.
+- [FPTF](https://github.com/public-transport/friendly-public-transport-format) - Standardized data format for public transport APIs, libraries, and datasets across Europe.
+- [transport-apis](https://github.com/public-transport/transport-apis) - Machine-readable list of European public transport API endpoints.
+- [Time-Space Train Planner](https://github.com/traines-source/time-space-train-planner) - Browser-based tool to visualize public transport journeys across European networks.
+- [Netzgrafik Editor](https://github.com/OpenRailAssociation/netzgrafik-editor-frontend) - Regular-interval timetable creation, modification, and analysis for European rail networks.
 - [Pumperly](https://github.com/GeiserX/pumperly) - Open source fuel and EV route planner with real-time prices across European countries.
 - [OSRD](https://github.com/OpenRailAssociation/osrd) - Open source web application for railway infrastructure design, capacity analysis, and timetabling across European networks.
+- [transit_model](https://github.com/hove-io/transit_model) - Rust library for managing transit data with NeTEx and GTFS support.
+- [pyhafas](https://github.com/FahrplanDatenGarten/pyhafas) - Python client for HAFAS public transport APIs covering European transit operators.
+- [European Transport Feeds](https://github.com/public-transport/european-transport-feeds) - Directory of European public transport data feeds.
 - [Eclipse SUMO](https://github.com/eclipse-sumo/sumo) - Open source, highly portable microscopic traffic simulation package used in EU transport research.
+- [ETCS](https://github.com/cesarBLG/ETCS) - Open source implementation of the European Train Control System.
 - [UIC Barcode](https://github.com/UnionInternationalCheminsdeFer/UIC-barcode) - Implementation of the FCB barcode standard (IRS 90918-9) for European railway ticketing.
 - [Digitransit UI](https://github.com/HSLdevcom/digitransit-ui) - Open source multi-modal journey planner UI used in European public transport.
 - [NeTEx](https://github.com/NeTEx-CEN/NeTEx) - CEN technical standard for exchanging public transport schedules and related data across Europe.
-- [Transitous](https://github.com/public-transport/transitous) - Free and open public transport routing engine for pan-European journey planning.
-- [MOTIS](https://github.com/motis-project/motis) - Multimodal travel information system providing routing, geocoding, and map tiles across European transit networks.
+- [NeTEx Java Model](https://github.com/entur/netex-java-model) - Java JAXB binding classes for the NeTEx XSD schema.
+- [subset36](https://github.com/FokkeB/subset36) - Encode and decode Eurobalise contents for the European Train Control System.
 
 ## Space and Aviation
 
@@ -353,6 +399,7 @@ European Health Data Space (EHDS), EMA, EudraVigilance, EHIC, EU MDR/IVDR, and c
 
 NIS2 directive, ENISA, EU Cybersecurity Act, Cyber Resilience Act, and European cyber frameworks.
 
+- [Cortex](https://github.com/TheHive-Project/Cortex) - Observable analysis and active response engine used by European CERTs for automated threat analysis.
 - [MISP](https://github.com/MISP/MISP) - Open source threat intelligence and sharing platform used by EU-CERTs and endorsed by ENISA.
 - [DRAKVUF Sandbox](https://github.com/CERT-Polska/drakvuf-sandbox) - Automated hypervisor-level malware analysis system developed by CERT Polska.
 - [OpenCTI](https://github.com/OpenCTI-Platform/opencti) - Open cyber threat intelligence platform used by European CERTs and security agencies.
@@ -360,6 +407,8 @@ NIS2 directive, ENISA, EU Cybersecurity Act, Cyber Resilience Act, and European 
 - [AIL Framework](https://github.com/ail-project/ail-framework) - Analysis of Information Leaks framework developed by CIRCL Luxembourg for threat intelligence.
 - [Lookyloo](https://github.com/Lookyloo/lookyloo) - Web interface for capturing and analysing website page request trees, developed by CIRCL.
 - [Karton](https://github.com/CERT-Polska/karton) - Distributed malware processing framework developed by CERT Polska.
+- [MWDB Core](https://github.com/CERT-Polska/mwdb-core) - Malware repository component for samples and static configuration developed by CERT Polska.
+- [n6](https://github.com/CERT-Polska/n6) - Automated handling of data feeds for security teams, developed by CERT Polska.
 - [IntelMQ](https://github.com/certtools/intelmq) - Security feed processing framework for CERTs, developed by Austrian CERT for European cybersecurity operations.
 - [ALTCHA](https://github.com/altcha-org/altcha) - GDPR and EAA compliant, self-hosted CAPTCHA alternative with proof-of-work mechanism.
 
@@ -369,6 +418,7 @@ European Accessibility Act (EAA), EN 301 549, EU Web Accessibility Directive, an
 
 - [ACT Rules](https://github.com/act-rules/act-rules.github.io) - Community-maintained accessibility conformance testing rules used to harmonize EU EN 301 549 compliance evaluation.
 - [BIK Web Test](https://github.com/BIK-BITV/BIK-Web-Test) - Test procedures for evaluating web accessibility against WCAG 2.1 and EN 301 549 criteria.
+- [simplA11yMonit](https://github.com/accessibility-luxembourg/simplA11yMonit) - Tool implementing the EU simplified accessibility monitoring method from Commission Decision 2018/1524.
 
 ## Education and Research
 
