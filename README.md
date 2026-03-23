@@ -714,6 +714,14 @@ Contributions are welcome. Read the [contributing guidelines](contributing.md) b
 
 ## Footnotes
 
+**Badge:** If your project is listed here, you can add this badge to your README:
+
+[![listed on awesome-europe](https://img.shields.io/badge/listed%20on-awesome--europe-ffcc00?logo=europeanunion&logoColor=ffcc00&labelColor=003399)](https://github.com/GeiserX/awesome-europe#readme)
+
+```markdown
+[![listed on awesome-europe](https://img.shields.io/badge/listed%20on-awesome--europe-ffcc00?logo=europeanunion&logoColor=ffcc00&labelColor=003399)](https://github.com/GeiserX/awesome-europe#readme)
+```
+
 **Note:** This list focuses on open source software that provides **support specifically for Europe** — its institutions, regulations, standards, and cross-border infrastructure. The scope covers the **EU-27 and EEA** (Norway, Iceland, Liechtenstein). Software specific to a single country belongs in country-specific awesome lists. Software that is global and merely happens to work in Europe is also out of scope.
 
 **Disclaimer:** No projects related to pornography, NSFW content, gambling, religion, partisan politics, or any other controversial topic are accepted. This list aims to be a neutral and useful technical resource for the developer community.
