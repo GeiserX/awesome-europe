@@ -714,12 +714,23 @@ Contributions are welcome. Read the [contributing guidelines](contributing.md) b
 
 ## Footnotes
 
-**Badge:** If your project is listed here, you can add this badge to your README:
+**Badge:** If your project is listed here, you can add one of these badges to your README:
 
-[![listed on awesome-europe](https://img.shields.io/badge/listed%20on-awesome--europe-ffcc00?logo=europeanunion&logoColor=ffcc00&labelColor=003399)](https://github.com/GeiserX/awesome-europe#readme)
+![listed on awesome-europe](https://img.shields.io/badge/listed%20on-awesome--europe-ffcc00?style=flat&logo=europeanunion&logoColor=ffcc00&labelColor=003399) ![listed on awesome-europe](https://img.shields.io/badge/listed%20on-awesome--europe-ffcc00?style=flat-square&logo=europeanunion&logoColor=ffcc00&labelColor=003399) ![listed on awesome-europe](https://img.shields.io/badge/listed%20on-awesome--europe-ffcc00?style=for-the-badge&logo=europeanunion&logoColor=ffcc00&labelColor=003399)
 
+Flat (default):
 ```markdown
-[![listed on awesome-europe](https://img.shields.io/badge/listed%20on-awesome--europe-ffcc00?logo=europeanunion&logoColor=ffcc00&labelColor=003399)](https://github.com/GeiserX/awesome-europe#readme)
+[![listed on awesome-europe](https://img.shields.io/badge/listed%20on-awesome--europe-ffcc00?style=flat&logo=europeanunion&logoColor=ffcc00&labelColor=003399)](https://github.com/GeiserX/awesome-europe#readme)
+```
+
+Flat square:
+```markdown
+[![listed on awesome-europe](https://img.shields.io/badge/listed%20on-awesome--europe-ffcc00?style=flat-square&logo=europeanunion&logoColor=ffcc00&labelColor=003399)](https://github.com/GeiserX/awesome-europe#readme)
+```
+
+For the badge (large):
+```markdown
+[![listed on awesome-europe](https://img.shields.io/badge/listed%20on-awesome--europe-ffcc00?style=for-the-badge&logo=europeanunion&logoColor=ffcc00&labelColor=003399)](https://github.com/GeiserX/awesome-europe#readme)
 ```
 
 **Note:** This list focuses on open source software that provides **support specifically for Europe** — its institutions, regulations, standards, and cross-border infrastructure. The scope covers the **EU-27 and EEA** (Norway, Iceland, Liechtenstein). Software specific to a single country belongs in country-specific awesome lists. Software that is global and merely happens to work in Europe is also out of scope.
