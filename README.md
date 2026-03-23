@@ -178,6 +178,7 @@ Peppol, EN 16931, and the EU e-invoicing directive (2014/55/EU) for cross-border
 
 - [drafthorse](https://github.com/pretix/python-drafthorse) - Pure Python ZUGFeRD and Factur-X implementation for creating EN 16931 e-invoices.
 - [e-invoice-eu](https://github.com/gflohr/e-invoice-eu) - Generate EN 16931 compliant e-invoices from spreadsheet data or JSON.
+- [e-invoice-eu-validator](https://github.com/gflohr/e-invoice-eu-validator) - Offline validator for EN 16931 compliant electronic invoices wrapping the Mustang validation engine.
 - [e-invoicing (PHP)](https://github.com/easybill/e-invoicing) - PHP library to generate and read EN 16931 structured XML with UBL and CII syntaxes.
 - [einvoicing (JS)](https://github.com/esvit/einvoicing) - JavaScript library for creating and parsing electronic invoices compliant with the eInvoicing Directive and EN 16931.
 - [einvoicing (PHP)](https://github.com/josemmo/einvoicing) - PHP library for reading and creating European-compliant electronic invoices (EN 16931).
