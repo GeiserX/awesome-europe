@@ -1,10 +1,10 @@
-<h1 align="center">
-  <a href="https://github.com/GeiserX/awesome-europe"><img src="media/banner.svg" alt="Awesome Europe"></a>
+<div align="center">
+  <img src="media/banner.svg" alt="Awesome Europe">
   <br><br>
   <a href="https://awesome.re"><img src="https://awesome.re/badge-flat.svg" alt="Awesome"></a>
   <br><br>
-  <sub>A curated list of open source software that provides support specifically for Europe — its institutions, regulations, standards, and cross-border infrastructure.</sub>
-</h1>
+  <p>A curated list of open source software that provides support specifically for Europe — its institutions, regulations, standards, and cross-border infrastructure.</p>
+</div>
 
 ## Contents
 
