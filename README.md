@@ -125,7 +125,6 @@ CEF building blocks (eDelivery, eSignature, eTranslation), X-Road, EBSI, and EU 
 - [Core Location Vocabulary](https://github.com/SEMICeu/Core-Location-Vocabulary) - EU vocabulary describing location information such as geometries and addresses for cross-border exchange.
 - [Core Public Organisation Vocabulary](https://github.com/SEMICeu/CPOV) - EU vocabulary for describing public organisations in cross-border data exchange.
 - [CPSV-AP](https://github.com/SEMICeu/CPSV-AP) - Core Public Service Vocabulary Application Profile for describing public services in EU cross-border exchange.
-- [Cygnus](https://github.com/telefonicaid/fiware-cygnus) - FIWARE connector for persisting context data into third-party databases creating a historical view of EU smart data.
 - [Dataspace Protocol](https://github.com/International-Data-Spaces-Association/ids-specification) - Specifications for interoperable data sharing in EU data spaces based on web technologies.
 - [DSS](https://github.com/esig/dss) - EU Digital Signature Service for creation, extension and validation of advanced electronic signatures (CAdES, XAdES, PAdES, ASiC).
 - [DSS Demonstrations](https://github.com/esig/dss-demonstrations) - Sample applications demonstrating the integration of the EU Digital Signature Service library.
@@ -150,6 +149,7 @@ CEF building blocks (eDelivery, eSignature, eTranslation), X-Road, EBSI, and EU 
 - [ITB JSON Validator](https://github.com/ISAITB/json-validator) - European Commission validation service for JSON data in EU interoperability testing.
 - [ITB SHACL Validator](https://github.com/ISAITB/shacl-validator) - European Commission validation service for RDF data using SHACL shapes.
 - [ITB XML Validator](https://github.com/ISAITB/xml-validator) - European Commission validation service for XML data in EU interoperability testing.
+- [Kafnus](https://github.com/telefonicaid/Kafnus) - Kafka-based FIWARE connector for persisting context data into third-party databases, replacing Cygnus.
 - [libdigidocpp](https://github.com/open-eid/libdigidocpp) - Library for creating and verifying XAdES digital signatures compliant with eIDAS standards.
 - [LinkedPipes ETL](https://github.com/linkedpipes/etl) - RDF-based lightweight ETL tool developed under EU research funding.
 - [Minimum Viable Dataspace](https://github.com/eclipse-edc/MinimumViableDataspace) - Documentation and scripts for deploying a minimum viable EU dataspace with Eclipse EDC.

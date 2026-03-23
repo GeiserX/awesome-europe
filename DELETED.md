@@ -19,4 +19,6 @@ Repos that were removed from the list because they were archived, deprecated, or
 
 ## Deprecated
 
+- [Cygnus](https://github.com/telefonicaid/fiware-cygnus) - FIWARE connector for persisting context data into third-party databases. Deprecated, replaced by [Kafnus](https://github.com/telefonicaid/Kafnus).
+
 ## Other
