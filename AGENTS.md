@@ -78,18 +78,16 @@ A curated list of open source software that provides **support specifically for 
 ## Entry format
 
 ```markdown
-- [Name](https://github.com/owner/repo) ![Stars](https://img.shields.io/github/stars/owner/repo?style=flat-square&label=) - Description starting with a capital letter and ending with a period. ([Demo](https://example.com)) `Language` `License` `EU-Tag`
+- [Name](https://github.com/owner/repo) ![Stars](https://img.shields.io/github/stars/owner/repo?style=flat-square&label=⭐) ![Language](https://img.shields.io/github/languages/top/owner/repo?style=flat-square) ![License](https://img.shields.io/github/license/owner/repo?style=flat-square) ![GDPR](https://img.shields.io/badge/GDPR-003399?style=flat-square) ([Demo](https://example.com)) - Description starting with a capital letter and ending with a period.
 ```
 
-Each entry includes:
-- **Star badge** (required): shields.io auto-updating badge — `![Stars](https://img.shields.io/github/stars/owner/repo?style=flat-square&label=)`.
-- **Description** (required): one sentence, starts with a capital letter, ends with a period. Must not start with the project name.
-- **Demo link** (optional): `([Demo](url))` — only if a live interactive instance is available. Not marketing pages or docs.
-- **Language tag** (required if available): primary language from GitHub API, e.g. `` `Python` ``, `` `Java` ``.
-- **License tag** (required if available): SPDX identifier, e.g. `` `MIT` ``, `` `Apache-2.0` ``, `` `EUPL-1.2` ``.
-- **EU regulation tags** (required): one or more tags. Common: `GDPR`, `eIDAS`, `EN16931`, `PSD2`, `VAT`, `AMLD`, `NIS2`, `DORA`, `CRA`, `AI Act`, `DSA`, `DMA`, `INSPIRE`, `Copernicus`, `FIWARE`, `CERN`, `Peppol`, `SEPA`, `CSIRT`, `EAA`, `ITS`, `Data Spaces`, `Open Data`, `eProcurement`, `CAP`, `EHDS`.
-
-**Tag order:** Language → License → EU regulation tags (alphabetical).
+Each entry includes (in this order):
+- **Star badge** (required): `![Stars](https://img.shields.io/github/stars/owner/repo?style=flat-square&label=⭐)` — auto-updating.
+- **Language badge** (required): `![Language](https://img.shields.io/github/languages/top/owner/repo?style=flat-square)` — auto-updating.
+- **License badge** (required): `![License](https://img.shields.io/github/license/owner/repo?style=flat-square)` — auto-updating.
+- **EU regulation badges** (required): blue badges (`#003399`) manually assigned. E.g. `![GDPR](https://img.shields.io/badge/GDPR-003399?style=flat-square)`. Common: `GDPR`, `eIDAS`, `EN16931`, `PSD2`, `VAT`, `AMLD`, `NIS2`, `DORA`, `CRA`, `AI Act`, `DSA`, `DMA`, `INSPIRE`, `Copernicus`, `FIWARE`, `CERN`, `Peppol`, `SEPA`, `CSIRT`, `EAA`, `ITS`, `Data Spaces`, `Open Data`, `eProcurement`, `CAP`, `EHDS`.
+- **Demo link** (optional): `([Demo](url))` — only live interactive instances, not marketing pages or docs.
+- **Description** (required): one sentence at the end, starts with capital letter, ends with period. Must not start with the project name.
 
 - Maximum one line per entry.
 - Entries in **alphabetical order** (by display name, case-insensitive) within each section and subsection.
