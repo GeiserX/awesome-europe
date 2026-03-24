@@ -114,6 +114,7 @@ EU AI Act, Digital Services Act (DSA), Digital Markets Act (DMA), and related di
 - [Practical AI Act](https://github.com/aai-institute/practical-ai-act) - Reference implementation of a high-risk AI system demonstrating EU AI Act Chapter III compliance.
 - [RADAR](https://github.com/CheckFirstHQ/RADAR) - Structured framework for assessing Digital Services Act compliance with standardized infringement tags.
 - [TechOps](https://github.com/aloosley/techops) - Technical documentation templates for responsible AI systems with full EU AI Act requirement mapping.
+- [Venturalitica SDK](https://github.com/Venturalitica/venturalitica-sdk) - OSCAL-native Python SDK for embedding EU AI Act and ISO 42001 governance directly into ML training pipelines with local-first policy enforcement.
 - [VerifyWise](https://github.com/verifywise-ai/verifywise) - AI governance and evaluation platform with EU AI Act, ISO 42001, and NIST AI RMF support.
 
 ## Interoperability and Digital Infrastructure
