@@ -272,7 +272,7 @@ def transform_entry(line, current_section):
     """Transform a single entry line with metadata."""
     # Match entry pattern: - [Name](url) - Description.
     # Also match already-transformed entries (with ![Stars] etc.)
-    m = re.match(r'^- \[([^\]]+)\]\((https://github\.com/([^)]+))\)\s+(?:!\[.*?\]\([^)]+\)\s*)*- (.+)$', line)
+    m = re.match(r'^- \[([^\]]+)\]\((https://github\.com/([^)]+))\)\s+(?:!\[.*?\]\([^)]+\)\s*)*(?:\(\[Demo\]\([^)]+\)\)\s*)?- (.+)$', line)
     if not m:
         # Try simpler pattern for non-transformed entries
         m = re.match(r'^- \[([^\]]+)\]\((https://github\.com/([^)]+))\) - (.+)$', line)
@@ -290,6 +290,7 @@ def transform_entry(line, current_section):
 
     # Auto-updating shields.io badges
     star_badge = f"![Stars](https://img.shields.io/github/stars/{owner_repo}?style=flat-square&label=⭐)"
+    commit_badge = f"![Last Commit](https://img.shields.io/github/last-commit/{owner_repo}?style=flat-square)"
     lang_badge = f"![Language](https://img.shields.io/github/languages/top/{owner_repo}?style=flat-square)"
     license_badge = f"![License](https://img.shields.io/github/license/{owner_repo}?style=flat-square)"
 
@@ -305,7 +306,7 @@ def transform_entry(line, current_section):
     demo_str = f" ([Demo]({demo}))" if demo else ""
 
     # Build: Name + auto-badges + EU badges + demo + description
-    parts = [f"- [{name}]({url}) {star_badge} {lang_badge} {license_badge}"]
+    parts = [f"- [{name}]({url}) {star_badge} {commit_badge} {lang_badge} {license_badge}"]
     if eu_badges:
         parts[0] += f" {eu_badges}"
     if demo_str:
