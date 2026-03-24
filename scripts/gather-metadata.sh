@@ -22,7 +22,8 @@ grep -oE 'https://github\.com/[^/)]+/[^/)]+' README.md | sort -u | while read -r
     homepage: (.homepage // ""),
     topics: (.topics // []),
     description: (.description // ""),
-    stargazers_count: .stargazers_count
+    stargazers_count: .stargazers_count,
+    default_branch: (.default_branch // "main")
   }' 2>/dev/null || echo '{"error": true}')
 
   if [ "$FIRST" = true ]; then
