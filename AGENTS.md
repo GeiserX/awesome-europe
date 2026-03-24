@@ -91,7 +91,7 @@ Each entry includes (in this order):
 
 - Maximum one line per entry.
 - Entries in **alphabetical order** (by display name, case-insensitive) within each section and subsection.
-- Validate with awesome-lint: `npx awesome-lint`.
+- Validate with [awesome-lint-extra](https://github.com/GeiserX/awesome-lint-extra): `python3 /path/to/lint.py` or via CI.
 - The `scripts/transform-readme.py` script can auto-enrich entries using GitHub API metadata stored in `scripts/metadata.json`. Run `scripts/gather-metadata.sh` first to refresh metadata.
 
 ## Verification before adding

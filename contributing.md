@@ -34,10 +34,10 @@ Each entry includes (in this order):
 - **Description** (required): One sentence, starts with a capital letter, ends with a period. Placed at the end after the ` - ` separator.
 
 Additional rules:
-- Description **must not start with the project name** (awesome-lint rejects this).
+- Description **must not start with the project name**.
 - Maximum one line per entry.
 - Descriptions should be in **English**.
-- Run `npx awesome-lint` before submitting your PR to verify there are no errors.
+- CI runs [awesome-lint-extra](https://github.com/GeiserX/awesome-lint-extra) to validate format, badges, alphabetical order, and EU tags.
 
 ### Pull requests
 
