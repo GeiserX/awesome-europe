@@ -498,6 +498,7 @@ DEMO_URLS.update({
     "FlexMeasures/flexmeasures": "https://flexmeasures.io",
     "brbxai/recommand-peppol": "https://recommand.eu",
     "OpenRailAssociation/osrd": "https://osrd.fr",
+    "GeiserX/pumperly": "https://pumperly.com",
     "eclipse-sumo/sumo": "https://eclipse.dev/sumo",
     "juliuste/direkt.bahn.guru": "https://direkt.bahn.guru",
     "MISP/MISP": "https://www.misp-project.org",
