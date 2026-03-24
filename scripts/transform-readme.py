@@ -172,6 +172,72 @@ KEYWORD_TAGS = {
     "trust service": "eIDAS",
 }
 
+# EU tag → official regulation/standard URL
+TAG_URLS = {
+    "AI Act": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+    "AMLD": "https://finance.ec.europa.eu/financial-crime/anti-money-laundering-and-countering-financing-terrorism_en",
+    "CAP": "https://agriculture.ec.europa.eu/common-agricultural-policy_en",
+    "CBAM": "https://taxation-customs.ec.europa.eu/carbon-border-adjustment-mechanism_en",
+    "CEF": "https://digital-strategy.ec.europa.eu/en/activities/connecting-europe-facility",
+    "CERN": "https://home.cern/",
+    "Copernicus": "https://www.copernicus.eu/",
+    "CPSV-AP": "https://semiceu.github.io/CPSV-AP/",
+    "CRA": "https://eur-lex.europa.eu/eli/reg/2024/2847/oj",
+    "CSIRT": "https://csirtsnetwork.eu/",
+    "CSRD": "https://eur-lex.europa.eu/eli/dir/2022/2464/oj",
+    "Customs": "https://taxation-customs.ec.europa.eu/customs_en",
+    "Data Spaces": "https://dssc.eu/",
+    "DCAT-AP": "https://semiceu.github.io/DCAT-AP/",
+    "DGA": "https://eur-lex.europa.eu/eli/reg/2022/868/oj",
+    "DMA": "https://eur-lex.europa.eu/eli/reg/2022/1925/oj",
+    "DORA": "https://eur-lex.europa.eu/eli/reg/2022/2554/oj",
+    "DSA": "https://eur-lex.europa.eu/eli/reg/2022/2065/oj",
+    "EAA": "https://eur-lex.europa.eu/eli/dir/2019/882/oj",
+    "EBICS": "https://www.ebics.org/",
+    "ECMWF": "https://www.ecmwf.int/",
+    "ECTS": "https://education.ec.europa.eu/education-levels/higher-education/inclusive-and-connected-higher-education/european-credit-transfer-and-accumulation-system",
+    "eDelivery": "https://ec.europa.eu/digital-building-blocks/sites/display/DIGITAL/eDelivery",
+    "EECC": "https://eur-lex.europa.eu/eli/dir/2018/1972/oj",
+    "EHDS": "https://health.ec.europa.eu/ehealth-digital-health-and-care/european-health-data-space_en",
+    "eIDAS": "https://eur-lex.europa.eu/eli/reg/2014/910/oj",
+    "EMA": "https://www.ema.europa.eu/",
+    "EN16931": "https://eur-lex.europa.eu/eli/dir/2014/55/oj",
+    "EN301549": "https://www.etsi.org/deliver/etsi_en/301500_301599/301549/",
+    "END": "https://eur-lex.europa.eu/eli/dir/2002/49/oj",
+    "Energy": "https://energy.ec.europa.eu/",
+    "EOSC": "https://eosc.eu/",
+    "EPC": "https://www.europeanpaymentscouncil.eu/",
+    "eProcurement": "https://ted.europa.eu/",
+    "Erasmus+": "https://erasmus-plus.ec.europa.eu/",
+    "ESPR": "https://eur-lex.europa.eu/eli/reg/2024/1781/oj",
+    "ETS": "https://climate.ec.europa.eu/eu-action/eu-emissions-trading-system-eu-ets_en",
+    "ETSI": "https://www.etsi.org/",
+    "EU Taxonomy": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en",
+    "Eurostat": "https://ec.europa.eu/eurostat",
+    "FIC": "https://eur-lex.europa.eu/eli/reg/2011/1169/oj",
+    "FIWARE": "https://www.fiware.org/",
+    "Floods Directive": "https://eur-lex.europa.eu/eli/dir/2007/60/oj",
+    "Gaia-X": "https://gaia-x.eu/",
+    "GCVE": "https://gcve.eu/",
+    "GDPR": "https://eur-lex.europa.eu/eli/reg/2016/679/oj",
+    "Horizon": "https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe_en",
+    "INSPIRE": "https://inspire.ec.europa.eu/",
+    "ISO20022": "https://www.iso20022.org/",
+    "ITS": "https://transport.ec.europa.eu/transport-themes/intelligent-transport-systems_en",
+    "NIS2": "https://eur-lex.europa.eu/eli/dir/2022/2555/oj",
+    "NUTS": "https://ec.europa.eu/eurostat/web/nuts",
+    "OGC": "https://www.ogc.org/",
+    "Open Data": "https://data.europa.eu/",
+    "OpenAIRE": "https://www.openaire.eu/",
+    "Peppol": "https://peppol.org/",
+    "PSD2": "https://eur-lex.europa.eu/eli/dir/2015/2366/oj",
+    "Schengen": "https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa_en",
+    "SDMX": "https://sdmx.org/",
+    "SEPA": "https://www.europeanpaymentscouncil.eu/",
+    "VAT": "https://taxation-customs.ec.europa.eu/vat_en",
+    "X-Road": "https://x-road.global/",
+}
+
 # Normalize language names
 LANG_MAP = {
     "Jupyter Notebook": "Python",
@@ -224,6 +290,11 @@ LICENSE_MAP = {
 DEMO_URLS = {}
 
 
+def encode_tag(tag):
+    """Encode tag name for shields.io badge URL."""
+    return tag.replace("-", "--").replace("_", "__").replace(" ", "%20").replace("+", "%2B")
+
+
 def get_eu_tags(section_name, entry_name, description):
     """Determine EU regulation tags for an entry."""
     tags = set()
@@ -270,11 +341,18 @@ def get_demo_url(owner_repo):
 
 def transform_entry(line, current_section):
     """Transform a single entry line with metadata."""
-    # Match entry pattern: - [Name](url) - Description.
-    # Also match already-transformed entries (with ![Stars] etc.)
-    m = re.match(r'^- \[([^\]]+)\]\((https://github\.com/([^)]+))\)\s+(?:!\[.*?\]\([^)]+\)\s*)*(?:\(\[Demo\]\([^)]+\)\)\s*)?- (.+)$', line)
+    # Badge patterns: handle both clickable [![alt](img)](link) and plain ![alt](img)
+    badge_pat = r'(?:\[!\[[^\]]*\]\([^)]+\)\]\([^)]+\)|!\[[^\]]*\]\([^)]+\))'
+    demo_pat = r'\(\[Demo\]\([^)]+\)\)'
+
+    m = re.match(
+        rf'^- \[([^\]]+)\]\((https://github\.com/([^)]+))\)\s+'
+        rf'(?:{badge_pat}\s*)*'
+        rf'(?:{demo_pat}\s*)?'
+        rf'- (.+)$',
+        line
+    )
     if not m:
-        # Try simpler pattern for non-transformed entries
         m = re.match(r'^- \[([^\]]+)\]\((https://github\.com/([^)]+))\) - (.+)$', line)
     if not m:
         return line
@@ -288,24 +366,32 @@ def transform_entry(line, current_section):
     description = re.sub(r'\s*\(\[Demo\]\([^)]+\)\)', '', raw_desc)
     description = re.sub(r'\s*`[^`]+`', '', description).strip()
 
-    # Auto-updating shields.io badges
-    star_badge = f"![Stars](https://img.shields.io/github/stars/{owner_repo}?style=flat-square&label=⭐)"
-    commit_badge = f"![Last Commit](https://img.shields.io/github/last-commit/{owner_repo}?style=flat-square)"
-    lang_badge = f"![Language](https://img.shields.io/github/languages/top/{owner_repo}?style=flat-square)"
-    license_badge = f"![License](https://img.shields.io/github/license/{owner_repo}?style=flat-square)"
+    # Clickable auto-updating shields.io badges
+    star_badge = f"[![Stars](https://img.shields.io/github/stars/{owner_repo}?style=flat-square&label=⭐)](https://github.com/{owner_repo}/stargazers)"
+    commit_badge = f"[![Last Commit](https://img.shields.io/github/last-commit/{owner_repo}?style=flat-square)](https://github.com/{owner_repo}/commits)"
+    lang_badge = f"[![Language](https://img.shields.io/github/languages/top/{owner_repo}?style=flat-square)](https://github.com/{owner_repo})"
+    license_badge = f"[![License](https://img.shields.io/github/license/{owner_repo}?style=flat-square)](https://github.com/{owner_repo}/blob/HEAD/LICENSE)"
 
-    # EU regulation tags as blue badges
+    # EU regulation tags as clickable blue badges (linking to official pages)
     eu_tags = get_eu_tags(current_section, name, raw_desc)
-    eu_badges = " ".join(
-        f"![{t}](https://img.shields.io/badge/{t.replace(' ', '%20')}-003399?style=flat-square)"
-        for t in eu_tags
-    )
+    eu_badge_parts = []
+    for t in eu_tags:
+        encoded = encode_tag(t)
+        if t in TAG_URLS:
+            eu_badge_parts.append(
+                f"[![{t}](https://img.shields.io/badge/{encoded}-003399?style=flat-square)]({TAG_URLS[t]})"
+            )
+        else:
+            eu_badge_parts.append(
+                f"![{t}](https://img.shields.io/badge/{encoded}-003399?style=flat-square)"
+            )
+    eu_badges = " ".join(eu_badge_parts)
 
     # Demo link
     demo = get_demo_url(owner_repo)
     demo_str = f" ([Demo]({demo}))" if demo else ""
 
-    # Build: Name + auto-badges + EU badges + demo + description
+    # Build: Name + clickable auto-badges + EU badges + demo + description
     parts = [f"- [{name}]({url}) {star_badge} {commit_badge} {lang_badge} {license_badge}"]
     if eu_badges:
         parts[0] += f" {eu_badges}"
@@ -346,20 +432,21 @@ def main():
 
 # Known demo URLs
 DEMO_URLS.update({
-    "intuitem/ciso-assistant-community": "https://demo.ciso-assistant.com",
+    # "intuitem/ciso-assistant-community": demo removed (404)
+
     "orestbida/cookieconsent": "https://playground.cookieconsent.orestbida.com",
     "EUSurvey/EUSURVEY": "https://ec.europa.eu/eusurvey",
     "electricitymaps/electricitymap-contrib": "https://app.electricitymaps.com",
     "Open-EO/openeo-web-editor": "https://editor.openeo.org",
-    "ISAITB/csv-validator": "https://www.itb.ec.europa.eu/csv/upload",
-    "ISAITB/json-validator": "https://www.itb.ec.europa.eu/json/upload",
-    "ISAITB/shacl-validator": "https://www.itb.ec.europa.eu/shacl/upload",
+    "ISAITB/csv-validator": "https://www.itb.ec.europa.eu/csv/any/upload",
+    "ISAITB/json-validator": "https://www.itb.ec.europa.eu/json/any/upload",
+    "ISAITB/shacl-validator": "https://www.itb.ec.europa.eu/shacl/any/upload",
     "ISAITB/xml-validator": "https://www.itb.ec.europa.eu/xml/upload",
     "OP-TED/ted-open-data": "https://data.ted.europa.eu",
     "ec-europa/europa-component-library": "https://ec.europa.eu/component-library",
     "Nager/Nager.Date": "https://date.nager.at",
     "Lookyloo/lookyloo": "https://www.lookyloo.eu",
-    "consul/consul": "https://consuldemocracy.org/en",
+    "consul/consul": "https://consuldemocracy.org",
     "decidim/decidim": "https://decidim.org",
     "OpenCTI-Platform/opencti": "https://demo.opencti.io",
     "europeana/portal.js": "https://www.europeana.eu",
@@ -368,7 +455,8 @@ DEMO_URLS.update({
     "HowTheyVote/howtheyvote": "https://howtheyvote.eu",
     "HowTheyVote/data": "https://howtheyvote.eu",
     "kiprotect/klaro": "https://klaro.org/demo",
-    "altcha-org/altcha": "https://altcha.org/demo",
+    # "altcha-org/altcha": demo removed (404)
+
     "AKVorrat/dearmep": "https://dearmep.eu",
     "AmauriC/tarteaucitron.js": "https://tarteaucitron.io",
     "OpenBankProject/OBP-API": "https://apisandbox.openbankproject.com",
@@ -384,10 +472,12 @@ DEMO_URLS.update({
     "deegree/deegree3": "https://demo.deegree.org",
     "compl-ai/compl-ai": "https://compl-ai.org",
     "gcve-eu/gcve.eu": "https://gcve.eu",
-    "adorsys/XS2A-Sandbox": "https://demo-dynamicsandbox-xs2a.cloud.adorsys.de",
+    # "adorsys/XS2A-Sandbox": demo removed (connection refused)
+
     "CIRCL/bgp-ranking": "https://bgpranking.circl.lu",
     "getprobo/probo": "https://demo.getprobo.com",
-    "CovenantSQL/CookieScanner": "https://gdprexpert.io",
+    # "CovenantSQL/CookieScanner": demo removed (connection refused)
+
     "FIWARE/catalogue": "https://www.fiware.org/catalogue",
     "gnss-sdr/gnss-sdr": "https://gnss-sdr.org",
     "calliope-project/calliope": "https://www.callio.pe",
