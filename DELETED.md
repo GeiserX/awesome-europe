@@ -30,6 +30,6 @@ Repos that were removed from the list because they were archived, deprecated, or
 - [geoflow](https://github.com/r-geoflow/geoflow) - FAIR geospatial workflow tools. Used in EC projects but generic.
 - [RAPDF](https://github.com/accessibility-luxembourg/ReferentielAccessibilitePDF) - PDF accessibility framework. 0 stars.
 - [Apple-RHVoice](https://github.com/accessibility-luxembourg/Apple-RHVoice) - RHVoice for Apple. General-purpose text-to-speech, not EU-specific.
-- [FlowIntel](https://github.com/MISP/FlowIntel) - Generic case management tool without EU-specific functionality.
+- [FlowIntel](https://github.com/MISP/FlowIntel) - Original repo (now 404). Re-evaluated and included as [flowintel/flowintel](https://github.com/flowintel/flowintel) — now EU-funded via FETTA and developed by CIRCL Luxembourg.
 
 ## Other
