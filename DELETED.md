@@ -32,6 +32,7 @@ Repos that were removed from the list because they were archived, deprecated, or
 - [Apple-RHVoice](https://github.com/accessibility-luxembourg/Apple-RHVoice) - RHVoice for Apple. General-purpose text-to-speech, not EU-specific.
 - [FlowIntel](https://github.com/MISP/FlowIntel) - Original repo (now 404). Re-evaluated and included as [flowintel/flowintel](https://github.com/flowintel/flowintel) — now EU-funded via FETTA and developed by CIRCL Luxembourg.
 
+- [TRACEN-X](https://github.com/DriveX-devs/TRACEN-X) - Generic CAN bus telemetry replay tool, not tied to EU regulations or standards.
 - [Invenio](https://github.com/inveniosoftware/invenio) - Umbrella framework repo, replaced by [invenio-app-rdm](https://github.com/inveniosoftware/invenio-app-rdm) as the active InvenioRDM product repo.
 
 ## Other
