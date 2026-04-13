@@ -6,7 +6,7 @@ Guidelines for maintainers of this list. This guide is shared across the awesome
 
 ## Inclusion philosophy
 
-The fundamental criterion is: **we accept software that specifically supports the place, not software simply made by someone from the place.**
+The fundamental criterion is: **we accept software that specifically supports Europe, not software simply made by someone from Europe.**
 
 A repository is included because it interacts with institutions, services, infrastructure, regulations, or data specific to Europe. It is not enough for the author to be European or reside here. A generic JS framework created by a European developer does not belong in this list. A client for an EU institution API or an integration with European public services does.
 
@@ -45,9 +45,15 @@ See `AGENTS.md` (if present) for detailed criteria, edge cases, and prohibited t
    - Body: brief message explaining the inclusion and offering to remove if preferred.
    - **One issue per owner** — never open multiple issues for repos from the same user/org.
 
-## Removing entries
+## Removing entries and DELETED.md
 
-Entries are not simply deleted. They are moved to `DELETED.md` in the corresponding section:
+Each repository has (or should have) a `DELETED.md` file. It is a fundamental part of maintenance: it records all projects that were once listed and later removed, along with the reason. Its purpose is:
+
+- **Prevent re-additions:** if someone proposes a previously removed project, the reason for removal can be checked.
+- **Preserve history:** it documents past decisions for future maintainers.
+- **Record reasoning:** each entry carries enough context to understand the removal.
+
+Entries are never simply deleted from the README. They are moved to `DELETED.md` in the corresponding section:
 
 | Reason | Section in DELETED.md |
 |--------|-----------------------|
@@ -57,7 +63,7 @@ Entries are not simply deleted. They are moved to `DELETED.md` in the correspond
 | Does not meet inclusion criteria | Removed for not being Europe-specific |
 | Superseded by another project | Replaced (link successor) |
 
-This prevents re-additions and preserves history.
+If the repo doesn't have a `DELETED.md` yet, create it with the sections above the first time a project is removed.
 
 ## Periodic maintenance
 
@@ -70,6 +76,7 @@ This prevents re-additions and preserves history.
     [ "$archived" = "true" ] && echo "ARCHIVED: $repo"
   done
   ```
+  Move archived repos to `DELETED.md`.
 
 ## Tools
 
