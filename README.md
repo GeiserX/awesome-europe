@@ -360,6 +360,7 @@ EBA, ESMA regulations, MiFID II, MiCA, DORA, EMIR, XBRL/iXBRL reporting, and Eur
 - [Xoxo](https://github.com/dgm9704/Xoxo) [![Stars](https://img.shields.io/github/stars/dgm9704/Xoxo?style=flat-square&label=⭐)](https://github.com/dgm9704/Xoxo/stargazers) [![Last Commit](https://img.shields.io/github/last-commit/dgm9704/Xoxo?style=flat-square)](https://github.com/dgm9704/Xoxo/commits/main) [![Language](https://img.shields.io/github/languages/top/dgm9704/Xoxo?style=flat-square)](https://github.com/dgm9704/Xoxo) [![License](https://img.shields.io/github/license/dgm9704/Xoxo?style=flat-square)](https://github.com/dgm9704/Xoxo/blob/main/LICENSE) - Library for .NET to read, write, compare, and convert XBRL reports including ESEF and EBA taxonomies.
 
 ## GDPR and Data Protection
+* [Face-Efface Photo](https://xipinocode.github.io/face-efface-photo/) - Ein 100 % privates, browserbasiertes KI-Tool zum lokalen Verpixeln von Gesichtern. DSGVO-konform.
 
 EU General Data Protection Regulation (2016/679) and related data protection frameworks.
 
