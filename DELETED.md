@@ -24,6 +24,7 @@ Repos that were removed from the list because they were archived, deprecated, or
 
 ## Rejected (out of scope)
 
+- [Consul Democracy](https://github.com/consuldemocracy/consuldemocracy) - Spanish-origin project (Ayuntamiento de Madrid), used in 35+ countries globally. Listed in [awesome-spain](https://github.com/GeiserX/awesome-spain).
 - [ows4R](https://github.com/eblondel/ows4R) - R interface to OGC Web Services. Generic geospatial tool, not EU-specific.
 - [geosapi](https://github.com/eblondel/geosapi) - R interface to GeoServer API. Generic geospatial tool.
 - [geonapi](https://github.com/eblondel/geonapi) - R interface to GeoNetwork API. Generic geospatial tool.
