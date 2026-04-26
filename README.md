@@ -178,6 +178,15 @@ EU AI Act, Digital Services Act (DSA), Digital Markets Act (DMA), and related di
 - [Venturalitica SDK](https://github.com/Venturalitica/venturalitica-sdk) [![Stars](https://img.shields.io/github/stars/Venturalitica/venturalitica-sdk?style=flat-square&label=⭐)](https://github.com/Venturalitica/venturalitica-sdk/stargazers) [![Last Commit](https://img.shields.io/github/last-commit/Venturalitica/venturalitica-sdk?style=flat-square)](https://github.com/Venturalitica/venturalitica-sdk/commits/main) [![Language](https://img.shields.io/github/languages/top/Venturalitica/venturalitica-sdk?style=flat-square)](https://github.com/Venturalitica/venturalitica-sdk) [![License](https://img.shields.io/github/license/Venturalitica/venturalitica-sdk?style=flat-square)](https://github.com/Venturalitica/venturalitica-sdk/blob/main/LICENSE) [![AI Act](https://img.shields.io/badge/AI%20Act-003399?style=flat-square)](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) - OSCAL-native Python SDK for embedding EU AI Act and ISO 42001 governance directly into ML training pipelines.
 - [VerifyWise](https://github.com/verifywise-ai/verifywise) [![Stars](https://img.shields.io/github/stars/verifywise-ai/verifywise?style=flat-square&label=⭐)](https://github.com/verifywise-ai/verifywise/stargazers) [![Last Commit](https://img.shields.io/github/last-commit/verifywise-ai/verifywise?style=flat-square)](https://github.com/verifywise-ai/verifywise/commits/develop) [![Language](https://img.shields.io/github/languages/top/verifywise-ai/verifywise?style=flat-square)](https://github.com/verifywise-ai/verifywise) [![License](https://img.shields.io/github/license/verifywise-ai/verifywise?style=flat-square)](https://github.com/verifywise-ai/verifywise/blob/develop/LICENSE.md) [![AI Act](https://img.shields.io/badge/AI%20Act-003399?style=flat-square)](https://eur-lex.europa.eu/eli/reg/2024/1689/oj) - AI governance and evaluation platform with EU AI Act, ISO 42001, and NIST AI RMF support.
 
+
+### MEOK AI Labs — Signed-Attestation EU Compliance MCPs (CSOAI LTD, UK)
+- [meok-eu-ai-act-compliance](https://github.com/CSOAI-ORG/eu-ai-act-compliance-mcp) - EU AI Act compliance toolkit with HMAC-signed attestations.
+- [meok-dora-compliance](https://github.com/CSOAI-ORG/dora-compliance-mcp) - DORA (Reg 2022/2554) financial sector compliance toolkit.
+- [meok-nis2-de-register](https://github.com/CSOAI-ORG/meok-nis2-de-register-mcp) - Germany NIS2 BSI register product.
+- [meok-cra-annex-iv-classifier](https://github.com/CSOAI-ORG/meok-cra-annex-iv-classifier-mcp) - EU Cyber Resilience Act (Reg 2024/2847) classifier.
+- [meok-watermark-attest](https://github.com/CSOAI-ORG/meok-watermark-attest-mcp) - EU AI Act Article 50 watermarking (Aug 2026 deadline).
+- [meok-omnibus-tracker](https://github.com/CSOAI-ORG/meok-omnibus-tracker-mcp) - Track 8 Digital Omnibus EU regulatory cliff dates.
+
 ## Education and Research
 
 ECTS, Erasmus+, Horizon Europe, CORDIS, OpenAIRE, EOSC, CERN, and European research infrastructure.
