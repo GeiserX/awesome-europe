@@ -1,4 +1,4 @@
-# AGENTS.md — awesome-europe
+# CLAUDE.md — awesome-europe
 
 ## Purpose
 
