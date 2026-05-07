@@ -36,4 +36,8 @@ Repos that were removed from the list because they were archived, deprecated, or
 - [TRACEN-X](https://github.com/DriveX-devs/TRACEN-X) - Generic CAN bus telemetry replay tool, not tied to EU regulations or standards.
 - [Invenio](https://github.com/inveniosoftware/invenio) - Umbrella framework repo, replaced by [invenio-app-rdm](https://github.com/inveniosoftware/invenio-app-rdm) as the active InvenioRDM product repo.
 
+## Unmaintained
+
+- [workalendar](https://github.com/workalendar/workalendar) - Python library for holidays and working days computation across European countries. Unmaintained since early 2023.
+
 ## Other
