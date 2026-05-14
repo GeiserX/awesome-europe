@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   sync:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, Linux, X64]
     steps:
       - uses: actions/checkout@v4
 
@@ -52,7 +52,8 @@ jobs:
                        '--jq', '[.[] | select(.permissions.push) | .login] | .[]'],
                       capture_output=True, text=True, check=True)
                   if result.stdout.strip():
-                      maintainers = {l for l in result.stdout.strip().split('\n') if l}
+                      maintainers = {l for l in result.stdout.strip().split('
+') if l}
               except Exception as e:
                   print(f'Could not list collaborators via API: {e}')
                   print('Falling back to existing CODEOWNERS.')
@@ -65,24 +66,37 @@ jobs:
           if len(maintainers) >= 2:
               # Write CODEOWNERS
               with open('CODEOWNERS', 'w') as f:
-                  f.write('* ' + ' '.join(f'@{m}' for m in sorted_m) + '\n')
+                  f.write('* ' + ' '.join(f'@{m}' for m in sorted_m) + '
+')
 
               # Build Maintainers section
-              lines = '\n'.join(f'- [@{m}](https://github.com/{m})' for m in sorted_m)
-              section = (f'## Maintainers\n\n'
-                         f'<!--lint disable awesome-list-item-->\n\n'
-                         f'{lines}\n\n'
+              lines = '
+'.join(f'- [@{m}](https://github.com/{m})' for m in sorted_m)
+              section = (f'## Maintainers
+
+'
+                         f'<!--lint disable awesome-list-item-->
+
+'
+                         f'{lines}
+
+'
                          f'<!--lint enable awesome-list-item-->')
 
               if '## Maintainers' in readme:
                   readme = re.sub(
-                      r'## Maintainers\n.*?(?=\n## |\Z)',
-                      section + '\n',
+                      r'## Maintainers
+.*?(?=
+## |\Z)',
+                      section + '
+',
                       readme, flags=re.DOTALL)
               else:
                   for anchor in ['## Contribuir', '## Contributing']:
                       if anchor in readme:
-                          readme = readme.replace(anchor, section + '\n\n' + anchor)
+                          readme = readme.replace(anchor, section + '
+
+' + anchor)
                           break
 
               with open('README.md', 'w') as f:
@@ -94,7 +108,10 @@ jobs:
                   os.remove('CODEOWNERS')
                   changed = True
               if '## Maintainers' in readme:
-                  readme = re.sub(r'\n+## Maintainers\n.*?(?=\n## |\Z)', '', readme, flags=re.DOTALL)
+                  readme = re.sub(r'
++## Maintainers
+.*?(?=
+## |\Z)', '', readme, flags=re.DOTALL)
                   with open('README.md', 'w') as f:
                       f.write(readme)
                   changed = True
