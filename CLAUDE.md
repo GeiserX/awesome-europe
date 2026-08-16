@@ -59,6 +59,7 @@ A curated list of open source software that provides **support specifically for 
 - **Archived or read-only** repositories — these go to `DELETED.md`.
 - Repos where the **author explicitly states the project is broken, unmaintained, or deprecated** — treat as abandoned.
 - Repos with **no meaningful README** or that are clearly test/experiment repos.
+- **Open-core funnels**: repos whose open-source part exists as the free tier or marketing surface of a paid product or hosted service selling the same capability. Signals: a pricing page for a hosted version of what the repo does, development happening in a private repo with the public one as a synced snapshot, launch-day self-submission across multiple lists. The license being permissive and the code being substantial does not cure this — the list recommends community open source, not commercial funnels. Company-backed libraries remain fine when the vendor's business is elsewhere and the library is a complete give-away (e.g. pretix's drafthorse): the test is whether the vendor sells a paid version of the very thing the repo does. Precedent: Attestwire EN 16931, delisted Aug 2026 (see `DELETED.md`).
 
 ### Grey area — use judgement
 

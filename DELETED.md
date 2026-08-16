@@ -24,6 +24,7 @@ Repos that were removed from the list because they were archived, deprecated, or
 
 ## Rejected (out of scope)
 
+- [Attestwire EN 16931](https://github.com/attestwire/en16931) - MIT EN 16931 validator/generator, but published as the free tier of a paid hosted validation API (attestwire.com), with development in a private repo and the public one as a synced storefront. Open-core funnel — briefly listed Aug 2026, delisted under the community-open-source criterion.
 - [Consul Democracy](https://github.com/consuldemocracy/consuldemocracy) - Spanish-origin project (Ayuntamiento de Madrid), used in 35+ countries globally. Listed in [awesome-spain](https://github.com/GeiserX/awesome-spain).
 - [ows4R](https://github.com/eblondel/ows4R) - R interface to OGC Web Services. Generic geospatial tool, not EU-specific.
 - [geosapi](https://github.com/eblondel/geosapi) - R interface to GeoServer API. Generic geospatial tool.
