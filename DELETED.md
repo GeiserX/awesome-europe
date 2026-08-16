@@ -37,6 +37,7 @@ Repos that were removed from the list because they were archived, deprecated, or
 - [IntelMQ Manager](https://github.com/certtools/intelmq-manager) - Web interface for IntelMQ. Same reasoning as IntelMQ.
 - [TRACEN-X](https://github.com/DriveX-devs/TRACEN-X) - Generic CAN bus telemetry replay tool, not tied to EU regulations or standards.
 - [Invenio](https://github.com/inveniosoftware/invenio) - Umbrella framework repo, replaced by [invenio-app-rdm](https://github.com/inveniosoftware/invenio-app-rdm) as the active InvenioRDM product repo.
+- [Attestwire EN 16931](https://github.com/attestwire/en16931) - MIT EN 16931 validator/generator, but published as the free tier of a paid hosted validation API (attestwire.com), with development in a private repo and the public one as a synced storefront. Open-core funnel — briefly listed Aug 2026, delisted under the community-open-source criterion.
 
 ## Unmaintained
 
