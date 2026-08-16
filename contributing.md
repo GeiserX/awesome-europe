@@ -7,7 +7,7 @@ Thanks for your interest in contributing. This list grows thanks to the communit
 ### Adding a project
 
 - Make sure the project is **open source** with a public repository.
-- The project must be **fully usable for free, with no paid product behind it**. Open-source components that act as the free tier of a commercial API or hosted service (open-core funnels) are not accepted, even under a permissive license.
+- The project must be **fully usable for free**. Open-source components that act as the free tier of a commercial API or hosted service selling the same capability (open-core funnels) are not accepted, even under a permissive license. Vendor-backed libraries are welcome when the vendor's business is elsewhere and the library is a complete give-away.
 - The project must provide **support specifically for Europe** — EU institutions, regulations, standards, or cross-border infrastructure.
 - The project must be **actively maintained** (activity in the last 3 years) and not archived.
 - Each entry must follow the format: `- [Name](URL) - Brief description starting with a capital letter and ending with a period.`
