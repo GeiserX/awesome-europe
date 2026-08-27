@@ -23,11 +23,12 @@ Thanks for your interest in contributing. This list grows thanks to the communit
 ### Entry format
 
 ```markdown
-- [Name](https://github.com/owner/repo) ![Stars](https://img.shields.io/github/stars/owner/repo?style=flat-square&label=⭐) ![Language](https://img.shields.io/github/languages/top/owner/repo?style=flat-square) ![License](https://img.shields.io/github/license/owner/repo?style=flat-square) ![GDPR](https://img.shields.io/badge/GDPR-003399?style=flat-square) ([Demo](https://example.com)) - Description starting with a capital letter and ending with a period.
+- [Name](https://github.com/owner/repo) ![Stars](https://img.shields.io/github/stars/owner/repo?style=flat-square&label=⭐) ![Last Commit](https://img.shields.io/github/last-commit/owner/repo?style=flat-square) ![Language](https://img.shields.io/github/languages/top/owner/repo?style=flat-square) ![License](https://img.shields.io/github/license/owner/repo?style=flat-square) ![GDPR](https://img.shields.io/badge/GDPR-003399?style=flat-square) ([Demo](https://example.com)) - Description starting with a capital letter and ending with a period.
 ```
 
 Each entry includes (in this order):
 - **Star badge** (required): `![Stars](https://img.shields.io/github/stars/owner/repo?style=flat-square&label=⭐)` — auto-updating.
+- **Last Commit badge** (required): `![Last Commit](https://img.shields.io/github/last-commit/owner/repo?style=flat-square)` — auto-updating.
 - **Language badge** (required): `![Language](https://img.shields.io/github/languages/top/owner/repo?style=flat-square)` — auto-updating.
 - **License badge** (required): `![License](https://img.shields.io/github/license/owner/repo?style=flat-square)` — auto-updating.
 - **EU regulation badges** (required): Blue badges (`#003399`) for each EU regulation/standard. E.g. `![GDPR](https://img.shields.io/badge/GDPR-003399?style=flat-square)`. Common tags: `GDPR`, `eIDAS`, `EN16931`, `PSD2`, `VAT`, `AMLD`, `NIS2`, `DORA`, `CRA`, `AI Act`, `DSA`, `DMA`, `INSPIRE`, `Copernicus`, `FIWARE`, `CERN`, `Peppol`, `SEPA`, `CSIRT`, `EAA`, `ITS`, `Data Spaces`, `Open Data`, `eProcurement`, `CAP`, `EHDS`.
