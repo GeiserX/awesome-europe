@@ -2,3 +2,8 @@
 https://hepdata.net/
 https://transport.ec.europa.eu/
 https://www.copernicus.eu/
+
+# Enlaces de la insignia de estrellas: /stargazers devuelve 404 a los clientes
+# anonimos, asi que fallaban todas las entradas en cada ejecucion y tapaban
+# cualquier enlace roto de verdad. La URL base del repo si se comprueba.
+https://github.com/.*/stargazers

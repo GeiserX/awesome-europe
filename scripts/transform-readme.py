@@ -3,6 +3,7 @@
 
 import json
 import re
+from urllib.parse import quote
 import sys
 
 # Load metadata
@@ -340,6 +341,19 @@ def get_default_branch(owner_repo):
     return meta.get("default_branch", "main")
 
 
+def get_license_url(owner_repo, branch):
+    """Destino de la insignia de licencia: el fichero real, no una ruta supuesta."""
+    meta = metadata.get(owner_repo, {})
+    if "license_path" not in meta:
+        return f"https://github.com/{owner_repo}/blob/{branch}/LICENSE"
+    path = meta.get("license_path") or ""
+    if not path:
+        return f"https://github.com/{owner_repo}"
+    if path.startswith("/") or ".." in path.split("/"):
+        return f"https://github.com/{owner_repo}"
+    return f"https://github.com/{owner_repo}/blob/{branch}/{quote(path)}"
+
+
 def get_demo_url(owner_repo):
     """Get demo URL if available. Only uses curated DEMO_URLS dict."""
     return DEMO_URLS.get(owner_repo)
@@ -377,7 +391,7 @@ def transform_entry(line, current_section):
     star_badge = f"[![Stars](https://img.shields.io/github/stars/{owner_repo}?style=flat-square&label=⭐)](https://github.com/{owner_repo}/stargazers)"
     commit_badge = f"[![Last Commit](https://img.shields.io/github/last-commit/{owner_repo}?style=flat-square)](https://github.com/{owner_repo}/commits/{branch})"
     lang_badge = f"[![Language](https://img.shields.io/github/languages/top/{owner_repo}?style=flat-square)](https://github.com/{owner_repo})"
-    license_badge = f"[![License](https://img.shields.io/github/license/{owner_repo}?style=flat-square)](https://github.com/{owner_repo}/blob/{branch}/LICENSE)"
+    license_badge = f"[![License](https://img.shields.io/github/license/{owner_repo}?style=flat-square)]({get_license_url(owner_repo, branch)})"
 
     # EU regulation tags as clickable blue badges (linking to official pages)
     eu_tags = get_eu_tags(current_section, name, raw_desc)
