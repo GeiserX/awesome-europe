@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <clipPath id="a-clip"><rect width="800" height="200" rx="16" ry="16"/></clipPath>
+    <linearGradient id="a-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a0a0f"/>
+      <stop offset="0.55" stop-color="#14141f"/>
+      <stop offset="1" stop-color="#2a1d19"/>
+    </linearGradient>
+    <linearGradient id="a-stone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e0bf86"/>
+      <stop offset="0.5" stop-color="#c49a60"/>
+      <stop offset="1" stop-color="#8a6a44"/>
+    </linearGradient>
+    <linearGradient id="a-water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1d3f3c"/>
+      <stop offset="1" stop-color="#0d1a1a"/>
+    </linearGradient>
+    <linearGradient id="a-refl" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c49a60" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#c49a60" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="a-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="40"/></filter>
+  </defs>
+  <g clip-path="url(#a-clip)">
+    <rect width="800" height="200" fill="url(#a-sky)"/>
+    <ellipse cx="400" cy="150" rx="260" ry="70" fill="#d98a4a" opacity="0.22" filter="url(#a-blur)"/>
+    <path fill="#171c15" d="M-2,202V98C70,98 150,101 180,106C192,108 196,118 198,132C200,146 206,153 226,155C250,157 266,157 272,166C276,174 276,184 284,189H-2Z"/>
+    <path fill="#151a13" d="M802,202V92C730,94 680,99 648,104C638,106 636,118 636,132C636,146 630,153 606,155C574,157 540,157 532,166C526,174 526,184 518,189H802Z"/>
+    <path fill="none" stroke="#3a4530" stroke-width="1.2" opacity="0.8" d="M-2,98C70,98 150,101 180,106C192,108 196,118 198,132M802,92C730,94 680,99 648,104C638,106 636,118 636,132"/>
+    <path fill="url(#a-stone)" fill-rule="evenodd" d="M274.1,188V152.8H525.9V188ZM283.7,188V168.7A12.4,12.4 0 0 1 308.5,168.7V188ZM318.1,188V171.7A15.4,15.4 0 0 1 348.8,171.7V188ZM358.4,188V175.9A19.6,19.6 0 0 1 397.6,175.9V188ZM407.2,188V173.5A17.2,17.2 0 0 1 441.6,173.5V188ZM451.2,188V171.7A15.4,15.4 0 0 1 481.9,171.7V188ZM491.5,188V168.7A12.4,12.4 0 0 1 516.3,168.7V188ZM198.9,152.8V120.8H638.7V152.8ZM208.5,152.8V138A14,14 0 0 1 236.5,138V152.8ZM246.1,152.8V138A14,14 0 0 1 274.1,138V152.8ZM283.7,152.8V136.4A12.4,12.4 0 0 1 308.5,136.4V152.8ZM318.1,152.8V139.4A15.4,15.4 0 0 1 348.8,139.4V152.8ZM358.4,152.8V143.6A19.6,19.6 0 0 1 397.6,143.6V152.8ZM407.2,152.8V141.2A17.2,17.2 0 0 1 441.6,141.2V152.8ZM451.2,152.8V139.4A15.4,15.4 0 0 1 481.9,139.4V152.8ZM491.5,152.8V136.4A12.4,12.4 0 0 1 516.3,136.4V152.8ZM525.9,152.8V138A14,14 0 0 1 553.9,138V152.8ZM563.5,152.8V138A14,14 0 0 1 591.5,138V152.8ZM601.1,152.8V138A14,14 0 0 1 629.1,138V152.8ZM170,120.8V109.6H658V120.8ZM172.8,120.8V116A4.15,4.15 0 0 1 181.1,116V120.8ZM186.8,120.8V116A4.15,4.15 0 0 1 195.1,116V120.8ZM200.7,120.8V116A4.15,4.15 0 0 1 209.0,116V120.8ZM214.7,120.8V116A4.15,4.15 0 0 1 223.0,116V120.8ZM228.6,120.8V116A4.15,4.15 0 0 1 236.9,116V120.8ZM242.5,120.8V116A4.15,4.15 0 0 1 250.8,116V120.8ZM256.5,120.8V116A4.15,4.15 0 0 1 264.8,116V120.8ZM270.4,120.8V116A4.15,4.15 0 0 1 278.7,116V120.8ZM284.4,120.8V116A4.15,4.15 0 0 1 292.7,116V120.8ZM298.3,120.8V116A4.15,4.15 0 0 1 306.6,116V120.8ZM312.2,120.8V116A4.15,4.15 0 0 1 320.5,116V120.8ZM326.2,120.8V116A4.15,4.15 0 0 1 334.5,116V120.8ZM340.1,120.8V116A4.15,4.15 0 0 1 348.4,116V120.8ZM354.1,120.8V116A4.15,4.15 0 0 1 362.4,116V120.8ZM368.0,120.8V116A4.15,4.15 0 0 1 376.3,116V120.8ZM382.0,120.8V116A4.15,4.15 0 0 1 390.3,116V120.8ZM395.9,120.8V116A4.15,4.15 0 0 1 404.2,116V120.8ZM409.9,120.8V116A4.15,4.15 0 0 1 418.1,116V120.8ZM423.8,120.8V116A4.15,4.15 0 0 1 432.1,116V120.8ZM437.7,120.8V116A4.15,4.15 0 0 1 446.0,116V120.8ZM451.7,120.8V116A4.15,4.15 0 0 1 460.0,116V120.8ZM465.6,120.8V116A4.15,4.15 0 0 1 473.9,116V120.8ZM479.6,120.8V116A4.15,4.15 0 0 1 487.9,116V120.8ZM493.5,120.8V116A4.15,4.15 0 0 1 501.8,116V120.8ZM507.5,120.8V116A4.15,4.15 0 0 1 515.8,116V120.8ZM521.4,120.8V116A4.15,4.15 0 0 1 529.7,116V120.8ZM535.3,120.8V116A4.15,4.15 0 0 1 543.6,116V120.8ZM549.3,120.8V116A4.15,4.15 0 0 1 557.6,116V120.8ZM563.2,120.8V116A4.15,4.15 0 0 1 571.5,116V120.8ZM577.2,120.8V116A4.15,4.15 0 0 1 585.5,116V120.8ZM591.1,120.8V116A4.15,4.15 0 0 1 599.4,116V120.8ZM605.1,120.8V116A4.15,4.15 0 0 1 613.4,116V120.8ZM619.0,120.8V116A4.15,4.15 0 0 1 627.3,116V120.8ZM632.9,120.8V116A4.15,4.15 0 0 1 641.2,116V120.8ZM646.9,120.8V116A4.15,4.15 0 0 1 655.2,116V120.8Z"/>
+    <g fill="#f3dcae" opacity="0.55">
+      <rect x="170" y="109.6" width="488" height="1.2"/>
+      <rect x="198.9" y="120.8" width="439.8" height="1.2"/>
+      <rect x="274.1" y="152.8" width="251.8" height="1.2"/>
+    </g>
+    <rect x="0" y="188" width="800" height="12" fill="url(#a-water)"/>
+    <g transform="translate(0,376) scale(1,-1)">
+      <path fill="url(#a-refl)" fill-rule="evenodd" d="M274.1,188V152.8H525.9V188ZM283.7,188V168.7A12.4,12.4 0 0 1 308.5,168.7V188ZM318.1,188V171.7A15.4,15.4 0 0 1 348.8,171.7V188ZM358.4,188V175.9A19.6,19.6 0 0 1 397.6,175.9V188ZM407.2,188V173.5A17.2,17.2 0 0 1 441.6,173.5V188ZM451.2,188V171.7A15.4,15.4 0 0 1 481.9,171.7V188ZM491.5,188V168.7A12.4,12.4 0 0 1 516.3,168.7V188Z"/>
+    </g>
+    <g fill="#9fd3c7" opacity="0.18">
+      <rect x="330" y="192" width="46" height="0.8"/>
+      <rect x="420" y="195" width="30" height="0.8"/>
+      <rect x="360" y="197" width="22" height="0.8"/>
+    </g>
+    <g fill="#222b1c"><ellipse cx="788.2" cy="130.5" rx="2.7" ry="1.6"/><ellipse cx="67.6" cy="116.2" rx="4.3" ry="2.6"/><ellipse cx="19" cy="138" rx="3.3" ry="2"/><ellipse cx="654.9" cy="151.3" rx="5.8" ry="3.5"/><ellipse cx="104.4" cy="140.1" rx="5.9" ry="3.6"/><ellipse cx="100.9" cy="122.6" rx="4" ry="2.4"/><ellipse cx="103.3" cy="150.9" rx="4.9" ry="2.9"/><ellipse cx="105.2" cy="156.2" rx="3.8" ry="2.3"/><ellipse cx="102.2" cy="154.7" rx="4.2" ry="2.5"/><ellipse cx="762.6" cy="137" rx="5.7" ry="3.4"/><ellipse cx="691" cy="163.8" rx="4.9" ry="3"/><ellipse cx="18.2" cy="130.2" rx="4.2" ry="2.5"/><ellipse cx="755.4" cy="125.8" rx="5.9" ry="3.6"/><ellipse cx="93.1" cy="124.4" rx="3.7" ry="2.2"/><ellipse cx="709.3" cy="173.6" rx="2.8" ry="1.7"/><ellipse cx="697" cy="134.1" rx="4.2" ry="2.5"/><ellipse cx="656.3" cy="120" rx="3.4" ry="2.1"/><ellipse cx="14.6" cy="156.5" rx="4.8" ry="2.9"/><ellipse cx="688.7" cy="137" rx="4.8" ry="2.9"/><ellipse cx="167.7" cy="140" rx="4.6" ry="2.8"/><ellipse cx="654.8" cy="164.7" rx="3" ry="1.8"/><ellipse cx="73.2" cy="173.2" rx="4.2" ry="2.5"/><ellipse cx="82.2" cy="149.3" rx="5.6" ry="3.4"/><ellipse cx="775.6" cy="123.7" rx="4" ry="2.4"/><ellipse cx="748.4" cy="132.4" rx="3.3" ry="2"/><ellipse cx="34.7" cy="126.4" rx="3.3" ry="2"/><ellipse cx="770.7" cy="117.7" rx="3.5" ry="2.1"/><ellipse cx="76.9" cy="137.2" rx="4.5" ry="2.7"/><ellipse cx="124.1" cy="148.8" rx="4.7" ry="2.8"/><ellipse cx="83.5" cy="170.6" rx="5.8" ry="3.5"/><ellipse cx="705.7" cy="136.3" rx="4.2" ry="2.5"/><ellipse cx="655.3" cy="118.4" rx="3.2" ry="1.9"/><ellipse cx="23.1" cy="150.2" rx="2.9" ry="1.7"/><ellipse cx="97.4" cy="176.3" rx="4.6" ry="2.8"/><ellipse cx="156.1" cy="156.6" rx="3" ry="1.8"/><ellipse cx="789.3" cy="144.1" rx="4.2" ry="2.5"/><ellipse cx="151.7" cy="181.5" rx="4.1" ry="2.5"/><ellipse cx="692.8" cy="120.8" rx="5.1" ry="3.1"/></g>
+    <text x="400" y="62" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="50" font-weight="700" letter-spacing="0.5" fill="#ffffff">awesome-<tspan fill="#e6c48c">europe</tspan></text>
+    <text x="400" y="88" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" letter-spacing="4" fill="#ffffff" fill-opacity="0.55">OPEN SOURCE FOR EUROPE</text>
+  </g>
+</svg>
