@@ -9,7 +9,7 @@ Thanks for your interest in contributing. This list grows thanks to the communit
 - Make sure the project is **open source** with a public repository.
 - The project must be **fully usable for free**. Open-source components that act as the free tier of a commercial API or hosted service selling the same capability (open-core funnels) are not accepted, even under a permissive license. Vendor-backed libraries are welcome when the vendor's business is elsewhere and the library is a complete give-away.
 - The project must provide **support specifically for Europe** — EU institutions, regulations, standards, or cross-border infrastructure.
-- The project must be **actively maintained** (activity in the last 3 years) and not archived.
+- The project must **still do its job** and not be archived. If it consumes a European service or API, it must still work against it; if it consumes none (a validator, a parser, a dataset), its logic being correct is enough. We do not require recent commits: an archived project is removed as such; one that is not archived is removed only when it no longer works, even if its last commit was yesterday, and removing it requires showing the failure.
 - Each entry must follow the format: `- [Name](URL) - Brief description starting with a capital letter and ending with a period.`
 - Add the entry in **alphabetical order** within the corresponding category.
 - Check for **duplicates** and typos.
@@ -51,7 +51,7 @@ Additional rules:
 
 ### Reporting issues
 
-If you find broken links, archived projects, or incorrect information, open an issue describing the problem.
+If you find broken links, archived projects, projects that stopped working, or incorrect information, open an issue describing the problem.
 
 ## Code of conduct
 
