@@ -44,3 +44,7 @@ Repos that were removed from the list because they were archived, deprecated, or
 - [workalendar](https://github.com/workalendar/workalendar) - Python library for holidays and working days computation across European countries. Unmaintained since early 2023.
 
 ## Other
+
+## Missing or renamed repos
+
+- `CyberAlbSecOP/Awesome_NIS2_Directive` - Curated resources, information, and tools for the EU NIS2 Directive on network and information security. Repo deleted or made private (GitHub returns 404).
