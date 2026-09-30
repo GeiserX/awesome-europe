@@ -1,8 +1,10 @@
-# One-page site: docs/index.md includes README.md word for word, so the list
-# stays the single source that awesome-lint-extra governs. Never copy it.
+# Three pages, no copies: docs/index.md is written here; docs/list.md includes
+# README.md from "## Contents" to the end (a pymdownx.snippets section); and
+# docs/contributing.md includes the root contributing.md. The README stays the
+# single source that awesome-lint-extra governs.
 site_name: Awesome Europe
 site_url: https://geiserx.github.io/awesome-europe/
-site_description: A curated list of open source software that provides support specifically for Europe — its institutions, regulations, standards, and cross-border infrastructure.
+site_description: A curated list of open source software built for Europe, its institutions, regulations, standards and cross-border infrastructure.
 repo_url: https://github.com/GeiserX/awesome-europe
 repo_name: GeiserX/awesome-europe
 
@@ -13,6 +15,8 @@ strict: true
 theme:
   name: material
   language: en
+  logo: images/logo.svg
+  favicon: images/icon.svg
   # Dark first: the first palette entry is the default, and the banner is dark.
   palette:
     - scheme: slate
@@ -27,20 +31,27 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-  # One page: no tabs, no sections. No edit button either, because the page
-  # file is a one-line include; entries are edited in README.md.
+  # No tabs: three pages are a nav, not sections, and Material would fold them
+  # into a single tab. No edit button: two of the three pages are includes, so
+  # the edit link would open a one-line stub instead of the README.
   features:
     - navigation.top
+    - navigation.footer
     - content.code.copy
     - search.highlight
     - search.suggest
+    - toc.follow
   icon:
     repo: fontawesome/brands/github
 
 # MkDocs reports most link problems as `info`, which --strict ignores. Every
-# line here promotes one of them to a warning so the build fails on it. For
-# this site the one that matters is links.anchors: every entry of the
-# Contents list must land on a real section heading.
+# line here promotes one of them to a warning so the build fails on it. The one
+# that matters most here is links.anchors: every entry of the README's Contents
+# list, and every category link on the home page, must land on a real heading
+# of the list page. A missing or misspelled `[start:list]` marker never gets
+# this far: pymdownx.snippets (check_paths below) raises SnippetMissingError
+# and the build aborts. links.anchors guards the other case, a marker moved
+# so that a category heading falls outside the included section.
 validation:
   nav:
     omitted_files: warn
@@ -55,6 +66,12 @@ validation:
 plugins:
   - search
 
+# The list page renders about 2,700 shields.io badges. The hook marks every
+# <img> on that page lazy, so a browser fetches only the badges near the
+# viewport instead of all of them on load.
+hooks:
+  - hooks/lazy_images.py
+
 markdown_extensions:
   - admonition
   - pymdownx.details
@@ -62,20 +79,27 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
-  # docs/index.md is `--8<-- "README.md"`. base_path includes the repository
-  # root; check_paths makes a renamed or missing README fail the build instead
-  # of rendering an empty page.
+  # Includes resolve against the repository root only: docs/list.md pulls
+  # README.md:list and docs/contributing.md pulls contributing.md. Listing docs/
+  # as a second base would make "contributing.md" ambiguous between the root
+  # file and the page that includes it. check_paths makes a renamed or missing
+  # file, or a missing section marker, raise SnippetMissingError and abort the
+  # build instead of rendering an empty page.
   - pymdownx.snippets:
       base_path:
         - .
-        - docs
       check_paths: true
   - attr_list
-  # Renders the README's <div align="center"> header block.
+  # Renders the README's <div align="center"> and the home page's grid cards.
   - md_in_html
+  # Turns :material-xxx: shortcodes into icons on the home page cards.
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - tables
-  # GitHub-style anchors keep accents. The headings here are ASCII today; the
-  # same slugify as awesome-spain protects a future accented heading.
+  # GitHub-style anchors: "VAT, Customs, and Trade" becomes
+  # #vat-customs-and-trade on GitHub and here alike, so the README's Contents
+  # links keep working on the site.
   - toc:
       permalink: true
       slugify: !!python/object/apply:pymdownx.slugs.slugify
@@ -101,3 +125,5 @@ exclude_docs: |
 
 nav:
   - Home: index.md
+  - The list: list.md
+  - Contributing: contributing.md
