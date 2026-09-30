@@ -1,4 +1,4 @@
-# Contributing to Awesome Europe
+# Contributing
 
 Thanks for your interest in contributing. This list grows thanks to the community.
 
@@ -8,7 +8,7 @@ Thanks for your interest in contributing. This list grows thanks to the communit
 
 - Make sure the project is **open source** with a public repository.
 - The project must be **fully usable for free**. Open-source components that act as the free tier of a commercial API or hosted service selling the same capability (open-core funnels) are not accepted, even under a permissive license. Vendor-backed libraries are welcome when the vendor's business is elsewhere and the library is a complete give-away.
-- The project must provide **support specifically for Europe** — EU institutions, regulations, standards, or cross-border infrastructure.
+- The project must provide **support specifically for Europe**: EU institutions, regulations, standards or cross-border infrastructure. The EU-27 and the EEA are in scope; Switzerland and the UK only when the software targets them alongside the EU. Single-country software belongs in a country list.
 - The project must **still do its job** and not be archived. If it consumes a European service or API, it must still work against it; if it consumes none (a validator, a parser, a dataset), its logic being correct is enough. We do not require recent commits: an archived project is removed as such; one that is not archived is removed only when it no longer works, even if its last commit was yesterday, and removing it requires showing the failure.
 - Each entry must follow the format: `- [Name](URL) - Brief description starting with a capital letter and ending with a period.`
 - Add the entry in **alphabetical order** within the corresponding category.
@@ -23,17 +23,19 @@ Thanks for your interest in contributing. This list grows thanks to the communit
 ### Entry format
 
 ```markdown
-- [Name](https://github.com/owner/repo) ![Stars](https://img.shields.io/github/stars/owner/repo?style=flat-square&label=⭐) ![Last Commit](https://img.shields.io/github/last-commit/owner/repo?style=flat-square) ![Language](https://img.shields.io/github/languages/top/owner/repo?style=flat-square) ![License](https://img.shields.io/github/license/owner/repo?style=flat-square) ![GDPR](https://img.shields.io/badge/GDPR-003399?style=flat-square) ([Demo](https://example.com)) - Description starting with a capital letter and ending with a period.
+- [Name](https://github.com/owner/repo) [![Stars](https://img.shields.io/github/stars/owner/repo?style=flat-square&label=⭐)](https://github.com/owner/repo/stargazers) [![Last Commit](https://img.shields.io/github/last-commit/owner/repo?style=flat-square)](https://github.com/owner/repo/commits/main) [![Language](https://img.shields.io/github/languages/top/owner/repo?style=flat-square)](https://github.com/owner/repo) [![License](https://img.shields.io/github/license/owner/repo?style=flat-square)](https://github.com/owner/repo/blob/main/LICENSE) [![GDPR](https://img.shields.io/badge/GDPR-003399?style=flat-square)](https://eur-lex.europa.eu/eli/reg/2016/679/oj) ([Demo](https://example.com)) - Description starting with a capital letter and ending with a period.
 ```
 
 Each entry includes (in this order):
-- **Star badge** (required): `![Stars](https://img.shields.io/github/stars/owner/repo?style=flat-square&label=⭐)` — auto-updating.
-- **Last Commit badge** (required): `![Last Commit](https://img.shields.io/github/last-commit/owner/repo?style=flat-square)` — auto-updating.
-- **Language badge** (required): `![Language](https://img.shields.io/github/languages/top/owner/repo?style=flat-square)` — auto-updating.
-- **License badge** (required): `![License](https://img.shields.io/github/license/owner/repo?style=flat-square)` — auto-updating.
-- **EU regulation badges** (required): Blue badges (`#003399`) for each EU regulation/standard. E.g. `![GDPR](https://img.shields.io/badge/GDPR-003399?style=flat-square)`. Common tags: `GDPR`, `eIDAS`, `EN16931`, `PSD2`, `VAT`, `AMLD`, `NIS2`, `DORA`, `CRA`, `AI Act`, `DSA`, `DMA`, `INSPIRE`, `Copernicus`, `FIWARE`, `CERN`, `Peppol`, `SEPA`, `CSIRT`, `EAA`, `ITS`, `Data Spaces`, `Open Data`, `eProcurement`, `CAP`, `EHDS`.
-- **Demo link** (optional): `([Demo](url))` — only if a live interactive instance is available (not a marketing page or docs).
+- **Star badge** (required): `[![Stars](https://img.shields.io/github/stars/owner/repo?style=flat-square&label=⭐)](https://github.com/owner/repo/stargazers)`, auto-updating.
+- **Last Commit badge** (required): `[![Last Commit](https://img.shields.io/github/last-commit/owner/repo?style=flat-square)](https://github.com/owner/repo/commits/main)`, auto-updating.
+- **Language badge** (required): `[![Language](https://img.shields.io/github/languages/top/owner/repo?style=flat-square)](https://github.com/owner/repo)`, auto-updating.
+- **License badge** (required): `[![License](https://img.shields.io/github/license/owner/repo?style=flat-square)](https://github.com/owner/repo/blob/main/LICENSE)`, auto-updating.
+- **EU regulation badges** (required): Blue badges (`#003399`) for each EU regulation/standard. E.g. `[![GDPR](https://img.shields.io/badge/GDPR-003399?style=flat-square)](https://eur-lex.europa.eu/eli/reg/2016/679/oj)`, linking the official page of the regulation. Common tags: `GDPR`, `eIDAS`, `EN16931`, `PSD2`, `VAT`, `AMLD`, `NIS2`, `DORA`, `CRA`, `AI Act`, `DSA`, `DMA`, `INSPIRE`, `Copernicus`, `FIWARE`, `CERN`, `Peppol`, `SEPA`, `CSIRT`, `EAA`, `ITS`, `Data Spaces`, `Open Data`, `eProcurement`, `CAP`, `EHDS`.
+- **Demo link** (optional): `([Demo](url))`, only if a live interactive instance is available (not a marketing page or docs).
 - **Description** (required): One sentence, starts with a capital letter, ends with a period. Placed at the end after the ` - ` separator.
+
+Maintainers generate the badges with the scripts in `scripts/`; a pull request may submit the plain `- [Name](URL) - Description.` line and let the pipeline add them.
 
 Additional rules:
 - Description **must not start with the project name**.

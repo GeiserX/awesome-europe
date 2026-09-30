@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="Awesome Europe">
+  <defs>
+    <clipPath id="i-clip"><rect width="160" height="160" rx="32" ry="32"/></clipPath>
+    <linearGradient id="i-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a0a0f"/>
+      <stop offset="0.6" stop-color="#14141f"/>
+      <stop offset="1" stop-color="#2c2233"/>
+    </linearGradient>
+    <radialGradient id="i-glow" cx="0.62" cy="0.55" r="0.5">
+      <stop offset="0" stop-color="#e08a78" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#e08a78" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="i-east" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#f6c3a8"/>
+      <stop offset="0.45" stop-color="#d98d7e"/>
+      <stop offset="1" stop-color="#5b3a55"/>
+    </linearGradient>
+    <linearGradient id="i-north" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6d7a9c"/>
+      <stop offset="0.5" stop-color="#3b4563"/>
+      <stop offset="1" stop-color="#1c2033"/>
+    </linearGradient>
+    <linearGradient id="i-lake" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a2034"/>
+      <stop offset="1" stop-color="#0a0a0f"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#i-clip)">
+    <rect width="160" height="160" fill="url(#i-sky)"/>
+    <rect width="160" height="160" fill="url(#i-glow)"/>
+    <g transform="translate(-537 -10)">
+      <path fill="url(#i-north)" d="M452,150 L486,134 L518,119 L544,108 L558,100 L566,97 L572,90 L584,72 L596,52 L606,36 L613,24 L617,18 L624,19 L630,22 L633,30 L635,42 L639,55 L646,66 L656,72 L664,76 L668,84 L680,96 L698,108 L724,118 L760,126 L800,132 L804,150Z"/>
+      <path fill="url(#i-east)" d="M452,150 L486,134 L518,119 L544,108 L558,100 L566,97 L572,90 L584,72 L596,52 L606,36 L613,24 L617,18 L616,34 L612,56 L606,78 L600,98 L592,120 L586,150Z"/>
+      <path fill="none" stroke="#fbe0d2" stroke-opacity="0.45" stroke-width="0.9" d="M617,18L616,34L612,56L606,78L600,98L592,120"/>
+    </g>
+    <rect x="0" y="140" width="160" height="20" fill="url(#i-lake)"/>
+  </g>
+</svg>

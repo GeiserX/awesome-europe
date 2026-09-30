@@ -1,11 +1,18 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/GeiserX/awesome-europe/main/docs/images/banner.svg" alt="Awesome Europe">
+  <img src="docs/images/banner.svg" alt="Awesome Europe">
   <br><br>
   <a href="https://awesome.re"><img src="https://awesome.re/badge-flat.svg" alt="Awesome"></a>
   <br><br>
-  <p>A curated list of open source software that provides support specifically for Europe — its institutions, regulations, standards, and cross-border infrastructure.</p>
+  <p>A curated list of open source software built for Europe: its institutions, regulations, standards and cross-border infrastructure.</p>
 </div>
 
+Over 500 projects in 27 categories, for developers who build for EU rules: e-invoicing (Peppol, EN 16931), digital identity (eIDAS), GDPR, payments (PSD2, SEPA), VAT (VIES), open data (Eurostat, INSPIRE) and more. Every entry links the regulation, institution or standard it supports.
+
+**Scope:** the EU-27 and the EEA (Norway, Iceland, Liechtenstein); Switzerland and the UK only when the software targets them alongside the EU. Software for a single country belongs in a [country list](#country-specific-awesome-lists). Software that is global and merely works in Europe is out of scope.
+
+Search the list at [geiserx.github.io/awesome-europe](https://geiserx.github.io/awesome-europe/).
+
+<!-- --8<-- [start:list] -->
 ## Contents
 
 <!--lint disable awesome-list-item-->
@@ -40,7 +47,7 @@
 
 <!--lint enable awesome-list-item-->
 
-> Badges show: ⭐ stars, last commit, main language and license. The coloured tags link to the official page of the EU regulation, institution or standard. **Demo** links point to public instances.
+> Badges show stars, last commit, main language and license. The blue tags link to the official page of the EU regulation, institution or standard. **Demo** links point to public instances.
 
 ## Accessibility
 
@@ -182,7 +189,7 @@ EU AI Act, Digital Services Act (DSA), Digital Markets Act (DMA), and related di
 ECTS, Erasmus+, Horizon Europe, CORDIS, OpenAIRE, EOSC, CERN, and European research infrastructure.
 
 - [Awesome CERN](https://github.com/CERN/awesome-cern) [![Stars](https://img.shields.io/github/stars/CERN/awesome-cern?style=flat-square&label=⭐)](https://github.com/CERN/awesome-cern/stargazers) [![Last Commit](https://img.shields.io/github/last-commit/CERN/awesome-cern?style=flat-square)](https://github.com/CERN/awesome-cern/commits/main) [![Language](https://img.shields.io/github/languages/top/CERN/awesome-cern?style=flat-square)](https://github.com/CERN/awesome-cern) [![License](https://img.shields.io/github/license/CERN/awesome-cern?style=flat-square)](https://github.com/CERN/awesome-cern) [![CERN](https://img.shields.io/badge/CERN-003399?style=flat-square)](https://home.cern/) - Curated list of open source frameworks, libraries and software developed by CERN.
-- [B2SHARE](https://github.com/EUDAT-B2SHARE/b2share) [![Stars](https://img.shields.io/github/stars/EUDAT-B2SHARE/b2share?style=flat-square&label=⭐)](https://github.com/EUDAT-B2SHARE/b2share/stargazers) [![Last Commit](https://img.shields.io/github/last-commit/EUDAT-B2SHARE/b2share?style=flat-square)](https://github.com/EUDAT-B2SHARE/b2share/commits/master) [![Language](https://img.shields.io/github/languages/top/EUDAT-B2SHARE/b2share?style=flat-square)](https://github.com/EUDAT-B2SHARE/b2share) [![License](https://img.shields.io/github/license/EUDAT-B2SHARE/b2share?style=flat-square)](https://github.com/EUDAT-B2SHARE/b2share/blob/master/LICENSE) ([Demo](https://b2share.eudat.eu)) - EUDAT collaborative data infrastructure service for storing and sharing European research data.
+- [B2SHARE](https://github.com/EUDAT-B2SHARE/b2share) [![Stars](https://img.shields.io/github/stars/EUDAT-B2SHARE/b2share?style=flat-square&label=⭐)](https://github.com/EUDAT-B2SHARE/b2share/stargazers) [![Last Commit](https://img.shields.io/github/last-commit/EUDAT-B2SHARE/b2share?style=flat-square)](https://github.com/EUDAT-B2SHARE/b2share/commits/master) [![Language](https://img.shields.io/github/languages/top/EUDAT-B2SHARE/b2share?style=flat-square)](https://github.com/EUDAT-B2SHARE/b2share) [![License](https://img.shields.io/github/license/EUDAT-B2SHARE/b2share?style=flat-square)](https://github.com/EUDAT-B2SHARE/b2share/blob/master/LICENSE) - EUDAT collaborative data infrastructure service for storing and sharing European research data.
 - [CDS Videos](https://github.com/CERNDocumentServer/cds-videos) [![Stars](https://img.shields.io/github/stars/CERNDocumentServer/cds-videos?style=flat-square&label=⭐)](https://github.com/CERNDocumentServer/cds-videos/stargazers) [![Last Commit](https://img.shields.io/github/last-commit/CERNDocumentServer/cds-videos?style=flat-square)](https://github.com/CERNDocumentServer/cds-videos/commits/main) [![Language](https://img.shields.io/github/languages/top/CERNDocumentServer/cds-videos?style=flat-square)](https://github.com/CERNDocumentServer/cds-videos) [![License](https://img.shields.io/github/license/CERNDocumentServer/cds-videos?style=flat-square)](https://github.com/CERNDocumentServer/cds-videos/blob/main/LICENSE) [![CERN](https://img.shields.io/badge/CERN-003399?style=flat-square)](https://home.cern/) ([Demo](https://videos.cern.ch)) - CERN Document Server for accessing articles, reports and multimedia content in high-energy physics.
 - [CERN Analysis Preservation](https://github.com/cernanalysispreservation/analysispreservation.cern.ch) [![Stars](https://img.shields.io/github/stars/cernanalysispreservation/analysispreservation.cern.ch?style=flat-square&label=⭐)](https://github.com/cernanalysispreservation/analysispreservation.cern.ch/stargazers) [![Last Commit](https://img.shields.io/github/last-commit/cernanalysispreservation/analysispreservation.cern.ch?style=flat-square)](https://github.com/cernanalysispreservation/analysispreservation.cern.ch/commits/master) [![Language](https://img.shields.io/github/languages/top/cernanalysispreservation/analysispreservation.cern.ch?style=flat-square)](https://github.com/cernanalysispreservation/analysispreservation.cern.ch) [![License](https://img.shields.io/github/license/cernanalysispreservation/analysispreservation.cern.ch?style=flat-square)](https://github.com/cernanalysispreservation/analysispreservation.cern.ch/blob/master/LICENSE) [![CERN](https://img.shields.io/badge/CERN-003399?style=flat-square)](https://home.cern/) ([Demo](https://analysispreservation.cern.ch)) - Portal for capturing, preserving and reusing physics analyses at CERN.
 - [CERN C++ Course](https://github.com/hsf-training/cpluspluscourse) [![Stars](https://img.shields.io/github/stars/hsf-training/cpluspluscourse?style=flat-square&label=⭐)](https://github.com/hsf-training/cpluspluscourse/stargazers) [![Last Commit](https://img.shields.io/github/last-commit/hsf-training/cpluspluscourse?style=flat-square)](https://github.com/hsf-training/cpluspluscourse/commits/master) [![Language](https://img.shields.io/github/languages/top/hsf-training/cpluspluscourse?style=flat-square)](https://github.com/hsf-training/cpluspluscourse) [![License](https://img.shields.io/github/license/hsf-training/cpluspluscourse?style=flat-square)](https://github.com/hsf-training/cpluspluscourse/blob/master/LICENSE) [![CERN](https://img.shields.io/badge/CERN-003399?style=flat-square)](https://home.cern/) - C++ course taught at CERN by the HEP Software Foundation.
@@ -723,11 +730,11 @@ EU VAT system (VIES, OSS/IOSS), TARIC customs tariffs, CN codes, EORI, and Intra
 
 ## Contributing
 
-Contributions are welcome. Read the [contributing guidelines](https://github.com/GeiserX/awesome-europe/blob/main/contributing.md) before submitting a pull request.
+Contributions are welcome. Read the [contributing guidelines](contributing.md) before submitting a pull request. Every pull request is checked by [awesome-lint-extra](https://github.com/GeiserX/awesome-lint-extra) and a link checker. Projects that were removed, and why, are recorded in [DELETED.md](https://github.com/GeiserX/awesome-europe/blob/main/DELETED.md).
 
-## Footnotes
+## Badge for listed projects
 
-**Badge:** If your project is listed here, you can add one of these badges to your README:
+If your project is listed here, add one of these badges to its README:
 
 ![listed on awesome-europe](https://img.shields.io/badge/listed%20on-awesome--europe-ffcc00?style=flat&logo=europeanunion&logoColor=ffcc00&labelColor=003399) ![listed on awesome-europe](https://img.shields.io/badge/listed%20on-awesome--europe-ffcc00?style=flat-square&logo=europeanunion&logoColor=ffcc00&labelColor=003399) ![listed on awesome-europe](https://img.shields.io/badge/listed%20on-awesome--europe-ffcc00?style=plastic&logo=europeanunion&logoColor=ffcc00&labelColor=003399) ![listed on awesome-europe](https://img.shields.io/badge/listed%20on-awesome--europe-ffcc00?style=for-the-badge&logo=europeanunion&logoColor=ffcc00&labelColor=003399)
 
@@ -751,6 +758,7 @@ For the badge (large):
 [![listed on awesome-europe](https://img.shields.io/badge/listed%20on-awesome--europe-ffcc00?style=for-the-badge&logo=europeanunion&logoColor=ffcc00&labelColor=003399)](https://github.com/GeiserX/awesome-europe#readme)
 ```
 
-**Note:** This list focuses on open source software that provides **support specifically for Europe** — its institutions, regulations, standards, and cross-border infrastructure. The scope covers the **EU-27 and EEA** (Norway, Iceland, Liechtenstein). Software specific to a single country belongs in country-specific awesome lists. Software that is global and merely happens to work in Europe is also out of scope.
+**Note:** the list covers software built for Europe's institutions, regulations and standards in the EU-27 and the EEA. Software for a single country, or global software that merely works in Europe, is out of scope.
 
-**Disclaimer:** No projects related to pornography, NSFW content, gambling, religion, partisan politics, or any other controversial topic are accepted. This list aims to be a neutral and useful technical resource for the developer community.
+**Disclaimer:** projects about pornography, NSFW content, gambling, religion or partisan politics are not accepted. The list is a neutral technical resource.
+<!-- --8<-- [end:list] -->

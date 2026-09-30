@@ -14,22 +14,11 @@ I will respond within **48 hours** and work with you to understand and address t
 
 ### What to Include
 
-- Type of issue (e.g., XSS, SQL injection, authentication bypass)
-- Full paths of affected source files
-- Step-by-step instructions to reproduce
-- Proof-of-concept or exploit code (if possible)
-- Impact assessment and potential attack scenarios
+Describe which entry or link is affected and what you observed.
 
 ## Supported Versions
 
 Only the latest version receives security updates. Please always use the most recent release.
-
-## Security Best Practices for Contributors
-
-1. **Never commit secrets** — use environment variables
-2. **Validate all input** — especially from external sources
-3. **Keep dependencies updated** — Dependabot is enabled on this repo
-4. **Follow the principle of least privilege** in all code
 
 ## Contact
 
