@@ -1,6 +1,7 @@
 ---
 hide:
   - navigation
+  - toc
 ---
 
 # Awesome Europe { .ae-visually-hidden }
