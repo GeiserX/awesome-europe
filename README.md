@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="docs/images/banner.svg" alt="Awesome Europe">
+  <img src="https://raw.githubusercontent.com/GeiserX/awesome-europe/main/docs/images/banner.svg" alt="Awesome Europe">
   <br><br>
   <a href="https://awesome.re"><img src="https://awesome.re/badge-flat.svg" alt="Awesome"></a>
   <br><br>
@@ -723,7 +723,7 @@ EU VAT system (VIES, OSS/IOSS), TARIC customs tariffs, CN codes, EORI, and Intra
 
 ## Contributing
 
-Contributions are welcome. Read the [contributing guidelines](contributing.md) before submitting a pull request.
+Contributions are welcome. Read the [contributing guidelines](https://github.com/GeiserX/awesome-europe/blob/main/contributing.md) before submitting a pull request.
 
 ## Footnotes
 
