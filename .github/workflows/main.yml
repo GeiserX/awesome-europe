@@ -5,7 +5,7 @@ on:
   pull_request:
     branches: [main]
 
-# Ninguno de los trabajos escribe nada: solo leen el repositorio.
+# No job writes anything: they only read the repository.
 permissions:
   contents: read
 

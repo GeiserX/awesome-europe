@@ -1,11 +1,18 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/GeiserX/awesome-europe/main/docs/images/banner.svg" alt="Awesome Europe">
+  <img src="docs/images/banner.svg" alt="Awesome Europe">
   <br><br>
   <a href="https://awesome.re"><img src="https://awesome.re/badge-flat.svg" alt="Awesome"></a>
   <br><br>
-  <p>A curated list of open source software that provides support specifically for Europe — its institutions, regulations, standards, and cross-border infrastructure.</p>
+  <p>A curated list of open source software built for Europe: its institutions, regulations, standards and cross-border infrastructure.</p>
 </div>
 
+Over 500 projects in 27 categories, for developers who build for EU rules: e-invoicing (Peppol, EN 16931), digital identity (eIDAS), GDPR, payments (PSD2, SEPA), VAT (VIES), open data (Eurostat, INSPIRE) and more. Every entry links the regulation, institution or standard it supports.
+
+**Scope:** the EU-27 and the EEA (Norway, Iceland, Liechtenstein); Switzerland and the UK only when the software targets them alongside the EU. Software for a single country belongs in a [country list](#country-specific-awesome-lists). Software that is global and merely works in Europe is out of scope.
+
+Search the list at [geiserx.github.io/awesome-europe](https://geiserx.github.io/awesome-europe/list/).
+
+<!-- --8<-- [start:list] -->
 ## Contents
 
 <!--lint disable awesome-list-item-->
@@ -40,7 +47,7 @@
 
 <!--lint enable awesome-list-item-->
 
-> Badges show: ⭐ stars, last commit, main language and license. The coloured tags link to the official page of the EU regulation, institution or standard. **Demo** links point to public instances.
+> Badges show stars, last commit, main language and license. The blue tags link to the official page of the EU regulation, institution or standard. **Demo** links point to public instances.
 
 ## Accessibility
 
@@ -723,11 +730,13 @@ EU VAT system (VIES, OSS/IOSS), TARIC customs tariffs, CN codes, EORI, and Intra
 
 ## Contributing
 
-Contributions are welcome. Read the [contributing guidelines](https://github.com/GeiserX/awesome-europe/blob/main/contributing.md) before submitting a pull request.
+Contributions are welcome. Read the [contributing guidelines](contributing.md) before submitting a pull request. Every pull request is checked by [awesome-lint-extra](https://github.com/GeiserX/awesome-lint-extra) and a link checker. Projects that were removed, and why, are recorded in [DELETED.md](https://github.com/GeiserX/awesome-europe/blob/main/DELETED.md).
 
-## Footnotes
+Projects about pornography, NSFW content, gambling, religion or partisan politics are not accepted. The list is a neutral technical resource.
 
-**Badge:** If your project is listed here, you can add one of these badges to your README:
+## Badge for listed projects
+
+If your project is listed here, add one of these badges to its README:
 
 ![listed on awesome-europe](https://img.shields.io/badge/listed%20on-awesome--europe-ffcc00?style=flat&logo=europeanunion&logoColor=ffcc00&labelColor=003399) ![listed on awesome-europe](https://img.shields.io/badge/listed%20on-awesome--europe-ffcc00?style=flat-square&logo=europeanunion&logoColor=ffcc00&labelColor=003399) ![listed on awesome-europe](https://img.shields.io/badge/listed%20on-awesome--europe-ffcc00?style=plastic&logo=europeanunion&logoColor=ffcc00&labelColor=003399) ![listed on awesome-europe](https://img.shields.io/badge/listed%20on-awesome--europe-ffcc00?style=for-the-badge&logo=europeanunion&logoColor=ffcc00&labelColor=003399)
 
@@ -750,7 +759,4 @@ For the badge (large):
 ```markdown
 [![listed on awesome-europe](https://img.shields.io/badge/listed%20on-awesome--europe-ffcc00?style=for-the-badge&logo=europeanunion&logoColor=ffcc00&labelColor=003399)](https://github.com/GeiserX/awesome-europe#readme)
 ```
-
-**Note:** This list focuses on open source software that provides **support specifically for Europe** — its institutions, regulations, standards, and cross-border infrastructure. The scope covers the **EU-27 and EEA** (Norway, Iceland, Liechtenstein). Software specific to a single country belongs in country-specific awesome lists. Software that is global and merely happens to work in Europe is also out of scope.
-
-**Disclaimer:** No projects related to pornography, NSFW content, gambling, religion, partisan politics, or any other controversial topic are accepted. This list aims to be a neutral and useful technical resource for the developer community.
+<!-- --8<-- [end:list] -->
