@@ -27,8 +27,11 @@ on:
       - 'docs/**'
       - 'mkdocs.yml'
       - '.github/workflows/docs.yml'
-      # docs/index.md includes README.md: every merged entry rebuilds the site.
+      # docs/list.md includes README.md: every merged entry rebuilds the site.
       - 'README.md'
+      # docs/contributing.md includes it; mkdocs.yml loads the hooks.
+      - 'contributing.md'
+      - 'hooks/**'
       # Add every file a page includes with pymdownx.snippets (for example
       # docker-compose.yml, .env.example): a change to it must rebuild the
       # site, and a rename must fail the build.
