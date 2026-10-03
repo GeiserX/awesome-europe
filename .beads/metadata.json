@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "europe",
+  "project_id": "eea65410-87f9-444e-9536-77cf200332eb"
+}
