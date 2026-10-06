@@ -1,0 +1,135 @@
+/* docs/stylesheets/theme.css: the site takes its two colours from the banner
+ * (the Matterhorn at dusk): the night sky and the salmon of "europe".
+ *
+ * The banner sky is a gradient from #0a0a0f to #14141f to #2c2233. The page
+ * body sits between the first two stops, so the rounded banner reads as a
+ * picture card on a slightly lighter sky, which is the intended look.
+ *
+ * mkdocs.yml sets `primary: custom` and `accent: custom`, which means Material
+ * paints nothing until these variables exist.
+ */
+:root {
+  --md-primary-fg-color: #0f0f17; /* banner sky */
+  --md-primary-fg-color--light: #262c44; /* far ridge */
+  --md-primary-fg-color--dark: #0a0a0f; /* top of the sky */
+  --md-primary-bg-color: #ffffff; /* wordmark */
+  --md-primary-bg-color--light: #6d7a9c; /* north face, used for muted header text */
+
+  --md-accent-fg-color: #f2b8a2; /* "europe" in the wordmark */
+  --md-accent-fg-color--transparent: #f2b8a21a;
+}
+
+/* Dark scheme: the page body uses the sky colour too, so the header and the
+   page read as one surface. Code blocks take the near hill. */
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #0f0f17;
+  --md-code-bg-color: #171b2b;
+  --md-typeset-a-color: #f2b8a2;
+}
+
+/* Light scheme: salmon on white is about 1.9:1, too faint for body links.
+   #b0583e is the same hue darkened to about 4.9:1 on white. */
+[data-md-color-scheme="default"] {
+  --md-typeset-a-color: #b0583e;
+  --md-accent-fg-color: #b0583e;
+}
+
+/* Fixed logo size so the peak does not crowd the site name. */
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+/* The site name, set the way banner.svg sets the wordmark: white, bold,
+   slightly tracked. Only the first topic is styled. Material puts the site
+   name in one .md-header__topic and the page title in a second one, and swaps
+   them on scroll; styling both would change every page title too. */
+.md-header__topic:first-child .md-ellipsis {
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+/* Keep the mark and the name close, so they read as one unit. */
+.md-header__button.md-logo {
+  padding-right: 0.2rem;
+}
+
+.md-header__title {
+  margin-left: 0.2rem;
+}
+
+/* Buttons. Material paints .md-button in --md-primary-fg-color, the header
+   colour. On the dark page that is also the page background, so a button
+   would show as plain text. Outline buttons take the link colour instead. */
+.md-typeset .md-button {
+  color: var(--md-typeset-a-color);
+  border-color: var(--md-typeset-a-color);
+  border-radius: 0.5rem;
+}
+
+.md-typeset .md-button:focus,
+.md-typeset .md-button:hover {
+  background-color: var(--md-typeset-a-color);
+  border-color: var(--md-typeset-a-color);
+  color: #0f0f17;
+}
+
+/* Grid cards: the border picks up the accent on hover, so the cards match
+   the links. */
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid > .card {
+  border-radius: 0.5rem;
+}
+
+.md-typeset .grid.cards > ul > li:focus-within,
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid > .card:focus-within,
+.md-typeset .grid > .card:hover {
+  border-color: var(--md-accent-fg-color);
+}
+
+/* The home and list pages keep an H1 for search, screen readers and the
+   browser tab. The banner (home) and the header (list) already show the name,
+   so the H1 is hidden visually. Use it as: # Awesome Europe { .ae-visually-hidden } */
+.md-typeset h1.ae-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Screenshot gallery: figures in a row on a wide screen, stacked on a narrow
+   one, each with a short caption. One figure wide today; the class is the
+   kit's, so a second shot drops in without a style change. */
+.md-typeset .ae-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 0.8rem;
+  margin: 1em 0;
+}
+
+.md-typeset .ae-gallery figure {
+  margin: 0;
+}
+
+.md-typeset .ae-gallery img {
+  border-radius: 0.4rem;
+}
+
+.md-typeset .ae-gallery figcaption {
+  margin-top: 0.3rem;
+  font-size: 0.7rem;
+}
+
+/* Badge images inside list entries: no gap under them, so a wrapped entry
+   keeps its line height. */
+.md-typeset li img {
+  vertical-align: middle;
+}

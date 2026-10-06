@@ -2,3 +2,8 @@
 https://hepdata.net/
 https://transport.ec.europa.eu/
 https://www.copernicus.eu/
+
+# Star badge links: /stargazers returns 404 to anonymous clients, so every
+# entry failed on every run and hid the real broken links. The repository URL
+# itself is still checked.
+https://github.com/.*/stargazers
