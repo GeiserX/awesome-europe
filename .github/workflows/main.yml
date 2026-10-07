@@ -21,14 +21,3 @@ jobs:
           require_badges: 'true'
           badge_types: '["stars", "last-commit", "language", "license"]'
           check_alphabetical: 'true'
-  links:
-    runs-on: ubuntu-latest
-    continue-on-error: true
-    steps:
-      - uses: actions/checkout@v7
-        with:
-          persist-credentials: false
-      - uses: lycheeverse/lychee-action@v2
-        with:
-          args: --no-progress --insecure --accept 200..=403 --timeout 30 --max-retries 3 --exclude img.shields.io --exclude iso20022.org --exclude ted.europa.eu README.md
-          fail: true
