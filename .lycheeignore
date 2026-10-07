@@ -7,3 +7,9 @@ https://www.copernicus.eu/
 # entry failed on every run and hid the real broken links. The repository URL
 # itself is still checked.
 https://github.com/.*/stargazers
+
+# Moved here from the --exclude flags of the old links job in main.yml, so
+# both link checks skip the same hosts.
+img\.shields\.io
+iso20022\.org
+ted\.europa\.eu
