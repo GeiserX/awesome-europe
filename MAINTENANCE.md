@@ -67,7 +67,7 @@ If the repo doesn't have a `DELETED.md` yet, create it with the sections above t
 
 ## Periodic maintenance
 
-- **Weekly:** `links-weekly` checks every link in the README each Monday and keeps one open "Dead links" issue with the ones that still fail on a second pass five minutes later. Fix or remove those links; the issue closes itself on the next clean run.
+- **Weekly:** a check shared by every list goes through all the README links each Monday from Spain (many official sites do not answer GitHub's runners) and keeps one open "Dead links" issue with the ones that still fail on a second pass five minutes later. Fix or remove those links; the issue closes itself on the next clean run.
 - **Quarterly:** Refresh badges (`gather-metadata.sh` + `transform-readme.py`). Check for recently archived repos:
   ```bash
   grep -oE 'https://github\.com/[^/)]+/[^/)]+' README.md | sort -u | while read url; do
@@ -83,7 +83,7 @@ If the repo doesn't have a `DELETED.md` yet, create it with the sections above t
 - **awesome-lint-extra** — Custom linter. Validates format, alphabetical order, badges, and descriptions. Runs as GitHub Action (`GeiserX/awesome-lint-extra@main`) and standalone (`python3 lint.py`). Configuration in `.awesomerc.json`.
 - **transform-readme.py** — Generates shields.io badges and institution/service tags from `scripts/metadata.json`.
 - **gather-metadata.sh** — Fetches metadata (stars, language, license, branch) from the GitHub API for each listed repo.
-- **lychee** — Link checker, in two workflows. `links-changed.yml` checks only the README lines a PR adds or changes, and it does block the merge: 403 and 429 pass (bot blocks), any other error or timeout fails if it repeats on a second pass a minute later. `links-weekly.yml` checks the whole README every week, never fails on a dead link, and opens or updates the "Dead links" issue. Hosts that always block the checker go in `.lycheeignore`.
+- **lychee** — Link checker. `links-changed.yml` checks only the README lines a PR adds or changes, through the `links-changed` action in awesome-lint-extra, and it does block the merge: 403 and 429 pass (bot blocks), any other error or timeout fails if it repeats on a second pass a minute later. The weekly check of the whole README runs outside this repo, never fails on a dead link, and opens or updates the "Dead links" issue. Hosts that always block the checker go in `.lycheeignore`.
 
 ## Format rules
 
