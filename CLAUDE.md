@@ -114,6 +114,20 @@ Before including a repository, check:
 - **Required**: include in the PR the **URL of the EU regulation, institution, or standard** the software supports (e.g., eur-lex.europa.eu, eurostat.ec.europa.eu).
 - Issue templates available for suggesting projects (`suggest-project.md`) and requesting removal (`remove-project.md`).
 
+## Replying to a contributor's PR
+
+Someone who adds their project to the list wants it to be seen. The more stars awesome-europe has, the higher it ranks on GitHub and the more people reach each entry, so starring the list also helps the contributor. Every reply to someone else's PR uses that:
+
+- **Before replying, check whether they already starred it:**
+  ```bash
+  gh api --paginate repos/GeiserX/awesome-europe/stargazers --jq '.[].login' | grep -qix '<login>' && echo "already starred"
+  ```
+  If it prints nothing (or `gh` fails), use the conditional wording "if you haven't starred it yet".
+- **Merged PR:** thank them and invite them to star the list, saying what they get out of it. If they already starred it, thank them for the star instead of asking.
+  > Thanks, it's on the list! If you haven't starred awesome-europe yet ⭐, please do: the more stars the list has, the higher it ranks on GitHub and the more people find your project.
+- **Closed without merging:** don't ask for a star by default; it reads as asking for something in exchange for a no. Ask only when it truly helps them: the entry moves to another of our lists, or you invite them back once the project meets the criteria.
+- Reply in the language the author wrote in (English by default), in a few lines.
+
 ## Structure
 
 - Sections with `##`, subsections with `###`.
