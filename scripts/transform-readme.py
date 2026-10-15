@@ -522,6 +522,8 @@ DEMO_URLS.update({
     "ckan/ckan": "https://demo.ckan.org",
     "aai-institute/practical-ai-act": "https://practical-ai-act.eu",
     "SonnyLabs/EU_AI_ACT_MCP": "https://sonnylabs.ai",
+    "sebastianfoerste/eu-ai-act-classifier": "https://sebastianfoerste.github.io/eu-ai-act-classifier/playground/",
+    "sebastianfoerste/micar-whitepaper-linter": "https://sebastianfoerste.github.io/micar-whitepaper-linter/playground/",
 })
 
 if __name__ == "__main__":
