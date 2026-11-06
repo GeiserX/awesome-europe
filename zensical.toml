@@ -1,0 +1,79 @@
+# Generated from mkdocs.yml by mkdocs-to-zensical.py; the why of every block is in
+# new-repo/templates/zensical.toml. Edit this file, not mkdocs.yml, which is gone.
+
+[project]
+site_name = "Awesome Europe"
+site_url = "https://geiserx.github.io/awesome-europe/"
+site_description = "A curated list of open source software built for Europe, its institutions, regulations, standards and cross-border infrastructure."
+repo_url = "https://github.com/GeiserX/awesome-europe"
+repo_name = "GeiserX/awesome-europe"
+strict = true
+extra_css = ["stylesheets/theme.css"]
+exclude_docs = """
+[A-Z]*.md
+design/
+research/
+notes/
+requirements-docs.txt
+hooks/
+"""
+nav = [
+  { Home = "index.md" },
+  { "The list" = "list.md" },
+  { Contributing = "contributing.md" },
+]
+
+[project.validation]
+invalid_links = true
+invalid_link_anchors = true
+
+[project.theme]
+language = "en"
+variant = "modern"
+logo = "images/logo.svg"
+favicon = "images/icon.svg"
+font = false
+features = [
+  "navigation.top",
+  "navigation.footer",
+  "content.code.copy",
+  "search.highlight",
+  "toc.follow",
+]
+icon.repo = "fontawesome/brands/github"
+
+[[project.theme.palette]]
+scheme = "slate"
+primary = "custom"
+accent = "custom"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to light mode"
+
+[[project.theme.palette]]
+scheme = "default"
+primary = "custom"
+accent = "custom"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to dark mode"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/GeiserX/awesome-europe"
+
+[project.plugins.search]
+
+[project.markdown_extensions]
+"docs.hooks.awesome_site" = { section = "list", ids = ["contents"] }
+admonition = {}
+"pymdownx.details" = {}
+"pymdownx.superfences" = {}
+"pymdownx.highlight".anchor_linenums = true
+"pymdownx.inlinehilite" = {}
+"pymdownx.snippets".base_path = ["."]
+"pymdownx.snippets".check_paths = true
+attr_list = {}
+md_in_html = {}
+"pymdownx.emoji".emoji_index = "zensical.extensions.emoji.twemoji"
+"pymdownx.emoji".emoji_generator = "zensical.extensions.emoji.to_svg"
+tables = {}
+toc = { permalink = true, slugify = { object = "pymdownx.slugs.slugify", kwds = { case = "lower" } } }
