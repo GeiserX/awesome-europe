@@ -5,7 +5,7 @@
  * body sits between the first two stops, so the rounded banner reads as a
  * picture card on a slightly lighter sky, which is the intended look.
  *
- * mkdocs.yml sets `primary: custom` and `accent: custom`, which means Material
+ * zensical.toml sets `primary: custom` and `accent: custom`, which means Material
  * paints nothing until these variables exist.
  */
 :root {
@@ -46,9 +46,15 @@
    name in one .md-header__topic and the page title in a second one, and swaps
    them on scroll; styling both would change every page title too. */
 .md-header__topic:first-child .md-ellipsis {
-  color: #ffffff;
   font-weight: 700;
   letter-spacing: 0.01em;
+}
+
+/* That colour only on the dark scheme: Zensical's modern header takes the page
+   background, so on the light scheme it is white and a light name would vanish.
+   There the name keeps the default text colour. */
+[data-md-color-scheme="slate"] .md-header__topic:first-child .md-ellipsis {
+  color: #ffffff;
 }
 
 /* Keep the mark and the name close, so they read as one unit. */
