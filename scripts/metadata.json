@@ -423,7 +423,7 @@
 ,
 "consul/consul": {"default_branch":"master","description":"Consul Democracy - Open Government and E-Participation Web Software","homepage":"https://consuldemocracy.org","language":"Ruby","license":"AGPL-3.0","stargazers_count":1529,"topics":["agplv3","consuldemocracy","democracy","e-government","hacktoberfest","open-government","rails","ruby"]}
 ,
-"csaf-poc/csaf_distribution": {"default_branch":"main","description":"Tools to download or provide CSAF (Common Security Advisory Framework) documents.","homepage":"","language":"Go","license":"","stargazers_count":58,"topics":["apache-2-0-license","csaf","csaf-aggregator","csaf-distribution","csaf-downloader","csaf-trusted-provider","provider-checker","security-automation","tools"]}
+"gocsaf/csaf": {"default_branch":"main","description":"Tools to download or provide CSAF (Common Security Advisory Framework) documents.","homepage":"","language":"Go","license":"","license_path":"LICENSES","stargazers_count":58,"topics":["apache-2-0-license","csaf","csaf-aggregator","csaf-distribution","csaf-downloader","csaf-trusted-provider","provider-checker","security-automation","tools"]}
 ,
 "custom-components/nordpool": {"default_branch":"master","description":"This component allows you to pull in the energy prices into Home-Assistant.","homepage":"","language":"Python","license":"","stargazers_count":554,"topics":["custom-component","energy-prices","hacs","homeassistant","nordpool","sensor"]}
 ,
