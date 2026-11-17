@@ -110,21 +110,27 @@ The only exception is software published by an official body (an EU institution,
 ```bash
 gh api repos/<owner>/<repo> --jq '{stars: .stargazers_count, created: .created_at}'
 # Date of the first commit: the last page of commits, one per page.
-# Stops with an error if the first call fails or if there are more pages but no link to the last one,
+# Both calls read the same SHA, so a new commit cannot shift the last page.
+# Stops with an error if a call fails, if there are more pages but no link to the last one, or if no date comes back,
 # instead of reading page 1, which holds the newest commit.
+# It reads only this repository's default branch, in commit-date order.
+# If the project moved, or its history was rewritten or merges several repositories, find the first commit by hand, in the original if there is one.
 (
-  h=$(gh api "repos/<owner>/<repo>/commits?per_page=1" -i) || exit 1
+  h=$(gh api "repos/<owner>/<repo>/commits?per_page=1" -i --jq '.[0].sha') || exit 1
+  sha=$(printf '%s\n' "$h" | tail -n 1)
   n=$(printf '%s\n' "$h" | sed -n 's/.*[?&]page=\([0-9]*\)>; rel="last".*/\1/p')
   if [ -z "$n" ] && printf '%s\n' "$h" | grep -q 'rel="next"'; then
     echo "No link to the last page: the first commit cannot be found." >&2; exit 1
   fi
-  gh api "repos/<owner>/<repo>/commits?per_page=1&page=${n:-1}" --jq '.[0].commit.author.date'
+  d=$(gh api "repos/<owner>/<repo>/commits?sha=$sha&per_page=1&page=${n:-1}" --jq '.[0].commit.author.date // empty') || exit 1
+  [ -n "$d" ] || { echo "No date came back: the first commit cannot be found." >&2; exit 1; }
+  echo "$d"
 )
 ```
 
 Reply when closing, in a few lines and without asking for a star:
 
-> Thanks for the proposal. I'm closing it because the repository doesn't meet the list's minimum yet: 5 stars and 3 months of history. Once it does, send it again and I'll take a look.
+> Thanks for the proposal. I'm closing it because the repository doesn't meet the list's minimum yet: 5 stars and 3 months of history. It falls short on <stars, history or both>: today it has <N> stars and its first commit is from <date>. Once it meets the minimum, send it again and I'll take a look.
 
 If the reason is that it copies another site's data without the code that builds it, say so instead:
 
@@ -149,8 +155,8 @@ If it passes the minimum, check:
 
 What works and has no maintained replacement in the list stays. Reputation decides who has to prove what. Nothing is removed without Sergio's approval.
 
-- **Archived**: always removed.
-- **Broken**: removed, whatever its age. Show the failure: run the project, or show that the service it consumes no longer answers as it expects.
+- **Archived or read-only**: always removed.
+- **Broken**: removed, whatever its age. Show the failure: run the project, show that the service it consumes no longer answers as it expects or, for a dataset, check its data against the official source and point to where they differ.
 - **Superseded**: if another maintained entry in the list does the same job, the old one is removed even if it has a reputation. It moves to `DELETED.md` with a link to its successor.
 - **Serves a retired system**: removed even if official.
 - **Old**: more than 3 years without commits on the default branch (not `pushed_at`, which bot branches refresh). If none of the cases above applies:
@@ -163,7 +169,7 @@ Reputation is one of these three:
 - a known organisation publishes it;
 - it has visible real use: stars, forks, or downloads or dependents in its package registry (PyPI, npm, Packagist, RubyGems, CRAN, NuGet, crates.io, Maven Central). There is no fixed number: judge each case.
 
-The review is quarterly. List the entries with more than 3 years without commits and check each against these criteria; show Sergio the proposed table before moving anything to `DELETED.md`.
+The review is quarterly. List the archived entries and the entries with more than 3 years without commits, and check each against these criteria; show Sergio the proposed table before moving anything to `DELETED.md`. A newer entry found broken, serving a retired system or superseded by a maintained entry joins a proposal as soon as it is found. The 3-year filter only sets when age gets reviewed.
 
 ## Pull requests and contributions
 
