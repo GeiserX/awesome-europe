@@ -69,7 +69,7 @@ If the repo doesn't have a `DELETED.md` yet, create it with the sections above t
 ## Periodic maintenance
 
 - **Weekly:** a check shared by every list goes through all the README links each Monday from Spain (many official sites do not answer GitHub's runners) and keeps one open "Dead links" issue with the ones that still fail on a second pass five minutes later. Fix or remove those links; the issue closes itself on the next clean run.
-- **Quarterly:** Review the entries with more than 3 years without commits on the default branch: those that work and either have a reputation or have no replacement in the list stay (criteria in "Staying in" in `CLAUDE.md`). Get the proposed removals approved before touching `DELETED.md`. Refresh badges (`gather-metadata.sh` + `transform-readme.py`). Check for recently archived repos:
+- **Quarterly:** Review the entries with more than 3 years without commits on the default branch against "Staying in" in `CLAUDE.md`: archived, broken or superseded entries go; the rest stay if they have a reputation, or if they have none but are shown to work. Get the proposed removals approved before touching `DELETED.md`. Refresh badges (`gather-metadata.sh` + `transform-readme.py`). Check for recently archived repos:
   ```bash
   grep -oE 'https://github\.com/[^/)]+/[^/)]+' README.md | sort -u | while read url; do
     repo="${url#https://github.com/}"

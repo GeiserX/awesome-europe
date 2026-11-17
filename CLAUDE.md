@@ -72,10 +72,10 @@ A curated list of open source software that provides **support specifically for 
 **Same quality bar as [awesome-spain](https://github.com/GeiserX/awesome-spain):**
 
 - **No archived repos**: if discovered archived after inclusion, move to `DELETED.md` immediately.
-- **No old repos without reputation**: old entries stay only if they work and have a reputation (see "Staying in").
+- **Nothing old left unchecked**: an old entry without a reputation stays only if it is shown to work and no maintained entry in the list does the same job (see "Staying in").
 - **No broken repos**: if the repo README says "deprecated", "no longer maintained", "use X instead", or similar — do not include. Move to `DELETED.md` if already listed.
 - **Minimum stars**: 5 stars and 3 months of history to get in (see "Minimum to get in").
-- **Verify every repo** before adding: check `archived`, `pushed_at`, `stargazers_count` via `gh api repos/owner/name`.
+- **Verify every repo** before adding: check `archived`, `stargazers_count` and `created_at` via `gh api repos/owner/name`, and the date of the last commit on the default branch (not `pushed_at`).
 
 ## Entry format
 
@@ -128,16 +128,21 @@ If it passes the minimum, check:
 
 ## Staying in: what stays and what goes
 
-Only software that works and either has a reputation or has no replacement stays. Nothing is removed without Sergio's approval.
+What works and has no maintained replacement in the list stays. Reputation decides who has to prove what. Nothing is removed without Sergio's approval.
 
+- **Archived**: always removed.
 - **Broken**: removed, whatever its age. Show the failure: run the project, or show that the service it consumes no longer answers as it expects.
-- **Old and without reputation**: more than 3 years without commits on the default branch (not `pushed_at`, which bot branches refresh) and no reputation. Removed, unless it still works and no maintained entry in the list does the same job.
-- **Old with reputation**: stays while it works. Reputation is one of these three:
-  - an official body publishes it;
-  - a known organisation publishes it;
-  - it has visible real use: stars, forks, or downloads or dependents in its package registry (PyPI, npm, Packagist, RubyGems, CRAN, NuGet, crates.io, Maven Central). There is no fixed number: judge each case.
-- **Superseded**: if a maintained entry does the same job, the old one moves to `DELETED.md` with a link to its successor.
+- **Superseded**: if another maintained entry in the list does the same job, the old one is removed even if it has a reputation. It moves to `DELETED.md` with a link to its successor.
 - **Serves a retired system**: removed even if official.
+- **Old**: more than 3 years without commits on the default branch (not `pushed_at`, which bot branches refresh). If none of the cases above applies:
+  - **with a reputation**, it stays until someone shows it is broken;
+  - **without a reputation**, it stays only if it is shown to work today, by running it or checking it against the service it consumes. If that cannot be shown, it is removed.
+
+Reputation is one of these three:
+
+- an official body publishes it;
+- a known organisation publishes it;
+- it has visible real use: stars, forks, or downloads or dependents in its package registry (PyPI, npm, Packagist, RubyGems, CRAN, NuGet, crates.io, Maven Central). There is no fixed number: judge each case.
 
 The review is quarterly. List the entries with more than 3 years without commits and check each against these criteria; show Sergio the proposed table before moving anything to `DELETED.md`.
 
