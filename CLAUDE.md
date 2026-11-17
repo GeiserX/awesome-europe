@@ -128,14 +128,14 @@ If it passes the minimum, check:
 
 ## Staying in: what stays and what goes
 
-Only software that works and has a reputation stays. Nothing is removed without Sergio's approval.
+Only software that works and either has a reputation or has no replacement stays. Nothing is removed without Sergio's approval.
 
 - **Broken**: removed, whatever its age. Show the failure: run the project, or show that the service it consumes no longer answers as it expects.
-- **Old and without reputation**: more than 3 years without commits on the default branch (not `pushed_at`, which bot branches refresh) and no reputation. Removed even if it works.
+- **Old and without reputation**: more than 3 years without commits on the default branch (not `pushed_at`, which bot branches refresh) and no reputation. Removed, unless it still works and no maintained entry in the list does the same job.
 - **Old with reputation**: stays while it works. Reputation is one of these three:
   - an official body publishes it;
   - a known organisation publishes it;
-  - it has real use: 50 stars or more, or downloads or dependents you can measure in its package registry (PyPI, npm, Packagist, RubyGems, CRAN, NuGet, crates.io, Maven Central).
+  - it has visible real use: stars, forks, or downloads or dependents in its package registry (PyPI, npm, Packagist, RubyGems, CRAN, NuGet, crates.io, Maven Central). There is no fixed number: judge each case.
 - **Superseded**: if a maintained entry does the same job, the old one moves to `DELETED.md` with a link to its successor.
 - **Serves a retired system**: removed even if official.
 
