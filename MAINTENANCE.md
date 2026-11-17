@@ -59,26 +59,26 @@ Entries are never simply deleted from the README. They are moved to `DELETED.md`
 | Reason | Section in DELETED.md |
 |--------|-----------------------|
 | Repo archived/read-only | Archived |
-| Repo deleted or renamed | Missing or renamed repos |
-| Author confirmed abandonment | Abandoned |
+| Repo deleted (a renamed repo stays: update its link) | Missing or renamed repos |
+| Author confirmed abandonment and it no longer works | Abandoned |
 | Does not meet inclusion criteria | Removed for not being Europe-specific |
 | Superseded by another project | Replaced (link successor) |
-| Broken, old and unverifiable without a reputation, or serving a retired system | Removed for inactivity (say how it was checked) |
+| Broken, old and unverifiable without a reputation, or serving a retired system | Removed in review (say why and how it was checked) |
 
 If the repo doesn't have a `DELETED.md` yet, create it with the sections above the first time a project is removed.
 
 ## Periodic maintenance
 
 - **Weekly:** a check shared by every list goes through all the README links each Monday from Spain (many official sites do not answer GitHub's runners) and keeps one open "Dead links" issue with the ones that still fail on a second pass five minutes later. Fix or remove those links; the issue closes itself on the next clean run.
-- **Quarterly:** Review the entries with more than 3 years without commits on the default branch against "Staying in" in `CLAUDE.md`: archived, broken, superseded or retired-system entries go; the rest stay if they have a reputation, or if they have none but are shown to work (by running them, or by checking their data against the official source). Get the proposed removals approved before touching `DELETED.md`. Refresh badges (`gather-metadata.sh` + `transform-readme.py`). Check for recently archived repos:
+- **Quarterly:** Review the entries with more than 3 years without commits on the default branch against "Staying in" in `CLAUDE.md`: archived, broken, superseded or retired-system entries go; the rest stay if they have a reputation, or if they have none but are shown to work (by running them, by checking them against the service they consume, or by checking their data against the official source). Get the proposed removals approved before touching `DELETED.md`. Refresh badges (`gather-metadata.sh` + `transform-readme.py`). Check for recently archived repos:
   ```bash
   grep -oE 'https://github\.com/[^/)]+/[^/)]+' README.md | sort -u | while read url; do
     repo="${url#https://github.com/}"
-    archived=$(gh api "repos/$repo" --jq '.archived' 2>/dev/null)
+    archived=$(gh api "repos/$repo" --jq '.archived') || { echo "ERROR: could not query $repo" >&2; continue; }
     [ "$archived" = "true" ] && echo "ARCHIVED: $repo"
   done
   ```
-  Move archived repos to `DELETED.md`.
+  Add the archived repos to the same proposal; they move to `DELETED.md` once it is approved.
 
 ## Tools
 

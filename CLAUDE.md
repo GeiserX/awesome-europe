@@ -56,7 +56,7 @@ A curated list of open source software that provides **support specifically for 
 - Software by European developers that has **no Europe-specific functionality** (generic JS frameworks, visualization libraries, etc.).
 - **NATO or military** software.
 - Software only tangentially related to Europe (e.g., a global mapping tool that includes European map tiles).
-- **Archived or read-only** repositories — these go to `DELETED.md`.
+- **Archived or read-only** repositories. One already in the list goes through "Staying in".
 - Repos where the **author explicitly states the project is broken, unmaintained, or deprecated** — treat as abandoned.
 - Repos with **no meaningful README** or that are clearly test/experiment repos.
 - **Open-core funnels**: repos whose open-source part exists as the free tier or marketing surface of a paid product or hosted service selling the same capability. Signals: a pricing page for a hosted version of what the repo does, development happening in a private repo with the public one as a synced snapshot, launch-day self-submission across multiple lists. The license being permissive and the code being substantial does not cure this — the list recommends community open source, not commercial funnels. Company-backed libraries remain fine when the vendor's business is elsewhere and the library is a complete give-away (e.g. pretix's drafthorse): the test is whether the vendor sells a paid version of the very thing the repo does. Precedent: Attestwire EN 16931, delisted Aug 2026 (see `DELETED.md`).
@@ -71,7 +71,7 @@ A curated list of open source software that provides **support specifically for 
 
 **Same quality bar as [awesome-spain](https://github.com/GeiserX/awesome-spain):**
 
-- **No archived repos**: if discovered archived after inclusion, move to `DELETED.md` immediately.
+- **No archived repos**: if a listed repo turns out to be archived, propose removing it; it moves to `DELETED.md` once Sergio approves (see "Staying in").
 - **Nothing old left unchecked**: an old entry without a reputation stays only if it is shown to work and no maintained entry in the list does the same job (see "Staying in").
 - **No broken repos**: if the repo README says "deprecated", "broken", "no longer maintained", "use X instead", or similar — do not include. If it is already listed, decide with "Staying in": "use X instead" with X maintained in the list counts as superseded, and "no longer maintained" alone is not a reason to remove a reputable entry that still works.
 - **Minimum stars**: 5 stars and 3 months of history to get in (see "Minimum to get in").
@@ -110,24 +110,36 @@ The only exception is software published by an official body (an EU institution,
 ```bash
 gh api repos/<owner>/<repo> --jq '{stars: .stargazers_count, created: .created_at}'
 # Date of the first commit: the last page of commits, one per page.
-n=$(gh api "repos/<owner>/<repo>/commits?per_page=1" -i | sed -n 's/.*[?&]page=\([0-9]*\)>; rel="last".*/\1/p')
-gh api "repos/<owner>/<repo>/commits?per_page=1&page=${n:-1}" --jq '.[0].commit.author.date'
+# Stops with an error if the first call fails or if there are more pages but no link to the last one,
+# instead of reading page 1, which holds the newest commit.
+(
+  h=$(gh api "repos/<owner>/<repo>/commits?per_page=1" -i) || exit 1
+  n=$(printf '%s\n' "$h" | sed -n 's/.*[?&]page=\([0-9]*\)>; rel="last".*/\1/p')
+  if [ -z "$n" ] && printf '%s\n' "$h" | grep -q 'rel="next"'; then
+    echo "No link to the last page: the first commit cannot be found." >&2; exit 1
+  fi
+  gh api "repos/<owner>/<repo>/commits?per_page=1&page=${n:-1}" --jq '.[0].commit.author.date'
+)
 ```
 
 Reply when closing, in a few lines and without asking for a star:
 
 > Thanks for the proposal. I'm closing it because the repository doesn't meet the list's minimum yet: 5 stars and 3 months of history. Once it does, send it again and I'll take a look.
 
-If the reason is that it is a dump, say so instead:
+If the reason is that it copies another site's data without the code that builds it, say so instead:
 
-> Thanks for the proposal. I'm closing it because the repository is a copy of data published elsewhere, without the code that builds it, and the list only takes projects whose content can be checked or rebuilt. If you publish that code, send it again and I'll take a look.
+> Thanks for the proposal. I'm closing it because the repository is a copy of data published elsewhere, without the code that builds it, and the list does not take copies of data without that code. If you publish that code, send it again and I'll take a look.
+
+If the reason is that its whole history is one or two commits on the same day:
+
+> Thanks for the proposal. I'm closing it because the repository's whole history is one or two commits made on the same day, and the list only takes projects with some track record. Once it has more history, send it again and I'll take a look.
 
 ## Verification before adding
 
 If it passes the minimum, check:
 
 - **Exists and is public**: the GitHub link works and the repo is not private.
-- **Not archived or read-only**: if archived, it goes to `DELETED.md` ("Archived" section).
+- **Not archived or read-only**: if it is, the PR is closed without adding it anywhere; `DELETED.md` only records what was once in the list.
 - **Works today**: if it **consumes a service** (an API, a portal, a site it scrapes), it still does. If it **consumes none** (a validator, a format, a dataset), its logic or data are still correct. Run it or check it against the official source before merging.
 - **Not a duplicate**: cross-check with `README.md` and `DELETED.md`. If a maintained entry already does the same job, the new one must add something.
 - **Minimum quality**: has documentation (README) and is not an empty or test repository.
