@@ -69,7 +69,7 @@ If the repo doesn't have a `DELETED.md` yet, create it with the sections above t
 
 ## Periodic maintenance
 
-- **Weekly:** a check shared by every list goes through all the README links each Monday from Spain (many official sites do not answer GitHub's runners) and keeps one open "Dead links" issue with the ones that still fail on a second pass five minutes later. Fix or remove those links; the issue closes itself on the next clean run.
+- **Weekly:** a check shared by every list goes through all the README links each Monday from Spain (many official sites do not answer GitHub's runners) and keeps one open "Dead links" issue with the ones that still fail on a second pass five minutes later. Fix those links. An entry that cannot be fixed joins a removal proposal, which Sergio approves before it moves to `DELETED.md`. The issue closes itself on the next clean run.
 - **Quarterly:** Review the entries with more than 3 years without commits on the default branch against "Staying in" in `CLAUDE.md`: archived, broken, superseded or retired-system entries go; the rest stay if they have a reputation, or if they have none but are shown to work (by running them, by checking them against the service they consume, or by checking their data against the official source). Get the proposed removals approved before touching `DELETED.md`. Refresh badges (`gather-metadata.sh` + `transform-readme.py`). Check for recently archived repos:
   ```bash
   grep -oE 'https://github\.com/[^/)]+/[^/)]+' README.md | sort -u | while read url; do
@@ -78,7 +78,7 @@ If the repo doesn't have a `DELETED.md` yet, create it with the sections above t
     [ "$archived" = "true" ] && echo "ARCHIVED: $repo"
   done
   ```
-  Add the archived repos to the same proposal; they move to `DELETED.md` once it is approved.
+  Add the archived repos to the same proposal; they move to `DELETED.md` once it is approved. A newer entry found broken, superseded or serving a retired system joins a proposal as soon as it is found: the 3-year filter only sets when age gets reviewed.
 
 ## Tools
 
