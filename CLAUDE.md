@@ -56,7 +56,7 @@ A curated list of open source software that provides **support specifically for 
 - Software by European developers that has **no Europe-specific functionality** (generic JS frameworks, visualization libraries, etc.).
 - **NATO or military** software.
 - Software only tangentially related to Europe (e.g., a global mapping tool that includes European map tiles).
-- **Archived or read-only** repositories — these go to `DELETED.md`.
+- **Archived or read-only** repositories. One already in the list goes through "Staying in".
 - Repos where the **author explicitly states the project is broken, unmaintained, or deprecated** — treat as abandoned.
 - Repos with **no meaningful README** or that are clearly test/experiment repos.
 - **Open-core funnels**: repos whose open-source part exists as the free tier or marketing surface of a paid product or hosted service selling the same capability. Signals: a pricing page for a hosted version of what the repo does, development happening in a private repo with the public one as a synced snapshot, launch-day self-submission across multiple lists. The license being permissive and the code being substantial does not cure this — the list recommends community open source, not commercial funnels. Company-backed libraries remain fine when the vendor's business is elsewhere and the library is a complete give-away (e.g. pretix's drafthorse): the test is whether the vendor sells a paid version of the very thing the repo does. Precedent: Attestwire EN 16931, delisted Aug 2026 (see `DELETED.md`).
@@ -71,11 +71,11 @@ A curated list of open source software that provides **support specifically for 
 
 **Same quality bar as [awesome-spain](https://github.com/GeiserX/awesome-spain):**
 
-- **No archived repos**: if discovered archived after inclusion, move to `DELETED.md` immediately.
-- **No old repos without reputation**: old entries stay only if they work and have a reputation (see "Staying in").
-- **No broken repos**: if the repo README says "deprecated", "no longer maintained", "use X instead", or similar — do not include. Move to `DELETED.md` if already listed.
+- **No archived repos**: if a listed repo turns out to be archived, propose removing it; it moves to `DELETED.md` once Sergio approves (see "Staying in").
+- **Nothing old left unchecked**: an old entry without a reputation stays only if it is shown to work and no maintained entry in the list does the same job (see "Staying in").
+- **No broken repos**: if the repo README says "deprecated", "broken", "no longer maintained", "use X instead", or similar — do not include. If it is already listed, decide with "Staying in": "use X instead" with X maintained in the list counts as superseded, and "no longer maintained" alone is not a reason to remove a reputable entry that still works.
 - **Minimum stars**: 5 stars and 3 months of history to get in (see "Minimum to get in").
-- **Verify every repo** before adding: check `archived`, `pushed_at`, `stargazers_count` via `gh api repos/owner/name`.
+- **Verify every repo** before adding: check `archived`, `stargazers_count` and `created_at` via `gh api repos/owner/name`, and the date of the last commit on the default branch (not `pushed_at`).
 
 ## Entry format
 
@@ -109,18 +109,43 @@ The only exception is software published by an official body (an EU institution,
 
 ```bash
 gh api repos/<owner>/<repo> --jq '{stars: .stargazers_count, created: .created_at}'
+# Date of the first commit: the last page of commits, one per page.
+# Both calls read the same SHA, so a new commit cannot shift the last page.
+# Stops with an error if a call fails, if there are more pages but no link to the last one, or if no date comes back,
+# instead of reading page 1, which holds the newest commit.
+# It reads only this repository's default branch, in commit-date order.
+# If the project moved, or its history was rewritten or merges several repositories, find the first commit by hand, in the original if there is one.
+(
+  h=$(gh api "repos/<owner>/<repo>/commits?per_page=1" -i --jq '.[0].sha') || exit 1
+  sha=$(printf '%s\n' "$h" | tail -n 1)
+  n=$(printf '%s\n' "$h" | sed -n 's/.*[?&]page=\([0-9]*\)>; rel="last".*/\1/p')
+  if [ -z "$n" ] && printf '%s\n' "$h" | grep -q 'rel="next"'; then
+    echo "No link to the last page: the first commit cannot be found." >&2; exit 1
+  fi
+  d=$(gh api "repos/<owner>/<repo>/commits?sha=$sha&per_page=1&page=${n:-1}" --jq '.[0].commit.author.date // empty') || exit 1
+  [ -n "$d" ] || { echo "No date came back: the first commit cannot be found." >&2; exit 1; }
+  echo "$d"
+)
 ```
 
 Reply when closing, in a few lines and without asking for a star:
 
-> Thanks for the proposal. I'm closing it because the repository doesn't meet the list's minimum yet: 5 stars and 3 months of history. Once it does, send it again and I'll take a look.
+> Thanks for the proposal. I'm closing it because the repository doesn't meet the list's minimum yet: 5 stars and 3 months of history. It falls short on <stars, history or both>: today it has <N> stars and its first commit is from <date>. Once it meets the minimum, send it again and I'll take a look.
+
+If the reason is that it copies another site's data without the code that builds it, say so instead:
+
+> Thanks for the proposal. I'm closing it because the repository is a copy of data published elsewhere, without the code that builds it, and the list does not take copies of data without that code. If you publish that code, send it again and I'll take a look.
+
+If the reason is that its whole history is one or two commits on the same day:
+
+> Thanks for the proposal. I'm closing it because the repository's whole history is one or two commits made on the same day, and the list only takes projects with some track record. Once it has more history, send it again and I'll take a look.
 
 ## Verification before adding
 
 If it passes the minimum, check:
 
 - **Exists and is public**: the GitHub link works and the repo is not private.
-- **Not archived or read-only**: if archived, it goes to `DELETED.md` ("Archived" section).
+- **Not archived or read-only**: if it is, the PR is closed without adding it anywhere; `DELETED.md` only records what was once in the list.
 - **Works today**: if it **consumes a service** (an API, a portal, a site it scrapes), it still does. If it **consumes none** (a validator, a format, a dataset), its logic or data are still correct. Run it or check it against the official source before merging.
 - **Not a duplicate**: cross-check with `README.md` and `DELETED.md`. If a maintained entry already does the same job, the new one must add something.
 - **Minimum quality**: has documentation (README) and is not an empty or test repository.
@@ -128,18 +153,23 @@ If it passes the minimum, check:
 
 ## Staying in: what stays and what goes
 
-Only software that works and either has a reputation or has no replacement stays. Nothing is removed without Sergio's approval.
+What works and has no maintained replacement in the list stays. Reputation decides who has to prove what. Nothing is removed without Sergio's approval.
 
-- **Broken**: removed, whatever its age. Show the failure: run the project, or show that the service it consumes no longer answers as it expects.
-- **Old and without reputation**: more than 3 years without commits on the default branch (not `pushed_at`, which bot branches refresh) and no reputation. Removed, unless it still works and no maintained entry in the list does the same job.
-- **Old with reputation**: stays while it works. Reputation is one of these three:
-  - an official body publishes it;
-  - a known organisation publishes it;
-  - it has visible real use: stars, forks, or downloads or dependents in its package registry (PyPI, npm, Packagist, RubyGems, CRAN, NuGet, crates.io, Maven Central). There is no fixed number: judge each case.
-- **Superseded**: if a maintained entry does the same job, the old one moves to `DELETED.md` with a link to its successor.
+- **Archived or read-only**: always removed.
+- **Broken**: removed, whatever its age. Show the failure: run the project, show that the service it consumes no longer answers as it expects or, for a dataset, check its data against the official source and point to where they differ.
+- **Superseded**: if another maintained entry in the list does the same job, the old one is removed even if it has a reputation. It moves to `DELETED.md` with a link to its successor.
 - **Serves a retired system**: removed even if official.
+- **Old**: more than 3 years without commits on the default branch (not `pushed_at`, which bot branches refresh). If none of the cases above applies:
+  - **with a reputation**, it stays until someone shows it is broken;
+  - **without a reputation**, it stays only if it is shown to work today, by running it, checking it against the service it consumes or, for a dataset, checking its data against the official source. If that cannot be shown, it is removed.
 
-The review is quarterly. List the entries with more than 3 years without commits and check each against these criteria; show Sergio the proposed table before moving anything to `DELETED.md`.
+Reputation is one of these three:
+
+- an official body publishes it;
+- a known organisation publishes it;
+- it has visible real use: stars, forks, or downloads or dependents in its package registry (PyPI, npm, Packagist, RubyGems, CRAN, NuGet, crates.io, Maven Central). There is no fixed number: judge each case.
+
+The review is quarterly. List the archived entries and the entries with more than 3 years without commits, and check each against these criteria; show Sergio the proposed table before moving anything to `DELETED.md`. A newer entry found broken, serving a retired system or superseded by a maintained entry joins a proposal as soon as it is found. The 3-year filter only sets when age gets reviewed.
 
 ## Pull requests and contributions
 
