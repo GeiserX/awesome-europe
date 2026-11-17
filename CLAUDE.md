@@ -109,11 +109,18 @@ The only exception is software published by an official body (an EU institution,
 
 ```bash
 gh api repos/<owner>/<repo> --jq '{stars: .stargazers_count, created: .created_at}'
+# Date of the first commit: the last page of commits, one per page.
+n=$(gh api "repos/<owner>/<repo>/commits?per_page=1" -i | sed -n 's/.*[?&]page=\([0-9]*\)>; rel="last".*/\1/p')
+gh api "repos/<owner>/<repo>/commits?per_page=1&page=${n:-1}" --jq '.[0].commit.author.date'
 ```
 
 Reply when closing, in a few lines and without asking for a star:
 
 > Thanks for the proposal. I'm closing it because the repository doesn't meet the list's minimum yet: 5 stars and 3 months of history. Once it does, send it again and I'll take a look.
+
+If the reason is that it is a dump, say so instead:
+
+> Thanks for the proposal. I'm closing it because the repository is a copy of data published elsewhere, without the code that builds it, and the list only takes projects whose content can be checked or rebuilt. If you publish that code, send it again and I'll take a look.
 
 ## Verification before adding
 
