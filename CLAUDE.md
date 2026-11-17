@@ -72,9 +72,9 @@ A curated list of open source software that provides **support specifically for 
 **Same quality bar as [awesome-spain](https://github.com/GeiserX/awesome-spain):**
 
 - **No archived repos**: if discovered archived after inclusion, move to `DELETED.md` immediately.
-- **No extremely unmaintained repos**: at least one commit in the last 3 years, unless it's a clearly stable/complete project (e.g., a spec validator that hasn't changed because the spec hasn't changed).
+- **No old repos without reputation**: old entries stay only if they work and have a reputation (see "Staying in").
 - **No broken repos**: if the repo README says "deprecated", "no longer maintained", "use X instead", or similar — do not include. Move to `DELETED.md` if already listed.
-- **Minimum stars**: prefer repos with at least a few stars, but exceptional niche tools with 0-1 stars may be included if they fill an important gap.
+- **Minimum stars**: 5 stars and 3 months of history to get in (see "Minimum to get in").
 - **Verify every repo** before adding: check `archived`, `pushed_at`, `stargazers_count` via `gh api repos/owner/name`.
 
 ## Entry format
@@ -97,16 +97,49 @@ Each entry includes (in this order):
 - Validate with [awesome-lint-extra](https://github.com/GeiserX/awesome-lint-extra): `python3 /path/to/lint.py` or via CI.
 - The `scripts/transform-readme.py` script can auto-enrich entries using GitHub API metadata stored in `scripts/metadata.json`. Run `scripts/gather-metadata.sh` first to refresh metadata.
 
+## Minimum to get in: direct rejection
+
+The list collects software with a track record. A PR that proposes a repository with no stars and no history is closed without further review. It is rejected if, on the day the PR opens, the repository meets **any** of these:
+
+- It has **fewer than 5 stars**.
+- It is **less than 3 months old**. Count from the first commit; if the author moved it from another repository, count from the original.
+- It is **a dump**: one or two commits on the same day, or a copy of another site's data without the code that builds it.
+
+The only exception is software published by an official body (an EU institution, a national or regional government, a public agency): it gets in even when new.
+
+```bash
+gh api repos/<owner>/<repo> --jq '{stars: .stargazers_count, created: .created_at}'
+```
+
+Reply when closing, in a few lines and without asking for a star:
+
+> Thanks for the proposal. I'm closing it because the repository doesn't meet the list's minimum yet: 5 stars and 3 months of history. Once it does, send it again and I'll take a look.
+
 ## Verification before adding
 
-Before including a repository, check:
+If it passes the minimum, check:
 
 - **Exists and is public**: the GitHub link works and the repo is not private.
 - **Not archived or read-only**: if archived, it goes to `DELETED.md` ("Archived" section).
-- **Not deprecated**: check if the README says "deprecated", "unmaintained", "broken", "use X instead".
-- **Reasonable activity**: at least one commit in the last 3 years, unless it's a stable/complete project.
-- **Not a duplicate**: cross-check with `README.md` and `DELETED.md`.
+- **Works today**: if it **consumes a service** (an API, a portal, a site it scrapes), it still does. If it **consumes none** (a validator, a format, a dataset), its logic or data are still correct. Run it or check it against the official source before merging.
+- **Not a duplicate**: cross-check with `README.md` and `DELETED.md`. If a maintained entry already does the same job, the new one must add something.
 - **Minimum quality**: has documentation (README) and is not an empty or test repository.
+- **Accurate description**: the language, scope and service tags match what the repository does.
+
+## Staying in: what stays and what goes
+
+Only software that works and has a reputation stays. Nothing is removed without Sergio's approval.
+
+- **Broken**: removed, whatever its age. Show the failure: run the project, or show that the service it consumes no longer answers as it expects.
+- **Old and without reputation**: more than 3 years without commits on the default branch (not `pushed_at`, which bot branches refresh) and no reputation. Removed even if it works.
+- **Old with reputation**: stays while it works. Reputation is one of these three:
+  - an official body publishes it;
+  - a known organisation publishes it;
+  - it has real use: 50 stars or more, or downloads or dependents you can measure in its package registry (PyPI, npm, Packagist, RubyGems, CRAN, NuGet, crates.io, Maven Central).
+- **Superseded**: if a maintained entry does the same job, the old one moves to `DELETED.md` with a link to its successor.
+- **Serves a retired system**: removed even if official.
+
+The review is quarterly. List the entries with more than 3 years without commits and check each against these criteria; show Sergio the proposed table before moving anything to `DELETED.md`.
 
 ## Pull requests and contributions
 
@@ -125,6 +158,7 @@ Someone who adds their project to the list wants it to be seen. The more stars a
   If it prints nothing (or `gh` fails), use the conditional wording "if you haven't starred it yet".
 - **Merged PR:** thank them and invite them to star the list, saying what they get out of it. If they already starred it, thank them for the star instead of asking.
   > Thanks, it's on the list! If you haven't starred awesome-europe yet ⭐, please do: the more stars the list has, the higher it ranks on GitHub and the more people find your project.
+- **Closed for missing the minimum:** use the reply in "Minimum to get in". No need to review the code or data.
 - **Closed without merging:** don't ask for a star by default; it reads as asking for something in exchange for a no. Ask only when it truly helps them: the entry moves to another of our lists, or you invite them back once the project meets the criteria.
 - Reply in the language the author wrote in (English by default), in a few lines.
 

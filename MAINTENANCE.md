@@ -17,15 +17,16 @@ See `AGENTS.md` (if present) for detailed criteria, edge cases, and prohibited t
 
 ## Reviewing PRs
 
-1. Verify the project **specifically supports Europe** (not simply that the author is European).
-2. Check the PR includes the **URL of the European service or institution** the project supports.
-3. Check format: simple entry, alphabetical order, description starting with uppercase and ending with a period.
-4. **CI must be green** before merging: awesome-lint-extra (format and order) + `links-changed` (lychee over the links the PR adds or changes).
-5. Badges are auto-generated. Contributors only submit:
+1. Check the **minimum to get in**: 5 stars and 3 months of history, and not a dump. If it falls short, close it without further review (see `CLAUDE.md`). Software from official bodies is exempt.
+2. Verify the project **specifically supports Europe** (not simply that the author is European).
+3. Check the PR includes the **URL of the European service or institution** the project supports.
+4. Check format: simple entry, alphabetical order, description starting with uppercase and ending with a period.
+5. **CI must be green** before merging: awesome-lint-extra (format and order) + `links-changed` (lychee over the links the PR adds or changes).
+6. Badges are auto-generated. Contributors only submit:
    ```markdown
    - [Name](https://github.com/owner/repo) - Brief description starting with uppercase and ending with period.
    ```
-6. After merging, run the badge pipeline (if available) and push:
+7. After merging, run the badge pipeline (if available) and push:
    ```bash
    bash scripts/gather-metadata.sh
    python3 scripts/transform-readme.py
@@ -68,7 +69,7 @@ If the repo doesn't have a `DELETED.md` yet, create it with the sections above t
 ## Periodic maintenance
 
 - **Weekly:** a check shared by every list goes through all the README links each Monday from Spain (many official sites do not answer GitHub's runners) and keeps one open "Dead links" issue with the ones that still fail on a second pass five minutes later. Fix or remove those links; the issue closes itself on the next clean run.
-- **Quarterly:** Refresh badges (`gather-metadata.sh` + `transform-readme.py`). Check for recently archived repos:
+- **Quarterly:** Review the entries with more than 3 years without commits on the default branch: only those that work and have a reputation stay (criteria in "Staying in" in `CLAUDE.md`). Get the proposed removals approved before touching `DELETED.md`. Refresh badges (`gather-metadata.sh` + `transform-readme.py`). Check for recently archived repos:
   ```bash
   grep -oE 'https://github\.com/[^/)]+/[^/)]+' README.md | sort -u | while read url; do
     repo="${url#https://github.com/}"
