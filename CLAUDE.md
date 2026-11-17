@@ -73,7 +73,7 @@ A curated list of open source software that provides **support specifically for 
 
 - **No archived repos**: if discovered archived after inclusion, move to `DELETED.md` immediately.
 - **Nothing old left unchecked**: an old entry without a reputation stays only if it is shown to work and no maintained entry in the list does the same job (see "Staying in").
-- **No broken repos**: if the repo README says "deprecated", "no longer maintained", "use X instead", or similar — do not include. Move to `DELETED.md` if already listed.
+- **No broken repos**: if the repo README says "deprecated", "broken", "no longer maintained", "use X instead", or similar — do not include. If it is already listed, decide with "Staying in": "use X instead" with X maintained in the list counts as superseded, and "no longer maintained" alone is not a reason to remove a reputable entry that still works.
 - **Minimum stars**: 5 stars and 3 months of history to get in (see "Minimum to get in").
 - **Verify every repo** before adding: check `archived`, `stargazers_count` and `created_at` via `gh api repos/owner/name`, and the date of the last commit on the default branch (not `pushed_at`).
 
@@ -136,7 +136,7 @@ What works and has no maintained replacement in the list stays. Reputation decid
 - **Serves a retired system**: removed even if official.
 - **Old**: more than 3 years without commits on the default branch (not `pushed_at`, which bot branches refresh). If none of the cases above applies:
   - **with a reputation**, it stays until someone shows it is broken;
-  - **without a reputation**, it stays only if it is shown to work today, by running it or checking it against the service it consumes. If that cannot be shown, it is removed.
+  - **without a reputation**, it stays only if it is shown to work today, by running it, checking it against the service it consumes or, for a dataset, checking its data against the official source. If that cannot be shown, it is removed.
 
 Reputation is one of these three:
 

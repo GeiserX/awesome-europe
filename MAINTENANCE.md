@@ -63,13 +63,14 @@ Entries are never simply deleted from the README. They are moved to `DELETED.md`
 | Author confirmed abandonment | Abandoned |
 | Does not meet inclusion criteria | Removed for not being Europe-specific |
 | Superseded by another project | Replaced (link successor) |
+| Broken, old and unverifiable without a reputation, or serving a retired system | Removed for inactivity (say how it was checked) |
 
 If the repo doesn't have a `DELETED.md` yet, create it with the sections above the first time a project is removed.
 
 ## Periodic maintenance
 
 - **Weekly:** a check shared by every list goes through all the README links each Monday from Spain (many official sites do not answer GitHub's runners) and keeps one open "Dead links" issue with the ones that still fail on a second pass five minutes later. Fix or remove those links; the issue closes itself on the next clean run.
-- **Quarterly:** Review the entries with more than 3 years without commits on the default branch against "Staying in" in `CLAUDE.md`: archived, broken or superseded entries go; the rest stay if they have a reputation, or if they have none but are shown to work. Get the proposed removals approved before touching `DELETED.md`. Refresh badges (`gather-metadata.sh` + `transform-readme.py`). Check for recently archived repos:
+- **Quarterly:** Review the entries with more than 3 years without commits on the default branch against "Staying in" in `CLAUDE.md`: archived, broken, superseded or retired-system entries go; the rest stay if they have a reputation, or if they have none but are shown to work (by running them, or by checking their data against the official source). Get the proposed removals approved before touching `DELETED.md`. Refresh badges (`gather-metadata.sh` + `transform-readme.py`). Check for recently archived repos:
   ```bash
   grep -oE 'https://github\.com/[^/)]+/[^/)]+' README.md | sort -u | while read url; do
     repo="${url#https://github.com/}"
